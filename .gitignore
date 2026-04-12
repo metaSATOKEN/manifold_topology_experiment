@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.bbl
+*.blg
+
+# Pre-computed arrays (regenerable)
+*.npy
+
+# IDE
+.idea/
+.vscode/
+*.swp
