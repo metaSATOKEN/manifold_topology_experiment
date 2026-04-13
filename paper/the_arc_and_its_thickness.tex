@@ -600,6 +600,11 @@ Our experiments suggest that the dominant PCA axis captures hidden-state norm va
 These observations point toward a functional hierarchy---norm, position, lexical difficulty---that may organize Pre-LN hidden-state variation. A preliminary steering experiment found that direction-specific intervention along these axes does not outperform random orthogonal perturbation, suggesting that while the hierarchy is useful for \emph{understanding} representation geometry, exploiting it for \emph{intervention} may require fundamentally different approaches (e.g., response-level restart rather than token-level steering). The apparent topological triviality is consistent with the broad success of linear probing methods, suggesting that Transformer representations encode linguistic structure via linear geometry rather than global topology---though this conclusion is necessarily limited by the model scales and input diversity tested here.
 
 % ====================================================================
+\section*{Acknowledgments}
+
+This work was conducted with substantial assistance from large language models (Claude, Anthropic) for experiment design, code generation, debugging, data analysis, and manuscript drafting. All experimental results were produced by executing code on real hardware (Apple M1, NVIDIA T4, NVIDIA RTX PRO 6000 Blackwell) and verified by the author. The author takes full responsibility for the scientific claims and any errors in this work.
+
+% ====================================================================
 \begin{thebibliography}{20}
 
 \bibitem[Aghajanyan et~al.(2021)]{aghajanyan2021intrinsic}
