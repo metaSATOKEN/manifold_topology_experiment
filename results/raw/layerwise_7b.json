@@ -1,0 +1,69 @@
+{
+  "experiment": "layerwise_7b",
+  "description": "Layer-wise PCA analysis of 7B models (Pythia-6.9B, Mistral-7B, Qwen2-7B)",
+  "hardware": "Google Colab Blackwell 102GB",
+  "models": {
+    "Pythia-6.9B": {
+      "d_model": 4096, "n_layers": 32, "ln_type": "Pre-LN",
+      "phase_detection": {
+        "arc_formation": "embed (PC1-norm |r| first exceeds 0.95)",
+        "peak_pc1_var": {"value": 0.915, "layer": "L6"},
+        "final_layer": {"pc1_var": 0.105, "pc1_norm_r": 0.160},
+        "dissolution": "complete"
+      },
+      "key_layers_raw": [
+        {"layer": "embed", "pc1_var": 0.075, "pc1_norm_r": 0.981},
+        {"layer": "L3",    "pc1_var": 0.539, "pc1_norm_r": 0.991},
+        {"layer": "L6",    "pc1_var": 0.915, "pc1_norm_r": 0.999},
+        {"layer": "L16",   "pc1_var": 0.803, "pc1_norm_r": 1.000},
+        {"layer": "L21",   "pc1_var": 0.677, "pc1_norm_r": 1.000},
+        {"layer": "L31",   "pc1_var": 0.105, "pc1_norm_r": 0.160}
+      ]
+    },
+    "Mistral-7B": {
+      "d_model": 4096, "n_layers": 32, "ln_type": "Pre-LN (RMSNorm)",
+      "phase_detection": {
+        "arc_formation": "L0 (PC1-norm |r| first exceeds 0.95)",
+        "peak_pc1_var": {"value": 1.000, "layer": "L1"},
+        "final_layer": {"pc1_var": 0.083, "pc1_norm_r": 0.307},
+        "dissolution": "complete"
+      },
+      "key_layers_raw": [
+        {"layer": "embed", "pc1_var": 0.035, "pc1_norm_r": 0.664},
+        {"layer": "L1",    "pc1_var": 1.000, "pc1_norm_r": 1.000},
+        {"layer": "L8",    "pc1_var": 0.984, "pc1_norm_r": 1.000},
+        {"layer": "L14",   "pc1_var": 0.942, "pc1_norm_r": 1.000},
+        {"layer": "L18",   "pc1_var": 0.824, "pc1_norm_r": 0.998, "note": "peak position r=0.652"},
+        {"layer": "L31",   "pc1_var": 0.083, "pc1_norm_r": 0.307}
+      ]
+    },
+    "Qwen2-7B": {
+      "d_model": 3584, "n_layers": 28, "ln_type": "Pre-LN (RMSNorm)",
+      "phase_detection": {
+        "arc_formation": "L3",
+        "peak_pc1_var": {"value": 0.999, "layer": "L3"},
+        "final_layer": {"pc1_var": 0.188, "pc1_norm_r": 0.307},
+        "dissolution": "cliff (L26-L27)"
+      },
+      "key_layers_raw": [
+        {"layer": "embed", "pc1_var": 0.081, "pc1_norm_r": 0.003},
+        {"layer": "L1",    "pc1_var": 0.176, "pc1_norm_r": 0.635, "note": "NOT 100% — rejects RMSNorm hypothesis"},
+        {"layer": "L3",    "pc1_var": 0.999, "pc1_norm_r": 1.000},
+        {"layer": "L19",   "pc1_var": 0.988, "pc1_norm_r": 1.000, "note": "peak position r=0.664"},
+        {"layer": "L25",   "pc1_var": 0.886, "pc1_norm_r": 0.999},
+        {"layer": "L26",   "pc1_var": 0.371, "pc1_norm_r": 0.987, "note": "cliff begins"},
+        {"layer": "L27",   "pc1_var": 0.188, "pc1_norm_r": 0.307}
+      ],
+      "rmsnorm_hypothesis": {
+        "verdict": "REJECTED",
+        "evidence": "Qwen2-7B (RMSNorm) L1=9.0% vs Mistral-7B (RMSNorm) L1=100.0%",
+        "interpretation": "Mistral-specific, not RMSNorm-general. Sliding Window Attention is a candidate."
+      }
+    }
+  },
+  "dissolution_patterns": {
+    "plateau": {"model": "GPT-2", "description": "97% → 75%, gradual"},
+    "funnel": {"models": ["Pythia-6.9B", "Mistral-7B"], "description": "Peak → monotonic decay to <11%"},
+    "cliff": {"model": "Qwen2-7B", "description": "99%+ for 23 layers, then 2-layer collapse to 19%"}
+  }
+}

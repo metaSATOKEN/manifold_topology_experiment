@@ -1,0 +1,142 @@
+{
+  "experiment": "cross_model_probing",
+  "description": "Mid-layer PCA probing across all tested Pre-LN models",
+  "note": "Reconstructed from paper Tables and EXPERIMENT_REPORT. Values are from mid-layer analysis.",
+  "models": {
+    "GPT-2": {
+      "params": "124M", "d_model": 768, "n_layers": 12, "ln_type": "Pre-LN",
+      "mid_layer": 6, "hardware": "Apple M1 16GB",
+      "raw_pca": {
+        "pc1_variance": 0.948, "pc1_norm_r": 0.999,
+        "best_position_r": 0.863, "best_position_pc": 2,
+        "best_pos_f": 87.5, "best_pos_f_pc": 3
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.070, "delta_pp": -87.8
+      }
+    },
+    "Pythia-410M": {
+      "params": "410M", "d_model": 1024, "n_layers": 24, "ln_type": "Pre-LN",
+      "mid_layer": 12, "hardware": "Apple M1 16GB",
+      "raw_pca": {
+        "pc1_variance": 0.965, "pc1_norm_r": 1.000,
+        "best_position_r": 0.528, "best_position_pc": 3,
+        "best_pos_f": 18.1, "best_pos_f_pc": 5
+      }
+    },
+    "Qwen2-0.5B": {
+      "params": "494M", "d_model": 896, "n_layers": 24, "ln_type": "Pre-LN (RMSNorm)",
+      "mid_layer": 12, "hardware": "Apple M1 16GB",
+      "raw_pca": {
+        "pc1_variance": 0.987, "pc1_norm_r": 1.000,
+        "best_position_r": 0.562, "best_position_pc": 3,
+        "best_pos_f": 21.3, "best_pos_f_pc": 3
+      }
+    },
+    "OPT-1.3B": {
+      "params": "1.3B", "d_model": 2048, "n_layers": 24, "ln_type": "Pre-LN",
+      "mid_layer": 12, "hardware": "Apple M1 16GB",
+      "raw_pca": {
+        "pc1_variance": 0.270, "pc1_norm_r": 0.923,
+        "best_position_r": 0.640, "best_position_pc": 3,
+        "best_pos_f": 15.5, "best_pos_f_pc": 2
+      }
+    },
+    "Pythia-2.8B": {
+      "params": "2.8B", "d_model": 2560, "n_layers": 32, "ln_type": "Pre-LN",
+      "mid_layer": 16, "hardware": "Apple M1 16GB",
+      "raw_pca": {
+        "pc1_variance": 0.831, "pc1_norm_r": 0.999,
+        "best_position_r": 0.665, "best_position_pc": 2,
+        "best_pos_f": 40.6, "best_pos_f_pc": 3
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.060, "delta_pp": -77.0
+      }
+    },
+    "Mistral-7B": {
+      "params": "7B", "d_model": 4096, "n_layers": 32, "ln_type": "Pre-LN (RMSNorm)",
+      "mid_layer": 16, "hardware": "Google Colab T4 GPU",
+      "raw_pca": {
+        "pc1_variance": 0.900, "pc1_norm_r": 0.999,
+        "best_position_r": 0.571, "best_position_pc": 2,
+        "best_pos_f": 19.1, "best_pos_f_pc": 3
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.067, "delta_pp": -83.3
+      }
+    },
+    "Qwen2-7B": {
+      "params": "7B", "d_model": 3584, "n_layers": 28, "ln_type": "Pre-LN (RMSNorm)",
+      "mid_layer": 14, "hardware": "Google Colab T4 GPU",
+      "raw_pca": {
+        "pc1_variance": 0.995, "pc1_norm_r": 1.000,
+        "best_position_r": 0.552, "best_position_pc": 2,
+        "best_pos_f": 15.8, "best_pos_f_pc": 3
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.055, "delta_pp": -93.9
+      }
+    },
+    "Pythia-6.9B": {
+      "params": "6.9B", "d_model": 4096, "n_layers": 32, "ln_type": "Pre-LN",
+      "mid_layer": 16, "hardware": "Google Colab T4 GPU",
+      "raw_pca": {
+        "pc1_variance": 0.803, "pc1_norm_r": 1.000,
+        "best_position_r": 0.454, "best_position_pc": 2,
+        "best_pos_f": 43.4, "best_pos_f_pc": 3
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.052, "delta_pp": -75.1
+      }
+    },
+    "Pythia-12B": {
+      "params": "12B", "d_model": 5120, "n_layers": 36, "ln_type": "Pre-LN",
+      "mid_layer": 18, "hardware": "Google Colab Blackwell 102GB",
+      "raw_pca": {
+        "pc1_variance": 0.805, "pc1_norm_r": 1.000,
+        "best_position_r": 0.449, "best_position_pc": 2,
+        "best_pos_f": 37.3, "best_pos_f_pc": 3
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.050, "delta_pp": -75.5
+      }
+    },
+    "OPT-13B": {
+      "params": "13B", "d_model": 5120, "n_layers": 40, "ln_type": "Pre-LN",
+      "mid_layer": 20, "hardware": "Google Colab Blackwell 102GB",
+      "raw_pca": {
+        "pc1_variance": 0.710, "pc1_norm_r": 0.962,
+        "best_position_r": 0.372, "best_position_pc": 4,
+        "best_pos_f": 22.2, "best_pos_f_pc": 2
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.126, "delta_pp": -58.3
+      }
+    },
+    "Qwen2.5-14B": {
+      "params": "14B", "d_model": 5120, "n_layers": 48, "ln_type": "Pre-LN (RMSNorm)",
+      "mid_layer": 24, "hardware": "Google Colab Blackwell 102GB",
+      "raw_pca": {
+        "pc1_variance": 0.997, "pc1_norm_r": 1.000,
+        "best_position_r": 0.553, "best_position_pc": 2,
+        "best_pos_f": 16.7, "best_pos_f_pc": 4
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.056, "delta_pp": -94.1
+      }
+    },
+    "Falcon-40B": {
+      "params": "40B", "d_model": 8192, "n_layers": 60, "ln_type": "Pre-LN",
+      "mid_layer": 30, "hardware": "Google Colab Blackwell 102GB",
+      "raw_pca": {
+        "pc1_variance": 0.981, "pc1_norm_r": 1.000,
+        "best_position_r": 0.555, "best_position_pc": 3,
+        "best_pos_f": 18.1, "best_pos_f_pc": 5
+      },
+      "norm_normalized_pca": {
+        "pc1_variance": 0.079, "delta_pp": -90.2
+      }
+    }
+  }
+}

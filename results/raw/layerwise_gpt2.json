@@ -1,0 +1,36 @@
+{
+  "experiment": "layerwise_gpt2",
+  "description": "Layer-wise PCA analysis of GPT-2 (12 layers + embedding)",
+  "model": "gpt2",
+  "hardware": "Apple M1 16GB",
+  "raw_pca": [
+    {"layer": "embed", "pc1_var": 0.224, "pc1_norm_r": 0.273, "best_pos_r": 0.966, "pos_pc": 1, "best_f": 112.1, "f_pc": 5},
+    {"layer": "L0",    "pc1_var": 0.148, "pc1_norm_r": 0.479, "best_pos_r": 0.942, "pos_pc": 1, "best_f": 55.3,  "f_pc": 2},
+    {"layer": "L1",    "pc1_var": 0.700, "pc1_norm_r": 0.993, "best_pos_r": 0.961, "pos_pc": 2, "best_f": 161.7, "f_pc": 3},
+    {"layer": "L2",    "pc1_var": 0.969, "pc1_norm_r": 0.999, "best_pos_r": 0.952, "pos_pc": 2, "best_f": 120.1, "f_pc": 3},
+    {"layer": "L3",    "pc1_var": 0.966, "pc1_norm_r": 0.999, "best_pos_r": 0.931, "pos_pc": 2, "best_f": 106.3, "f_pc": 3},
+    {"layer": "L4",    "pc1_var": 0.963, "pc1_norm_r": 0.999, "best_pos_r": 0.924, "pos_pc": 2, "best_f": 103.5, "f_pc": 3},
+    {"layer": "L5",    "pc1_var": 0.957, "pc1_norm_r": 0.999, "best_pos_r": 0.874, "pos_pc": 2, "best_f": 94.4,  "f_pc": 3},
+    {"layer": "L6",    "pc1_var": 0.948, "pc1_norm_r": 0.999, "best_pos_r": 0.863, "pos_pc": 2, "best_f": 87.5,  "f_pc": 3},
+    {"layer": "L7",    "pc1_var": 0.933, "pc1_norm_r": 0.999, "best_pos_r": 0.800, "pos_pc": 2, "best_f": 73.6,  "f_pc": 3},
+    {"layer": "L8",    "pc1_var": 0.909, "pc1_norm_r": 0.999, "best_pos_r": 0.726, "pos_pc": 2, "best_f": 73.1,  "f_pc": 3},
+    {"layer": "L9",    "pc1_var": 0.872, "pc1_norm_r": 0.999, "best_pos_r": 0.597, "pos_pc": 2, "best_f": 52.4,  "f_pc": 3},
+    {"layer": "L10",   "pc1_var": 0.814, "pc1_norm_r": 0.999, "best_pos_r": 0.492, "pos_pc": 2, "best_f": 39.7,  "f_pc": 3},
+    {"layer": "L11",   "pc1_var": 0.745, "pc1_norm_r": 0.997, "best_pos_r": 0.258, "pos_pc": 5, "best_f": 26.0,  "f_pc": 4}
+  ],
+  "norm_normalized_pca": [
+    {"layer": "embed", "pc1_var": 0.238, "best_pos_r": 0.952, "pos_pc": 1, "best_f": 155.1, "f_pc": 4},
+    {"layer": "L0",    "pc1_var": 0.153, "best_pos_r": 0.978, "pos_pc": 1, "best_f": 216.0, "f_pc": 2},
+    {"layer": "L1",    "pc1_var": 0.137, "best_pos_r": 0.959, "pos_pc": 1, "best_f": 181.9, "f_pc": 2},
+    {"layer": "L2",    "pc1_var": 0.111, "best_pos_r": 0.970, "pos_pc": 1, "best_f": 248.3, "f_pc": 2},
+    {"layer": "L3",    "pc1_var": 0.091, "best_pos_r": 0.963, "pos_pc": 1, "best_f": 257.6, "f_pc": 2},
+    {"layer": "L4",    "pc1_var": 0.082, "best_pos_r": 0.936, "pos_pc": 1, "best_f": 210.9, "f_pc": 2},
+    {"layer": "L5",    "pc1_var": 0.073, "best_pos_r": 0.788, "pos_pc": 1, "best_f": 100.1, "f_pc": 2},
+    {"layer": "L6",    "pc1_var": 0.070, "best_pos_r": 0.805, "pos_pc": 1, "best_f": 115.2, "f_pc": 2},
+    {"layer": "L7",    "pc1_var": 0.073, "best_pos_r": 0.771, "pos_pc": 1, "best_f": 116.3, "f_pc": 2},
+    {"layer": "L8",    "pc1_var": 0.076, "best_pos_r": 0.723, "pos_pc": 1, "best_f": 78.2,  "f_pc": 2},
+    {"layer": "L9",    "pc1_var": 0.088, "best_pos_r": 0.629, "pos_pc": 1, "best_f": 43.1,  "f_pc": 2},
+    {"layer": "L10",   "pc1_var": 0.091, "best_pos_r": 0.521, "pos_pc": 2, "best_f": 29.7,  "f_pc": 2},
+    {"layer": "L11",   "pc1_var": 0.493, "best_pos_r": 0.197, "pos_pc": 2, "best_f": 38.7,  "f_pc": 4}
+  ]
+}
