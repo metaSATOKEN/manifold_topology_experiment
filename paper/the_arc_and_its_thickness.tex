@@ -61,7 +61,7 @@ Based on experiments with 11 Pre-LN models spanning 124M to 40B parameters acros
     \item \textbf{No detected non-trivial topology.} Persistent homology finds no evidence of torus or sphere structure at any tested PCA dimension (2--20) or significance threshold, suggesting that the observed structure is geometrically but not topologically organized.
 \end{enumerate}
 
-These observations are based on a limited set of models ($\leq 1.3$B parameters) and input texts; we discuss their scope and limitations throughout.
+These observations are based on models up to 40B parameters across five architecture families; we discuss their scope and limitations throughout.
 
 % ====================================================================
 \section{Background and Related Work}
@@ -87,7 +87,7 @@ Recent work has explored direct manipulation of Transformer hidden states for st
 
 \subsection{Models and Data}
 
-We analyze four pre-trained causal language models spanning two normalization strategies and three scales (Table~\ref{tab:models}).
+We analyze 14 pre-trained causal language models spanning two normalization strategies (Pre-LN and Post-LN) and scales from 110M to 40B parameters (Table~\ref{tab:models}). Topology and probing experiments use a core set of smaller models ($\leq 2.8$B) run locally; cross-model validation extends to 40B via cloud GPU.
 
 \begin{table}[h]
 \centering
@@ -543,7 +543,7 @@ This decomposition is notable for several reasons. First, the axes are orthogona
 
 The geometric decomposition identified above provides an interpretable description of hidden-state variation: norm, position, and lexical difficulty occupy distinct principal axes. A natural question is whether this interpretable structure can be \emph{exploited} for targeted intervention---i.e., whether steering hidden states along specific PCA axes during generation produces better outcomes than direction-agnostic perturbation.
 
-\paragraph{Experimental test.} We compared four strategies on GPT-2 (100 runs, 100 tokens each, 61 detected crisis events): no intervention (baseline), random orthogonal steering (analogous to existing hidden-state intervention methods \citep{zou2023representation,li2024inference,turner2024activation}), PC3-directed steering (surprisal axis), and PC2-directed steering (position axis). Table~\ref{tab:steering} and Figure~\ref{fig:steering} report the results.
+\paragraph{Experimental test.} We compared four strategies on GPT-2 (100 runs, 100 tokens each, 61 detected crisis events), measuring post-intervention recovery (PIR: mean cosine similarity between consecutive hidden states over the 5 tokens following intervention): no intervention (baseline), random orthogonal steering (analogous to existing hidden-state intervention methods \citep{zou2023representation,li2024inference,turner2024activation}), PC3-directed steering (surprisal axis), and PC2-directed steering (position axis). Table~\ref{tab:steering} and Figure~\ref{fig:steering} report the results.
 
 \begin{table}[H]
 \centering
