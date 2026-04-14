@@ -465,7 +465,13 @@ Pre-LN applies LayerNorm before each sublayer:
 \begin{equation}
     h_{l+1} = h_l + F_l(\mathrm{LN}(h_l))
 \end{equation}
-The sublayer output $F_l(\mathrm{LN}(h_l))$ is added to $h_l$ without normalization of the sum. This induces substantial norm variation across layers and token positions, making it the dominant axis of hidden-state covariance. Post-LN normalizes after addition ($h_{l+1} = \mathrm{LN}(h_l + F_l(h_l))$), suppressing this effect and distributing variance more uniformly---consistent with our finding that Post-LN hidden states are not concentrated on a low-dimensional subspace.
+The sublayer output $F_l(\mathrm{LN}(h_l))$ is added to $h_l$ without normalization of the sum. To see why this leads to norm dominance, consider the squared norm after one residual step:
+\begin{equation}
+    \|h_{l+1}\|^2 = \|h_l\|^2 + 2\langle h_l, F_l(\mathrm{LN}(h_l))\rangle + \|F_l(\mathrm{LN}(h_l))\|^2
+\end{equation}
+The cross-term $\langle h_l, F_l(\mathrm{LN}(h_l))\rangle$ is input-dependent---it varies across token positions depending on what the sublayer computes for each token. Over $L$ layers, these cross-terms accumulate, causing $\|h_l\|$ to diverge across tokens. Since LayerNorm normalizes the \emph{input} to each sublayer but not the \emph{output}, the running sum $h_l$ is free to grow without bound, and the token-dependent growth pattern becomes the largest source of variance.
+
+Post-LN normalizes after addition ($h_{l+1} = \mathrm{LN}(h_l + F_l(h_l))$), which resets the norm at every layer and prevents this accumulation. This explains the sharp contrast: Pre-LN models concentrate 80--99\% of variance on the norm axis, while Post-LN models distribute variance broadly (16--37\% at $k=2$).
 
 This norm dominance has a methodological implication: PCA-based analyses of Pre-LN Transformer representations are primarily capturing norm variation, not semantic structure. The semantically relevant structure resides in the residual subspace beyond the dominant norm axis, which collectively accounts for less than 10\% of variance but carries linguistically interpretable information.
 
@@ -504,7 +510,7 @@ Notably, Mistral-7B reaches PC1${}=100.0$\% at L1---the most extreme anisotropy 
 
 The final-layer dissolution is dramatically more severe at 7B scale: PC1 variance drops to 8--19\% (vs.\ 75\% in GPT-2), and the PC1--norm correlation falls below $r = 0.31$. The 32-layer models appear to undergo a qualitative representational shift in their final layers that is absent in the 12-layer GPT-2, plausibly reflecting greater specialization for next-token prediction after deeper processing.
 
-\subsection{A Natural Coordinate System for Hidden States}
+\subsection{An Interpretable Geometric Decomposition}
 
 \begin{figure}[H]
 \centering
@@ -513,7 +519,7 @@ The final-layer dissolution is dramatically more severe at 7B scale: PC1 varianc
 \label{fig:heatmap}
 \end{figure}
 
-The probing results (Figure~\ref{fig:heatmap}) suggest that PCA decomposition provides a linguistically interpretable coordinate system:
+The probing results (Figure~\ref{fig:heatmap}) suggest that PCA decomposition provides an interpretable geometric decomposition of hidden-state variation:
 
 \begin{table}[h]
 \centering
@@ -531,21 +537,17 @@ Higher residual & ${<}\,0.3$\% each & Subword, morphology & Weaker, less stable 
 \end{tabular}
 \end{table}
 
-This decomposition is notable for several reasons. First, the axes are orthogonal by construction (PCA), meaning each encodes an independent dimension of variation. Second, the mapping is consistent across text types, suggesting it reflects architectural properties rather than input-specific patterns. Third, the ordering by variance is linguistically interpretable: the model's representations are dominated by scale (norm), followed by position, followed by content-level features.
+This decomposition is notable for several reasons. First, the axes are orthogonal by construction (PCA), meaning each encodes an independent dimension of variation. Second, the mapping is consistent across text types, suggesting it reflects architectural properties rather than input-specific patterns. Third, the ordering by variance is linguistically interpretable: the model's representations are dominated by scale (norm), followed by position, followed by content-level features. However, as the following section demonstrates, interpretability of this decomposition does not imply that it can be directly exploited for intervention.
 
-\subsection{Implications for Hidden-State Intervention}
+\subsection{Geometric Interpretability Does Not Imply Intervention Efficacy}
 
-If the observed geometric decomposition generalizes to larger models, it may have implications for methods that intervene on hidden states during inference \citep{zou2023representation,li2024inference,turner2024activation}. We outline these possibilities speculatively, noting that they remain untested.
+The geometric decomposition identified above provides an interpretable description of hidden-state variation: norm, position, and lexical difficulty occupy distinct principal axes. A natural question is whether this interpretable structure can be \emph{exploited} for targeted intervention---i.e., whether steering hidden states along specific PCA axes during generation produces better outcomes than direction-agnostic perturbation.
 
-\paragraph{Direction-specific diagnosis.} Changes in cosine similarity between consecutive hidden states---a common coherence proxy---can be decomposed into principal-axis contributions. In the canonical GPT-2 decomposition, a drop driven primarily by PC1 indicates norm instability, a drop in PC2 indicates disrupted position tracking, and a drop in PC3 indicates a sudden shift in prediction difficulty. More generally, across tested Pre-LN models, norm dominates the first principal axis while positional and lexical/difficulty structure occupy leading residual directions whose exact PC indices are model-dependent. In each case, the functional hierarchy (norm $\to$ position $\to$ difficulty) provides a basis for attributing coherence changes to specific representational axes.
-
-\paragraph{Direction-specific intervention.} Current intervention methods that add vectors to hidden states operate in the full $d$-dimensional space. Our results suggest that the effective intervention space is much smaller (${\sim}10$ dimensions) and that its axes have interpretable meanings. An intervention targeting the lexical-difficulty axis is qualitatively different from one targeting the positional axis, even though both are ``perturbations to the hidden state.''
-
-However, a steering experiment on GPT-2 (100 runs, 100 tokens each, 61 crisis events; Table~\ref{tab:steering}) found that \textbf{direction-specific steering does not outperform random orthogonal perturbation}. None of the three steering strategies significantly outperform baseline (all $p > 0.15$), and PC3-directed steering is \emph{numerically worse} than random orthogonal steering ($\Delta = -0.010$, $d = -0.13$, $p = 0.32$).
+\paragraph{Experimental test.} We compared four strategies on GPT-2 (100 runs, 100 tokens each, 61 detected crisis events): no intervention (baseline), random orthogonal steering (analogous to existing hidden-state intervention methods \citep{zou2023representation,li2024inference,turner2024activation}), PC3-directed steering (surprisal axis), and PC2-directed steering (position axis). Table~\ref{tab:steering} and Figure~\ref{fig:steering} report the results.
 
 \begin{table}[H]
 \centering
-\caption{Steering experiment results (GPT-2, 100 runs, 61 crisis events). No strategy significantly outperforms baseline. Direction-specific steering (PC3, PC2) does not improve upon random orthogonal perturbation.}
+\caption{Steering experiment (GPT-2, 100 runs, 61 crisis events). Direction-specific steering does not outperform random orthogonal perturbation. All strategies produce small, non-significant improvements over baseline.}
 \label{tab:steering}
 \begin{tabular}{lcccc}
 \toprule
@@ -562,11 +564,21 @@ PC2-directed (position) & 0.836 & $+0.013$ & $+0.18$ & 0.16 \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figures/fig8_steering_n100.png}
-\caption{Steering experiment results (GPT-2, $N{=}100$ runs, 61 crisis events). (a)~PIR distributions by strategy---all four conditions are statistically indistinguishable. (b)~Mean PIR with standard error bars---the slight advantage of orthogonal over PC3-directed is not significant. (c)~Post-crisis surprisal is similar across conditions.}
+\caption{Steering experiment results (GPT-2, $N{=}100$ runs, 61 crisis events). (a)~PIR distributions by strategy---all four conditions are statistically indistinguishable. (b)~Mean PIR with standard error bars. (c)~Post-crisis surprisal is similar across conditions.}
 \label{fig:steering}
 \end{figure}
 
-This result, now with adequate statistical power ($N = 61$ crisis events), clarifies the role of the geometric decomposition. The PCA axes provide an interpretable coordinate system for \emph{understanding} hidden-state geometry, but targeting specific axes does not improve \emph{intervention} efficacy. If anything, random orthogonal perturbation may be marginally preferable, perhaps because it introduces diversity across multiple representational dimensions simultaneously rather than concentrating the perturbation on a single axis. This is consistent with findings that response-level restart strategies---which induce much larger trajectory changes via seed perturbation---outperform token-level steering \citep{li2024inference}.
+\paragraph{Result: direction does not matter.} None of the three steering strategies significantly outperform baseline (all $p > 0.15$). PC3-directed steering is \emph{numerically worse} than random orthogonal steering ($\Delta = -0.010$, $d = -0.13$, $p = 0.32$). The geometric decomposition, despite being interpretable, does not translate into intervention advantage.
+
+\paragraph{Interpretation: interpretability $\neq$ intervention efficacy.} This dissociation between interpretability and intervention efficacy is, we argue, an important finding in its own right. It demonstrates that \textbf{understanding the coordinate system of a representation space does not automatically provide leverage for manipulating it}. Several factors may explain this:
+
+\begin{itemize}
+    \item \emph{Scale mismatch}: The PCA axes capture variance structure across the entire token sequence, but crisis recovery depends on local, token-level dynamics that may not align with global principal directions.
+    \item \emph{Redundant encoding}: If linguistic information is distributed across multiple correlated dimensions (as suggested by the model-dependent PC assignments), perturbing a single axis may be insufficient to shift the model's behavior.
+    \item \emph{Perturbation magnitude}: Token-level steering operates at small magnitudes ($8$--$20$\% of $\|h\|$). The direction may matter more at larger perturbation scales, such as those achieved by response-level restart strategies that regenerate entire sequences from altered initial conditions.
+\end{itemize}
+
+This finding is consistent with the broader observation that linear probing accuracy does not predict intervention effectiveness \citep{li2024inference}, and suggests that the geometric structure identified in this paper is best understood as a \emph{descriptive} tool for representation analysis rather than a \emph{prescriptive} tool for representation control.
 
 \subsection{Why Topology Failed to Discriminate}
 
