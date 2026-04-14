@@ -63,9 +63,10 @@ python experiments/probing/exp5_thickness_probing.py
 
 Local experiments run on consumer hardware in ~10 minutes. GPU experiments require T4 (15GB) for 7B models and 40GB+ for 13B–40B.
 
-## Code
+## Code & DOI
 
-- **This repository:** [github.com/metaSATOKEN/manifold_topology_experiment](https://github.com/metaSATOKEN/manifold_topology_experiment)
+- **DOI:** [10.5281/zenodo.19563179](https://doi.org/10.5281/zenodo.19563179)
+- **Repository:** [github.com/metaSATOKEN/manifold_topology_experiment](https://github.com/metaSATOKEN/manifold_topology_experiment)
 
 ## License
 

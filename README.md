@@ -2,6 +2,8 @@
 
 Geometric Decomposition of Pre-LayerNorm Transformer Hidden States
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19563179.svg)](https://doi.org/10.5281/zenodo.19563179)
+
 **Kentaro Sato** — info@metaclan.jp
 
 ## What is this?
@@ -137,6 +139,21 @@ experiments/colab/exp7e_large_scale_probing.py
 
 - **Local:** Apple M1, 16 GB — topology + GPT-2 probing (~10 min)
 - **Colab:** T4 GPU (15GB) for 7B; Blackwell (102GB) for 13B–40B
+
+## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19563179.svg)](https://doi.org/10.5281/zenodo.19563179)
+
+```bibtex
+@article{sato2026arc,
+  title   = {The Arc and Its Thickness: Geometric Decomposition of
+             Pre-LayerNorm Transformer Hidden States},
+  author  = {Sato, Kentaro},
+  year    = {2026},
+  doi     = {10.5281/zenodo.19563179},
+  url     = {https://doi.org/10.5281/zenodo.19563179}
+}
+```
 
 ## License
 
