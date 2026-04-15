@@ -2,7 +2,7 @@
 
 Geometric Decomposition of Pre-LayerNorm Transformer Hidden States
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19563179.svg)](https://doi.org/10.5281/zenodo.19563179)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19590036.svg)](https://doi.org/10.5281/zenodo.19590036)
 
 **Kentaro Sato** — info@metaclan.jp
 
@@ -142,7 +142,7 @@ experiments/colab/exp7e_large_scale_probing.py
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19563179.svg)](https://doi.org/10.5281/zenodo.19563179)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19590036.svg)](https://doi.org/10.5281/zenodo.19590036)
 
 ```bibtex
 @article{sato2026arc,
@@ -150,8 +150,8 @@ experiments/colab/exp7e_large_scale_probing.py
              Pre-LayerNorm Transformer Hidden States},
   author  = {Sato, Kentaro},
   year    = {2026},
-  doi     = {10.5281/zenodo.19563179},
-  url     = {https://doi.org/10.5281/zenodo.19563179}
+  doi     = {10.5281/zenodo.19590036},
+  url     = {https://doi.org/10.5281/zenodo.19590036}
 }
 ```
 

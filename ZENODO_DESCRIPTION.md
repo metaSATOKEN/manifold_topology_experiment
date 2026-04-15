@@ -65,7 +65,7 @@ Local experiments run on consumer hardware in ~10 minutes. GPU experiments requi
 
 ## Code & DOI
 
-- **DOI:** [10.5281/zenodo.19563179](https://doi.org/10.5281/zenodo.19563179)
+- **DOI:** [10.5281/zenodo.19590036](https://doi.org/10.5281/zenodo.19590036)
 - **Repository:** [github.com/metaSATOKEN/manifold_topology_experiment](https://github.com/metaSATOKEN/manifold_topology_experiment)
 
 ## License
