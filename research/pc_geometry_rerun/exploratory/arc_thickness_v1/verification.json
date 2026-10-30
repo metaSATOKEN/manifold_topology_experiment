@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "at": "2026-10-20T14:03:55.640719+00:00",
+  "seconds": 66.70831237360835,
+  "counts": {
+    "conditions": 1152,
+    "curve_fold_sse": 34560,
+    "feature_predictions": 5672340,
+    "direct_svd": 18
+  },
+  "max_errors": {
+    "svd": 7.195775989315448e-16,
+    "old_v1": 1.3322676295501878e-15,
+    "curve_sse_relative": 9.345652628400349e-14,
+    "feature_prediction": 4.551839083433151e-08,
+    "bootstrap": 0.0
+  },
+  "reviewer": "same-agent separate reconstruction; not independent review"
+}

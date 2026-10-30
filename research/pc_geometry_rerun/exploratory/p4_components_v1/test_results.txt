@@ -1,0 +1,4 @@
+test_group_center_and_equal_id PASS
+test_variable_dimension_cv_against_direct_search PASS
+test_random_errors_are_not_ensemble_prediction_error PASS
+test_unicode_partition PASS

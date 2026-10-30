@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "scope": "AST literal extraction and lossless decoding only; no cell execution or experiment imports",
+  "stages": [
+    {
+      "stage": "p0_v2",
+      "source_files": 10,
+      "payload_sha256": "56c14b5f6c9d9bedacac2453a67476e5ad30b7c28ff2d3687a8ad721147aa941",
+      "onecell_sha256": "c7a2b23d3f11961d40dbaa11fe2147fb29110e9f9de03987beaffb33dd628080",
+      "source_sha256": {
+        "amendment.md": "4d80e5efa9629aa28bb8c5e12a20dd39e2de695a246595e21e2c72066f24e2d9",
+        "fixtures.json": "e2bd8ed6e1d501b1711298ad60cec640a13ca40e64aa39ac34f8f4c36bf7168a",
+        "legacy_release.json": "4bd2092997c44b020e4b528e8b2d6b6d76be5cbf776afc431988aff63b99c006",
+        "p0_io.py": "ebc28a43789c1c58b176231c5715b2b5095002163f61aa9fed0ce8393d200593",
+        "p0_launch.py": "a6c7bf5017a826c3c58cf2624023bd0ffad4f5872892df34e3b658c8713845bb",
+        "p0_numeric.py": "1075b95ee552884f507c4e18715ddaf3a0e6f38210a1787d34c689b68d9c84f1",
+        "p0_verify.py": "22d9dd5aa6e40cb278e3f604ed03de7ee0844a332f17a7a9feb253cf6b2845a5",
+        "p0_worker.py": "4219458546e69463a4b4f452150b18b8117626a314b6d6590f1ed8cae298a8e0",
+        "protocol.md": "fcdec563bb8aa42559a987acdeb798349bec2599de0eb10bcd6c3170d82d27ae",
+        "spec.json": "bc3a7386d19408815187bfb6f210978bf2da193e84995136a76f726c29c041cc"
+      },
+      "byte_identical": true
+    },
+    {
+      "stage": "p1_v1",
+      "source_files": 11,
+      "payload_sha256": "d0b980f14f2ae1a5220cbcf5a67c0fa428fe7d6a8f162a01a54ac85518e3505e",
+      "onecell_sha256": "79d8b8607050f3c0fc7e66a748efaa1a9a1a27c52ef04bdcd72e3eb53884f134",
+      "source_sha256": {
+        "DATA_LICENSE.md": "6e32286537663cf0dfe8b704a843bca3e09637d5ba0faff849d0b3bc54be6fa4",
+        "fixtures.json": "1bb4e0bf1c7e699b99a664d45989718af678cc358070234d443f94a0cd4d073e",
+        "input_manifest.json": "39d82e6e7da025c611ae22bf0f95f197d3bb593b31a16be787787ba836c0c037",
+        "p1_analysis.py": "871ba199144284133f6b4995d775be5fe9bfb60f81ccc542e6038d775972cf30",
+        "p1_io.py": "cad5d8a96a341eefd846e870e6991c19fc7ac55c75ac8d08d9de68ba316b0ef3",
+        "p1_launch.py": "dc45c912002af74d5a57c45994eaf6b9fcefe120b4c68547a2c215714a58e88d",
+        "p1_numeric.py": "51b5ffd3e544fbe0d8fa8da400d764644ea32374a0f19835a797b922195b9042",
+        "p1_verify.py": "0a09ec602b64bc0dd7dc50389a1d2c080426273d8b52ebdd3a3a1ac00b755a50",
+        "p1_worker.py": "4ddb184743f7fd3ea3d35bb5d748976d4e6d0fc191b0a89ac192d3d5a8f3561a",
+        "protocol.md": "74a38215871704d89f566e445a0c5a24c63defa92c56e54cb886a7695fa918aa",
+        "spec.json": "344b3dfd728c9d34f01b49616affb12857244100e62f60d0920cb8c51db87a3d"
+      },
+      "byte_identical": true
+    },
+    {
+      "stage": "p2_v1",
+      "source_files": 12,
+      "payload_sha256": "5704b05c273e6aee61dbcc890f3a7bb91e0e47b40f6bdc437e88741a32ab9ba8",
+      "onecell_sha256": "c6a0cacf7f66d82bcc10d8c0e24accae06544bf9a7cbdba53b14acd68108f839",
+      "source_sha256": {
+        "DATA_LICENSE.md": "6d7943dfffd07896b1268c8ea820c0a2e36ef3c91d4dc8171c79afa5522c1f88",
+        "fixtures.json": "0be1219d585959ebad81fd2b09b4562e75b77ee6f57cb54fefc5b97f0601e2c5",
+        "input_manifest.json": "74ec2a4961fcc1569dc9faf160ea514fdf7af70f5e931f0f162d79211940623d",
+        "p2_analysis.py": "fa43e51d169f6f35a58de94eb9cb8c194754492d3c11a608dbbdcdbade8b9386",
+        "p2_fit.py": "4787cc1b13b51bc1153279bdb5b57b7f7fd752bdcf9474215545d2949d5f7fac",
+        "p2_io.py": "213be844e79e200430eeef1de137925dd565ef0fdcf91b92560d362c3ad166c3",
+        "p2_launch.py": "f04e7382ea7179f1f616d4a974172f52fbde3bb571d110a8a12aff1cebdbe132",
+        "p2_numeric.py": "37e86f1ca575ed1310c25ca8dbd49d7849228a60d0e7fb7870ae2781d92bb2e2",
+        "p2_verify.py": "2443bf20bcf78dff13cc1881fb7f9b25dbcff7243e246f5d411ba0068978dd7b",
+        "p2_worker.py": "bbd2f6db822f3b0d3542d418194a39a3f60a2b0d7726d61ac314f6e5ecf4a237",
+        "protocol.md": "7c567d7e8e72eb2aec60ade33507abff54e1dec9805b71a3ad41aa2895d92f84",
+        "spec.json": "21b1ff0428da72a8385014eaf2b831dfd9bf84745acc82e89421dded10acb829"
+      },
+      "byte_identical": true
+    },
+    {
+      "stage": "p3_v1",
+      "source_files": 17,
+      "payload_sha256": "576dff0c7a785c2465d7bba457d6306f07bc8ccc405f507af01fdb9ce6c1c161",
+      "onecell_sha256": "67aaa0ef22d23cbc6b3e3b462fe8a248f1ceaebc7bd5d706d73ddbf1272c922d",
+      "source_sha256": {
+        "DATA_LICENSE.md": "13cee696260f74b373b4defe7463a2f1dbfaccdcb4f565969a6ec55b03d0ee1b",
+        "expected_model_files.json": "89da6849a5e689400a8fc1768b37f3c120b7aef285bc77d35b905f99fb811266",
+        "fixtures.json": "e83e7e2aeb36523fa5211f094099626bb6be53a45ec6f3cbeccb65a15b57c1b7",
+        "frozen_block06_C1.npz": "31d05c0b57b0502701b718c1c63759d6a31dd222d3f0189bcdbc0e67e8ccf8bf",
+        "frozen_final_ln_C1.npz": "cf4f8393ab1d036131bc4c97e2f88d631fc36ef6bd60ee1fdca4621aeda59540",
+        "frozen_frequency.npz": "425715815b660df7e5218106405b3e5d58037ca27def85e5c62912120ff92ffe",
+        "frozen_manifest.json": "1917b29592cb79160370062a3e46d2bf6e803b2a7f663b435d10c44b7abd986a",
+        "input_manifest.json": "59c09bdeccb98ca8ba4e9609309b032a78281c452167d8bf7bf1282e812822fd",
+        "p3_analysis.py": "37cd59b0685ac890e0c861a08ad7b3e9906b75888c915a1f7f55aef51d1a5bd2",
+        "p3_frozen.py": "dac46eb7b9576fa5456d3c72d31184630f0d6d571a4d779dba0ce6f9b22d67de",
+        "p3_io.py": "f06bb4ce58f3a563a0c4b4e3345a3d8a529f9315cceba9dbd38f5481fa8c3cf0",
+        "p3_launch.py": "3fdc01f98f99f7d9151e66437324c709af6afc48eddd7925e1e53a9009fb8d00",
+        "p3_numeric.py": "3f37a76faab0f93559d3b5f04ef0fdb10e2c8c7465446a2926461a222846ac84",
+        "p3_verify.py": "c71d4a90a9514d1583ec663ef5a5d267f053f7bfc1784ad9823c274d5500421d",
+        "p3_worker.py": "261a86e2c945a0a5550659b8ef658159b0a5747f934ca4db3f9d732424bf9d1e",
+        "protocol.md": "db39d3b2cb4aa349ee06942840102d65f6fb5ec7397be4596ef560981d447857",
+        "spec.json": "a8a13c2d98c4625af6a9b7cd4a61b61bc0b5b8ab1599e3d2abc1f09e891720b3"
+      },
+      "byte_identical": true
+    },
+    {
+      "stage": "p4_v1",
+      "source_files": 17,
+      "payload_sha256": "7ecac020c10fb6ecad8c4c4c32ae1d2437c50b95d65b52fb5d67b9a1c4428fc5",
+      "onecell_sha256": "5e2bbfd561bae5921b5122fdd44e4aa3a087de646fb3c2a324d497e3c4d47ba1",
+      "source_sha256": {
+        "DATA_LICENSE.md": "8b4478b42dd556a54b57ca61de96cc6afc490f799a31e7dbd70b81cbace2669b",
+        "LICENSE-transport.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "THIRD_PARTY_NOTICE.txt": "81f01baa07edef9e38a2537960130bd0c7d1c111d3bfb581b2bfc41916d93519",
+        "experiment_card.md": "f92fccff1de8ef93554f809214b26ea1c959f3a35aab1010f24db8c37adeb37f",
+        "fixtures.json": "1f25eeffd131a655a181601e76f8e181e3a4a61e6bd0c63792f496172469df2e",
+        "input_manifest.json": "de0d5dc8e4aa99376cf32066a5b192e9b990bf579f7640c116baeb64a0503eca",
+        "models.json": "400dcd853f766ab482b324829a465d4f30ae1238d76a4a1090a5568e86ee75b6",
+        "p4_analysis.py": "3180e19e3ed2987fa3e90d8f9b57a69aa9607f201bbc90dc3017e2f6b5ea31d7",
+        "p4_download.py": "6309d2e2ce9b89db47ba5250ba3140e567f481401e88627f1399816ae23cc1cb",
+        "p4_fit.py": "e3e14e78dffc056bdd169d211cc7831d1a5d9eb384287c784901d4c72a5fa84a",
+        "p4_io.py": "14a608d579f7554189b06d5fba985829fc24c55db3af1865b674ce2c534a8f1d",
+        "p4_launch.py": "c9af432241d702298551265c4940171f23cead3fa43032d521c9bdbfa6a8d677",
+        "p4_numeric.py": "35737dfc70d6a32a953c334a353957de4ef6b24341ac183880684f87af7697c5",
+        "p4_verify.py": "f4f4f8254c953bb6ff7c4f289a56dc0dc6f32b1c0eb202f37054538fbecdc3f6",
+        "p4_worker.py": "093aafece4b3e339740219927d57ee7ce055b6d5097d61e74ddb6c53a8531822",
+        "protocol.md": "4f0ff69a502be577c35a64630e3367a154f54ab2a04649813f2d64b9bee46502",
+        "spec.json": "ed0f834c9df0d9e059fb7e21dce3d9ea50faf1bd54b720e0e8eaeb3acfd81b62"
+      },
+      "byte_identical": true
+    },
+    {
+      "stage": "p5_v1",
+      "source_files": 14,
+      "payload_sha256": "c628634303b00d562477d066e5ebc549647bc397c2f3150c1ade61c601912d3b",
+      "onecell_sha256": "cc6039b03f09c4b41aab056d7d53dab453f2d8065c32d0346288f9aacbe1be8f",
+      "source_sha256": {
+        "LICENSE.txt": "a021027399cffce414793afe7efe420c65a84cb59baae5c3d699541d8e6e4976",
+        "THIRD_PARTY_NOTICE.txt": "771e1f0050779a6ec505ac2d075060518e218f8df0597e2a94fb35e669d39b16",
+        "experiment_card.md": "e6b4a547d68db9c3f0520af190e1ea55e368cf94f818972c54659dbfb65e54e9",
+        "historical_extraction.py.txt": "e3dd6345cb7c8e85b7ec44fb93b1cd0cdae1833473e03c2353ad85637d45039f",
+        "historical_plot.py.txt": "0802f049d3831311e790fc326f69db86d8450e6c9ac82b2d3345b35446a8a477",
+        "historical_pointclouds.png": "f7bb2a07456fda6e1323f5ec1c3e1e21ac98f5c6e8a8fd0e3082e76e00aac826",
+        "inputs.json": "103d79ca6c60692e23e8a63e8c5aef5bfb5d91cd85e2d1d48e172a21862b0bda",
+        "model.json": "efd27958b09466ea7659074a381ce2584f5a6b5abe201955ec0d60f429758881",
+        "p5_analysis.py": "b2c06eeb313934d8d913f71d52b3cb614f1ea563e59187725564348ab5fb47c7",
+        "p5_io.py": "6ae8a4d839913d975878805082bfecfbf8d7e18de5b3bd153102f540ee859963",
+        "p5_launch.py": "fb3d14158614c2bca66f814be0c2a2a2215796685b5e839eb494d3d6ab250bef",
+        "p5_numeric.py": "442b971852d1ec8e2613080c7bc79452798bf6681613acc6bea918571befac16",
+        "p5_worker.py": "da0edd0ee9e3bfe6563805152ec5b6a640bd7fa0361d1bf67ad53dfed44d698c",
+        "spec.json": "b50fa72c33a2a67d76bee6f7634329c4af935a59fb599e180fdf9fbfcad61387"
+      },
+      "byte_identical": true
+    }
+  ]
+}

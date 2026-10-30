@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-20T10:17:33.013188+00:00",
+  "seconds": 14.105948954820633,
+  "counts": {
+    "predictions": 7129472,
+    "article_points": 128,
+    "direct_qr_fits": 130,
+    "id_gradient_fits": 44
+  },
+  "max_differences": {
+    "predictions": 8.08242361927114e-14,
+    "metric": 1.4779288903810084e-12,
+    "geometry_identity": 5.657848988996906e-16,
+    "fitted_qr": 1.4453327423780138e-11,
+    "ordinary_gradient": 4.277233490028755e-14,
+    "bootstrap": 0.0,
+    "original_endpoints": 1.682681771697503e-16
+  },
+  "fit_precedes_new_evaluation": true,
+  "training_and_evaluation_disjoint": true,
+  "same_agent_self_audit": true,
+  "independent_reviewer": false,
+  "new_language_model_forwards": 0
+}

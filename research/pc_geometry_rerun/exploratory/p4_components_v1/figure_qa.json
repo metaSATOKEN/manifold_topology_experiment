@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "at": "2026-10-20T13:10:22.979233+00:00",
+  "method": "All four PNG figures visually inspected with view_image; SVG uses the same Matplotlib figures.",
+  "checks": [
+    "legible labels",
+    "unadjusted intervals identified",
+    "all six conditions shown",
+    "outlier full range and explicitly marked zoom",
+    "mean versus median distinguished"
+  ],
+  "sha256": {
+    "figures/02_radius_direction.png": "74b139ec4b244e38b5eeca7470fb29bf50c8e8d25416c9c26bfb7616d49b2862",
+    "figures/02_radius_direction.svg": "b39fd012eaa2d25e3e83af665075b2cc1b0e4c1ba475475849e11204110af6a2",
+    "figures/01_components.svg": "810de5bb8a2c2eaa5c52038f7af8da2abd8c3ec140dd107be9376f4aadcb2e94",
+    "figures/04_article_bias.svg": "32331033a6adbefd5b8f80d5b49f3516e3c6f4352df5ffc5439268b125084d6f",
+    "figures/03_equal_id.png": "36c3dd7883c58414ae872f039ab355fa76fcd8f5afe916e0e404bf09e4b0b8e2",
+    "figures/03_equal_id.svg": "29257bc7ceef32604b66f3cd5a42462e5c4ee353a8b477a7b6b94858bd0fc73a",
+    "figures/04_article_bias.png": "bb17d7b3ab3e42cd60730d4bd91172ca942c4b651cb2901150e8caea4292e6c1",
+    "figures/01_components.png": "5ba0013f5d9b93b8bf8a39436d43ed589a37d8832348a119e02b7107f94945d1"
+  },
+  "independent_reviewer": false
+}

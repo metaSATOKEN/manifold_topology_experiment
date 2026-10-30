@@ -1,0 +1,70 @@
+{
+  "alphas": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "analysis_dtype": "float64",
+  "array_atol": 1e-08,
+  "array_rtol": 1e-07,
+  "attention": "eager",
+  "bootstrap_repetitions": 20000,
+  "bootstrap_seed": 20261028,
+  "checkpoint_documents": 16,
+  "closure_seconds": 600,
+  "components": 8,
+  "documents": 128,
+  "dtype": "float32",
+  "experiment": "pcgeom_p4_v1",
+  "frequency_smoothing": 1.0,
+  "initial_free_bytes": 42949672960,
+  "max_tokens": 512,
+  "min_tokens": 256,
+  "minimum_gpu_free_bytes": 15032385536,
+  "minimum_host_available_bytes": 12884901888,
+  "minimum_valid_documents": 58,
+  "models": [
+    "gpt2",
+    "opt",
+    "qwen"
+  ],
+  "pins": {
+    "huggingface-hub": "0.36.0",
+    "numpy": "2.2.6",
+    "pip": "25.2",
+    "safetensors": "0.7.0",
+    "tokenizers": "0.22.2",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6"
+  },
+  "points": [
+    "middle",
+    "final_norm"
+  ],
+  "prepare_seconds": 1800,
+  "primary_endpoints": 12,
+  "random_seed": 20261022,
+  "random_subspaces": 20,
+  "scalar_atol": 1e-08,
+  "scalar_rtol": 1e-07,
+  "seed": 20261020,
+  "surprisal_atol": 1e-10,
+  "taus": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "technical_resumes": 2,
+  "test_documents": 64,
+  "tf32": false,
+  "total_seconds": 10800,
+  "train_documents": 64,
+  "version": 1,
+  "within_min_gain": 0.01,
+  "within_min_groups": 8,
+  "within_min_random_advantage": 0.005,
+  "within_min_tokens": 32
+}

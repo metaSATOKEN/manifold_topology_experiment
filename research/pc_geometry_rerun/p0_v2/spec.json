@@ -1,0 +1,40 @@
+{
+  "experiment": "pcgeom_p0_v1",
+  "version": 1,
+  "model": "openai-community/gpt2",
+  "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "tokens": 256,
+  "hidden": 768,
+  "documents": 4,
+  "points": [
+    "block01",
+    "block06",
+    "block12_preln",
+    "final_ln"
+  ],
+  "components": 8,
+  "dtype": "float32",
+  "seed": 20261020,
+  "analysis_dtype": "float64",
+  "tf32": false,
+  "attention": "eager",
+  "checkpoint_documents": 2,
+  "total_seconds": 2400,
+  "prepare_seconds": 1200,
+  "closure_seconds": 120,
+  "initial_free_bytes": 16106127360,
+  "array_atol": 1e-08,
+  "array_rtol": 1e-07,
+  "scalar_atol": 1e-08,
+  "scalar_rtol": 1e-07,
+  "surprisal_atol": 1e-10,
+  "pins": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6",
+    "numpy": "2.2.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.7.0",
+    "huggingface-hub": "0.36.0",
+    "pip": "25.2"
+  }
+}

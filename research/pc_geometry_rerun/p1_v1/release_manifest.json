@@ -1,0 +1,24 @@
+{
+  "capsule": "679b1d6a328aea86a1214325fbcaf19805a5ba1baeaffea4e1c9e5bd81712a8b",
+  "code_release": "pcgeom_p1_v1",
+  "experiment": "pcgeom_p1_v1",
+  "onecell_bytes": 449245,
+  "onecell_sha256": "79d8b8607050f3c0fc7e66a748efaa1a9a1a27c52ef04bdcd72e3eb53884f134",
+  "payload_sha256": "d0b980f14f2ae1a5220cbcf5a67c0fa428fe7d6a8f162a01a54ac85518e3505e",
+  "raw_hidden_state_bytes": 402653184,
+  "sources": {
+    "DATA_LICENSE.md": "6e32286537663cf0dfe8b704a843bca3e09637d5ba0faff849d0b3bc54be6fa4",
+    "fixtures.json": "1bb4e0bf1c7e699b99a664d45989718af678cc358070234d443f94a0cd4d073e",
+    "input_manifest.json": "39d82e6e7da025c611ae22bf0f95f197d3bb593b31a16be787787ba836c0c037",
+    "p1_analysis.py": "871ba199144284133f6b4995d775be5fe9bfb60f81ccc542e6038d775972cf30",
+    "p1_io.py": "cad5d8a96a341eefd846e870e6991c19fc7ac55c75ac8d08d9de68ba316b0ef3",
+    "p1_launch.py": "dc45c912002af74d5a57c45994eaf6b9fcefe120b4c68547a2c215714a58e88d",
+    "p1_numeric.py": "51b5ffd3e544fbe0d8fa8da400d764644ea32374a0f19835a797b922195b9042",
+    "p1_verify.py": "0a09ec602b64bc0dd7dc50389a1d2c080426273d8b52ebdd3a3a1ac00b755a50",
+    "p1_worker.py": "4ddb184743f7fd3ea3d35bb5d748976d4e6d0fc191b0a89ac192d3d5a8f3561a",
+    "protocol.md": "74a38215871704d89f566e445a0c5a24c63defa92c56e54cb886a7695fa918aa",
+    "spec.json": "344b3dfd728c9d34f01b49616affb12857244100e62f60d0920cb8c51db87a3d"
+  },
+  "frozen_at": "2026-10-20T16:22:40.124573+09:00",
+  "status": "FROZEN_USER_EXECUTION_PENDING"
+}

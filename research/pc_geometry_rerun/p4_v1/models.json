@@ -1,0 +1,122 @@
+{
+  "gpt2": {
+    "files": {
+      "config.json": {
+        "bytes": 665,
+        "sha256": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4"
+      },
+      "generation_config.json": {
+        "bytes": 124,
+        "sha256": "ed0b32ac72c0f5f44a719abb2d7786ea5146c871f83717b7f2018065954de02b"
+      },
+      "merges.txt": {
+        "bytes": 456318,
+        "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+      },
+      "model.safetensors": {
+        "bytes": 548105171,
+        "sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707"
+      },
+      "tokenizer.json": {
+        "bytes": 1355256,
+        "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6"
+      },
+      "tokenizer_config.json": {
+        "bytes": 26,
+        "sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f"
+      },
+      "vocab.json": {
+        "bytes": 1042301,
+        "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+      }
+    },
+    "hidden": 768,
+    "layers": 12,
+    "mid": 6,
+    "norm": "LayerNorm",
+    "repo": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "use_safetensors": true,
+    "vocab": 50257
+  },
+  "opt": {
+    "files": {
+      "config.json": {
+        "bytes": 653,
+        "sha256": "f1aaceefb7d34d346e9b0400d95fdb4970567bcbe1d4aba1068c5402099b644f"
+      },
+      "generation_config.json": {
+        "bytes": 137,
+        "sha256": "d37de99f9835d7a4d0916257f724504d12c4a668f36a50b2d42e09ba4ebd05d5"
+      },
+      "merges.txt": {
+        "bytes": 456318,
+        "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+      },
+      "pytorch_model.bin": {
+        "bytes": 2631639353,
+        "sha256": "cf7d5c970d6ddbd3b03009b397c0422e147edd5c8020d47a8d2fac0b11a3b08d"
+      },
+      "special_tokens_map.json": {
+        "bytes": 441,
+        "sha256": "0f3cd5f307a2735cfee31ddf33be88655e8be165ee2cdc26ced966f04258adf0"
+      },
+      "tokenizer_config.json": {
+        "bytes": 685,
+        "sha256": "d1e4185b43a0a06421ab7218d5c1a775350bd13024507b34fbed25dcf6c14c6b"
+      },
+      "vocab.json": {
+        "bytes": 898822,
+        "sha256": "06b4d46c8e752d410213d9548eb27a54db70fda0319b6271fb8d59dead5e1cab"
+      }
+    },
+    "hidden": 2048,
+    "layers": 24,
+    "mid": 12,
+    "norm": "LayerNorm",
+    "repo": "facebook/opt-1.3b",
+    "revision": "3f5c25d0bc631cb57ac65913f76e22c2dfb61d62",
+    "use_safetensors": false,
+    "vocab": 50272
+  },
+  "qwen": {
+    "files": {
+      "config.json": {
+        "bytes": 684,
+        "sha256": "0e8c8aa86468aba09c9d32157ff4bc2301c7e6c50e4398960425b2ea71e66f77"
+      },
+      "generation_config.json": {
+        "bytes": 138,
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      },
+      "merges.txt": {
+        "bytes": 1671839,
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      "model.safetensors": {
+        "bytes": 3087467144,
+        "sha256": "a961db72e75d52b18e6b0c9d379e51a26973b233385e0e127fdda7d648aec796"
+      },
+      "tokenizer.json": {
+        "bytes": 7031645,
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      "tokenizer_config.json": {
+        "bytes": 7228,
+        "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+      },
+      "vocab.json": {
+        "bytes": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "hidden": 1536,
+    "layers": 28,
+    "mid": 14,
+    "norm": "RMSNorm",
+    "repo": "Qwen/Qwen2.5-1.5B",
+    "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "use_safetensors": true,
+    "vocab": 151936
+  }
+}

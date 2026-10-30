@@ -1,0 +1,110 @@
+{
+  "name": "EDA-0004 v1",
+  "models": [
+    "gpt2",
+    "opt",
+    "qwen"
+  ],
+  "points": [
+    "middle",
+    "final_norm"
+  ],
+  "conditions": [
+    "C0",
+    "C1",
+    "C4"
+  ],
+  "article_ids": [
+    "wt2_train_27239",
+    "wt2_train_25496",
+    "wt2_train_08156",
+    "wt2_train_20626",
+    "wt2_train_25844",
+    "wt2_train_09183",
+    "wt2_train_21977",
+    "wt2_train_11400",
+    "wt2_train_02187",
+    "wt2_train_12719",
+    "wt2_train_08034",
+    "wt2_train_11011",
+    "wt2_train_04228",
+    "wt2_train_18153",
+    "wt2_train_05057",
+    "wt2_train_21422",
+    "wt2_train_07293",
+    "wt2_train_11189",
+    "wt2_train_23324",
+    "wt2_train_20734",
+    "wt2_train_20902",
+    "wt2_train_15642",
+    "wt2_train_23660",
+    "wt2_train_26784",
+    "wt2_train_13930",
+    "wt2_train_06059",
+    "wt2_train_05912",
+    "wt2_train_09228",
+    "wt2_train_17643",
+    "wt2_train_28198",
+    "wt2_train_06914",
+    "wt2_train_06781",
+    "wt2_train_34037",
+    "wt2_train_22200",
+    "wt2_train_22497",
+    "wt2_train_13574",
+    "wt2_train_05326",
+    "wt2_train_34683",
+    "wt2_train_02680",
+    "wt2_train_31896",
+    "wt2_train_27655",
+    "wt2_train_02712",
+    "wt2_train_03790",
+    "wt2_train_20958",
+    "wt2_train_34641",
+    "wt2_train_26812",
+    "wt2_train_04836",
+    "wt2_train_18840",
+    "wt2_train_19604",
+    "wt2_train_18866",
+    "wt2_train_08961",
+    "wt2_train_14859",
+    "wt2_train_33420",
+    "wt2_train_13405",
+    "wt2_train_14883",
+    "wt2_train_26317",
+    "wt2_train_11131",
+    "wt2_train_36085",
+    "wt2_train_08297",
+    "wt2_train_30319",
+    "wt2_train_24969",
+    "wt2_train_25181",
+    "wt2_train_06475",
+    "wt2_train_27981"
+  ],
+  "examples": [
+    "wt2_train_27239",
+    "wt2_train_24969"
+  ],
+  "folds": 5,
+  "bins": 20,
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "ridge_alpha": 0.01,
+  "bootstrap": 10000,
+  "seed": 20261030,
+  "criteria": {
+    "occupancy_min": 0.8,
+    "max_gap_max": 0.1,
+    "max_pc1_share_max": 0.5,
+    "q_min": 0.9,
+    "curvature_gain_min": 0.01
+  },
+  "limits": {
+    "cpu_seconds": 3600,
+    "bytes": 536870912
+  },
+  "input_sha256": {
+    "research/pc_geometry_rerun/p4_v1/fixtures.json": "1f25eeffd131a655a181601e76f8e181e3a4a61e6bd0c63792f496172469df2e"
+  }
+}

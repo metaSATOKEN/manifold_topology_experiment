@@ -1,0 +1,322 @@
+[
+  {
+    "document_id": "wt2_train_17190",
+    "tokens": 315,
+    "groups": 70
+  },
+  {
+    "document_id": "wt2_train_15777",
+    "tokens": 337,
+    "groups": 70
+  },
+  {
+    "document_id": "wt2_train_05885",
+    "tokens": 328,
+    "groups": 74
+  },
+  {
+    "document_id": "wt2_train_02555",
+    "tokens": 339,
+    "groups": 80
+  },
+  {
+    "document_id": "wt2_train_17245",
+    "tokens": 379,
+    "groups": 88
+  },
+  {
+    "document_id": "wt2_train_11106",
+    "tokens": 362,
+    "groups": 79
+  },
+  {
+    "document_id": "wt2_train_15407",
+    "tokens": 311,
+    "groups": 62
+  },
+  {
+    "document_id": "wt2_train_10809",
+    "tokens": 308,
+    "groups": 62
+  },
+  {
+    "document_id": "wt2_train_11166",
+    "tokens": 406,
+    "groups": 87
+  },
+  {
+    "document_id": "wt2_train_12341",
+    "tokens": 322,
+    "groups": 73
+  },
+  {
+    "document_id": "wt2_train_29224",
+    "tokens": 345,
+    "groups": 78
+  },
+  {
+    "document_id": "wt2_train_27916",
+    "tokens": 318,
+    "groups": 67
+  },
+  {
+    "document_id": "wt2_train_00748",
+    "tokens": 327,
+    "groups": 70
+  },
+  {
+    "document_id": "wt2_train_36339",
+    "tokens": 336,
+    "groups": 82
+  },
+  {
+    "document_id": "wt2_train_35449",
+    "tokens": 328,
+    "groups": 69
+  },
+  {
+    "document_id": "wt2_train_09703",
+    "tokens": 346,
+    "groups": 74
+  },
+  {
+    "document_id": "wt2_train_13338",
+    "tokens": 330,
+    "groups": 71
+  },
+  {
+    "document_id": "wt2_train_19035",
+    "tokens": 328,
+    "groups": 71
+  },
+  {
+    "document_id": "wt2_train_26932",
+    "tokens": 363,
+    "groups": 89
+  },
+  {
+    "document_id": "wt2_train_00271",
+    "tokens": 392,
+    "groups": 70
+  },
+  {
+    "document_id": "wt2_train_01582",
+    "tokens": 328,
+    "groups": 66
+  },
+  {
+    "document_id": "wt2_train_20051",
+    "tokens": 307,
+    "groups": 72
+  },
+  {
+    "document_id": "wt2_train_36544",
+    "tokens": 297,
+    "groups": 60
+  },
+  {
+    "document_id": "wt2_train_10340",
+    "tokens": 331,
+    "groups": 67
+  },
+  {
+    "document_id": "wt2_train_25279",
+    "tokens": 350,
+    "groups": 72
+  },
+  {
+    "document_id": "wt2_train_26883",
+    "tokens": 312,
+    "groups": 64
+  },
+  {
+    "document_id": "wt2_train_14680",
+    "tokens": 319,
+    "groups": 68
+  },
+  {
+    "document_id": "wt2_train_27157",
+    "tokens": 316,
+    "groups": 74
+  },
+  {
+    "document_id": "wt2_train_13592",
+    "tokens": 356,
+    "groups": 76
+  },
+  {
+    "document_id": "wt2_train_13978",
+    "tokens": 323,
+    "groups": 78
+  },
+  {
+    "document_id": "wt2_train_27087",
+    "tokens": 345,
+    "groups": 84
+  },
+  {
+    "document_id": "wt2_train_10258",
+    "tokens": 299,
+    "groups": 68
+  },
+  {
+    "document_id": "wt2_train_26228",
+    "tokens": 333,
+    "groups": 76
+  },
+  {
+    "document_id": "wt2_train_18279",
+    "tokens": 339,
+    "groups": 72
+  },
+  {
+    "document_id": "wt2_train_11296",
+    "tokens": 341,
+    "groups": 61
+  },
+  {
+    "document_id": "wt2_train_32253",
+    "tokens": 383,
+    "groups": 86
+  },
+  {
+    "document_id": "wt2_train_27895",
+    "tokens": 367,
+    "groups": 97
+  },
+  {
+    "document_id": "wt2_train_07877",
+    "tokens": 296,
+    "groups": 60
+  },
+  {
+    "document_id": "wt2_train_27839",
+    "tokens": 326,
+    "groups": 63
+  },
+  {
+    "document_id": "wt2_train_32231",
+    "tokens": 389,
+    "groups": 99
+  },
+  {
+    "document_id": "wt2_train_26916",
+    "tokens": 361,
+    "groups": 89
+  },
+  {
+    "document_id": "wt2_train_27341",
+    "tokens": 330,
+    "groups": 68
+  },
+  {
+    "document_id": "wt2_train_36586",
+    "tokens": 303,
+    "groups": 72
+  },
+  {
+    "document_id": "wt2_train_25973",
+    "tokens": 370,
+    "groups": 77
+  },
+  {
+    "document_id": "wt2_train_17380",
+    "tokens": 354,
+    "groups": 77
+  },
+  {
+    "document_id": "wt2_train_15839",
+    "tokens": 300,
+    "groups": 61
+  },
+  {
+    "document_id": "wt2_train_04199",
+    "tokens": 305,
+    "groups": 70
+  },
+  {
+    "document_id": "wt2_train_16067",
+    "tokens": 329,
+    "groups": 85
+  },
+  {
+    "document_id": "wt2_train_24355",
+    "tokens": 342,
+    "groups": 91
+  },
+  {
+    "document_id": "wt2_train_02932",
+    "tokens": 327,
+    "groups": 79
+  },
+  {
+    "document_id": "wt2_train_08771",
+    "tokens": 326,
+    "groups": 73
+  },
+  {
+    "document_id": "wt2_train_29878",
+    "tokens": 342,
+    "groups": 78
+  },
+  {
+    "document_id": "wt2_train_03259",
+    "tokens": 337,
+    "groups": 72
+  },
+  {
+    "document_id": "wt2_train_13511",
+    "tokens": 324,
+    "groups": 68
+  },
+  {
+    "document_id": "wt2_train_34964",
+    "tokens": 419,
+    "groups": 86
+  },
+  {
+    "document_id": "wt2_train_30631",
+    "tokens": 312,
+    "groups": 68
+  },
+  {
+    "document_id": "wt2_train_17843",
+    "tokens": 346,
+    "groups": 77
+  },
+  {
+    "document_id": "wt2_train_31747",
+    "tokens": 308,
+    "groups": 69
+  },
+  {
+    "document_id": "wt2_train_24694",
+    "tokens": 395,
+    "groups": 91
+  },
+  {
+    "document_id": "wt2_train_35025",
+    "tokens": 314,
+    "groups": 72
+  },
+  {
+    "document_id": "wt2_train_33562",
+    "tokens": 358,
+    "groups": 80
+  },
+  {
+    "document_id": "wt2_train_27037",
+    "tokens": 309,
+    "groups": 70
+  },
+  {
+    "document_id": "wt2_train_06968",
+    "tokens": 328,
+    "groups": 79
+  },
+  {
+    "document_id": "wt2_train_24003",
+    "tokens": 315,
+    "groups": 73
+  }
+]

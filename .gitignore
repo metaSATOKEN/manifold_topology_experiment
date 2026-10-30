@@ -1,26 +1,14 @@
-# Python
+# Local runtime and restored evidence
+.DS_Store
 __pycache__/
 *.pyc
 .venv/
-
-# macOS
-.DS_Store
-
-# LaTeX intermediates
-*.aux
-*.log
-*.out
-*.synctex.gz
-*.fdb_latexmk
-*.fls
-*.toc
-*.bbl
-*.blg
-
-# Pre-computed arrays (regenerable)
-*.npy
-
-# IDE
-.idea/
-.vscode/
-*.swp
+.env
+.env.*
+!.env.example
+work/
+release-assets/
+*.zip
+research/pc_geometry_rerun/receipts/*/raw/
+research/pc_geometry_rerun/exploratory/**/*.npz
+# The three small P3 frozen arrays are intentionally distributed with its code.

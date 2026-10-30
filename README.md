@@ -1,163 +1,69 @@
-# The Arc and Its Thickness
+# Principal Component Geometry and Feature Readout in Transformer Representations
 
-Geometric Decomposition of Pre-LayerNorm Transformer Hidden States
+**Kentaro Sato · [info@metaclan.jp](mailto:info@metaclan.jp)**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19590036.svg)](https://doi.org/10.5281/zenodo.19590036)
+**In GPT-2's middle layer, the first token drives much of the conspicuous variance concentration. After excluding its saved state from analysis, shared principal components still support surprisal readout on separate articles beyond lexical identity controls.**
 
-**Kentaro Sato** — info@metaclan.jp
+The paper connects these two findings: which observations make representations look strongly concentrated, and what information remains readable when that concentration is reduced. It also shows why improvements on a typical article must be considered alongside failures on individual articles.
 
-## What is this?
+**[Read the paper (PDF)](paper/manuscript.pdf) · [Markdown version](paper/manuscript.md) · [Figures, tables, and supporting evidence](references/FIGURE_TABLE_MAP.md)**
 
-Pre-LayerNorm Transformers concentrate hidden states on a low-dimensional subspace (PCA top-2 explains >90% of variance). We investigate the **topology** and **geometry** of this subspace.
+## The question
 
-**Key findings (12 models, 124M–40B, 5 architecture families):**
+PCA summarizes the directions in which a model's hidden states vary most. A striking long axis can suggest a simple organization of the representation space. To interpret it, we ask three questions: **What creates the shape? What features can be read from the remaining variation? Do those readouts transfer to other articles?**
 
-1. **Topologically trivial.** Persistent homology finds no torus, sphere, or other non-trivial structure. The manifold is empirically indistinguishable from a contractible arc.
-2. **The arc is norm.** PC1 (~90% variance) is near-perfectly correlated with hidden-state norm (|r| > 0.96 in all 12 tested models, |r| = 1.000 at 40B).
-3. **Structured thickness.** The residual subspace (PC2+) encodes token position, prediction difficulty, and part-of-speech in orthogonal directions — consistently across text types and models, though PC indices are model-dependent.
-4. **Layer-wise emergence.** The arc forms abruptly in early layers, stabilizes through middle layers, and dissolves in the final layer. Three distinct dissolution patterns: plateau (GPT-2), funnel (Pythia, Mistral), cliff (Qwen).
-5. **Cross-model consistency up to 40B.** PC1=norm holds across GPT-2, Pythia (410M/2.8B/6.9B/12B), Qwen (0.5B/7B/14B), Mistral-7B, OPT (1.3B/13B), and Falcon-40B. OPT is a consistent outlier with weaker dominance.
-6. **Direction doesn't help intervention.** PC-directed steering does not outperform random orthogonal perturbation (N=61 crises, all p > 0.15).
+We study GPT-2, OPT-1.3B, and Qwen2.5-1.5B base models using English WikiText articles, together with a geometric validation on three known short texts.
 
-## Paper
+## Main findings
 
-`paper/the_arc_and_its_thickness.pdf` (22 pages, 11 figures)
+### 1. The first token strongly influences the apparent geometry
 
-```bash
-# Recompile
-cd paper
-pdflatex the_arc_and_its_thickness.tex && pdflatex the_arc_and_its_thickness.tex
-```
+At GPT-2's middle layer, the first token has a strong influence on PC1's variance share and its association with hidden-state length. In the short texts, a distant first point and a dense cluster account for the prominent long axis. Excluding the first saved state sharply reduces the concentration; the input supplied to the model stays unchanged.
 
-## Repository Structure
+The article sensitivity tests are **confirmatory**. The short-text study is **geometric validation on known inputs**: strong concentration was reproduced, while the primary criterion for points distributed along a continuous arc was unmet in all three texts. Curve fits varied with extraction point and treatment.
 
-```
-manifold_topology_experiment/
-├── paper/
-│   ├── the_arc_and_its_thickness.tex    # LaTeX source
-│   ├── the_arc_and_its_thickness.pdf    # Compiled PDF (23pp)
-│   ├── the_arc_and_its_thickness.md     # Markdown version
-│   ├── figures/                         # fig1–fig12 (real files, not symlinks)
-│   └── LICENSE                          # CC BY 4.0 (paper content)
-│
-├── experiments/
-│   ├── topology/                        # Section 4.1 — local CPU
-│   │   ├── exp1_winding_number.py
-│   │   ├── exp2_persistent_homology.py
-│   │   ├── exp2b_topology_deep_dive.py
-│   │   ├── exp2c_highd_long_text.py
-│   │   ├── exp3_gaussian_curvature.py
-│   │   └── exp4_geodesic_ratio.py
-│   │
-│   ├── probing/                         # Sections 4.2–4.7 — local CPU
-│   │   ├── exp5_thickness_probing.py    # GPT-2 PC-feature correlations
-│   │   ├── exp5b_norm_normalized.py     # Norm normalization effect
-│   │   ├── exp5c_layerwise.py           # GPT-2 layer-wise analysis
-│   │   └── exp5d_cross_model.py         # Cross-model (<=2.8B)
-│   │
-│   ├── intervention/                    # Section 5.4 — local (M1 fallback)
-│   │   └── exp6_pc_directed_steering.py
-│   │
-│   ├── colab/                           # GPU-required — copy-paste to Colab
-│   │   ├── exp6_colab_n100.py           # Steering N=100
-│   │   ├── exp7b_7b_probing.py          # 7B mid-layer probing
-│   │   ├── exp7c_7b_layerwise.py        # 7B layer-wise (Pythia/Mistral)
-│   │   ├── exp7d_qwen2_7b_layerwise.py  # Qwen2-7B RMSNorm test
-│   │   └── exp7e_large_scale_probing.py # 13B–40B probing
-│   │
-│   ├── run_all.py                       # Batch runner (local experiments)
-│   └── utils/
-│       ├── __init__.py
-│       └── extraction.py                # Shared hidden-state extraction
-│
-├── results/                             # Generated figures (PNG)
-├── EXPERIMENT_REPORT.md                 # Detailed experiment log (18 sections)
-├── README.md                            # This file
-├── LICENSE                              # Apache 2.0 (code)
-├── requirements.txt
-└── .gitignore
-```
+### 2. Shared PCs retain information beyond token identity
 
-## Quick Start
+With the first state excluded, a PCA basis fixed on training articles retains position correlations on separate articles. In a distinct test, shared PCs improve readout of **current-token surprisal**—how unexpected that token was given its preceding context—beyond a fixed token-ID baseline.
 
-### Local experiments (M1 Mac, 16GB)
+The prespecified GPT-2 middle-layer comparison also finds an advantage over random directions of the same dimensionality when comparing **repeated occurrences of the same token ID within the same article**. These **confirmatory** gains are measured as medians across evaluation articles. They show that the readout captures variation beyond differences between lexical identities.
 
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+### 3. The advantage depends on the evaluation conditions
 
-# Topology (Section 4.1)
-python experiments/topology/exp2_persistent_homology.py
-python experiments/topology/exp2b_topology_deep_dive.py
-python experiments/topology/exp2c_highd_long_text.py
+A **confirmatory** comparison across three models and two extraction points used a training objective focused on variation within article × token-ID groups. **Four of six conditions met the prespecified minimum-effect criteria for surprisal gains over the baseline and over random directions; two were inconclusive.** The supported conditions were GPT-2 after final normalization, OPT at the middle layer, and Qwen at both points. GPT-2's middle layer and OPT after final normalization were inconclusive under this design.
 
-# Probing (Sections 4.2–4.7)
-python experiments/probing/exp5_thickness_probing.py
-python experiments/probing/exp5b_norm_normalized.py
-python experiments/probing/exp5c_layerwise.py
-python experiments/probing/exp5d_cross_model.py
-```
+In an earlier GPT-2 final-layer comparison within recurring token IDs, random directions outperformed PCs. Exploratory diagnostics showed that the ranking changed with the choice of training observations and objective.
 
-### Colab experiments (GPU required)
+## What the exploratory analyses add
 
-Copy-paste scripts from `experiments/colab/` into Google Colab cells:
+Analyses of saved data help locate the additional readout and its weaknesses:
 
-```bash
-# 7B probing (Section 5.1) — T4 GPU sufficient
-experiments/colab/exp7b_7b_probing.py
+- **PC2–8 and vector direction matter.** Much of the additional surprisal association remains in PC2–8 after accounting for position and norm. Direction-based coordinates also add readout beyond flexible length controls, although their advantage over random directions is unclear at OPT's middle layer.
+- **A positive median can conceal severe failures.** At Qwen's middle layer, a large loss on one article makes the mean increment negative despite a positive median. Reporting the article distribution changes how the aggregate gain should be interpreted.
+- **Local residuals contain feature associations.** Coordinates fitted separately within each article reveal associations around its main axis. Their relationship to the fixed PCs shared across articles remains an open question.
 
-# 7B layer-wise (Section 5.3) — T4 GPU sufficient
-experiments/colab/exp7c_7b_layerwise.py
+These are **exploratory findings**, reported separately from the confirmatory tests.
 
-# Steering N=100 (Section 5.4) — any GPU
-experiments/colab/exp6_colab_n100.py
+## Contribution and scope
 
-# 13B–40B probing (Section 5.1) — 40GB+ VRAM recommended
-experiments/colab/exp7e_large_scale_probing.py
-```
+The contribution is an empirical connection between **first-token sensitivity of geometry, transferable readout beyond lexical identity, and variation in performance across articles**. The study combines point-distribution measurements with fixed PCA bases and predictors, token-ID controls, and matched random directions. This makes the link between a geometric visualization and a readout claim directly testable.
 
-## Models Tested
+The results concern statistical readout in the selected models, extraction points, and English article passages. Causal mechanisms, dedicated semantic axes, generalization to other domains, and the correspondence between local residuals and shared PCs remain unresolved. The paper brings these limitations together in Section 8 and retains the unsupported criteria, inconclusive comparisons, and individual failures.
 
-| Model | Params | d_model | LN Type | HuggingFace ID |
-|-------|--------|---------|---------|----------------|
-| GPT-1 | 110M | 768 | Post-LN | `openai-community/openai-gpt` |
-| GPT-2 | 124M | 768 | Pre-LN | `gpt2` |
-| OPT-125m | 125M | 768 | Pre-LN | `facebook/opt-125m` |
-| Pythia-410M | 410M | 1024 | Pre-LN | `EleutherAI/pythia-410m` |
-| Qwen2-0.5B | 0.5B | 896 | Pre-LN (RMSNorm) | `Qwen/Qwen2-0.5B` |
-| OPT-1.3B | 1.3B | 2048 | Pre-LN | `facebook/opt-1.3b` |
-| Pythia-2.8B | 2.8B | 2560 | Pre-LN | `EleutherAI/pythia-2.8b` |
-| Pythia-6.9B | 6.9B | 4096 | Pre-LN | `EleutherAI/pythia-6.9b` |
-| Mistral-7B | 7B | 4096 | Pre-LN (RMSNorm) | `mistralai/Mistral-7B-v0.1` |
-| Qwen2-7B | 7B | 3584 | Pre-LN (RMSNorm) | `Qwen/Qwen2-7B` |
-| Pythia-12B | 12B | 5120 | Pre-LN | `EleutherAI/pythia-12b` |
-| OPT-13B | 13B | 5120 | Pre-LN | `facebook/opt-13b` |
-| Qwen2.5-14B | 14B | 5120 | Pre-LN (RMSNorm) | `Qwen/Qwen2.5-14B` |
-| Falcon-40B | 40B | 8192 | Pre-LN | `tiiuae/falcon-40b` |
+## Paper, data, and code
 
-## Hardware
-
-- **Local:** Apple M1, 16 GB — topology + GPT-2 probing (~10 min)
-- **Colab:** T4 GPU (15GB) for 7B; Blackwell (102GB) for 13B–40B
+| To explore | Start here |
+| --- | --- |
+| Claims, methods, results, and compact appendices | [Paper PDF](paper/manuscript.pdf) or [Markdown](paper/manuscript.md) |
+| Evidence behind a particular figure or table | [Figure and table map](references/FIGURE_TABLE_MAP.md) |
+| Complete numerical tables and method details | [Reference materials](references/README.md) |
+| Saved observations and exploratory arrays | [Data inventory](references/DATA.md) |
+| Readable experiment code and its execution flow | [Source-code guide](docs/CODE_GUIDE.md) |
+| Protocols, analysis code, and result summaries | [Research materials](research/pc_geometry_rerun/README.md) |
+| File verification, data restoration, and execution instructions | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19590036.svg)](https://doi.org/10.5281/zenodo.19590036)
+Sato, Kentaro. 2026. *Principal Component Geometry and Feature Readout in Transformer Representations: Sensitivity to the First Token, Features in Local Residuals, and Readout from Fixed Shared Principal Components.*
 
-```bibtex
-@article{sato2026arc,
-  title   = {The Arc and Its Thickness: Geometric Decomposition of
-             Pre-LayerNorm Transformer Hidden States},
-  author  = {Sato, Kentaro},
-  year    = {2026},
-  doi     = {10.5281/zenodo.19590036},
-  url     = {https://doi.org/10.5281/zenodo.19590036}
-}
-```
-
-## License
-
-- **Paper content** (`.tex`, `.pdf`, `.md`, figures): CC BY 4.0
-- **Experiment code** (`.py`): Apache License 2.0
-
-Copyright 2026 Kentaro Sato.
+[Citation metadata](CITATION.cff) · [Licensing and source attribution](licenses/README.md) · [Contact](mailto:info@metaclan.jp)

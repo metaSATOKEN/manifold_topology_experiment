@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-20T13:58:00.234396+00:00",
+  "status": "FROZEN_BEFORE_NEW_NUMERICAL_ANALYSIS",
+  "files": {
+    "research/pc_geometry_rerun/prereg/EDA-0004_v1_arc_thickness.md": "b905e8b4adc964f1bdcfd3a5e9d0bb17af969f1131467f4463fca84cdea136db",
+    "research/pc_geometry_rerun/exploratory/arc_thickness_v1/spec.json": "5fe676b27c1d1326d60e32e324fd777483cd73af88f7e9d59f9f86a90ce16a1c"
+  },
+  "previous_anchor_verified": 5222,
+  "equipment": {
+    "requirements": true,
+    "ledger": true,
+    "handoff": true,
+    "fp_corpus": true,
+    "prereg": true
+  }
+}

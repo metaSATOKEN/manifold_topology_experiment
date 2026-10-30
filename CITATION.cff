@@ -1,13 +1,28 @@
-cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
-title: "The Arc and Its Thickness: Geometric Decomposition of Pre-LayerNorm Transformer Hidden States"
-authors:
-  - family-names: Sato
-    given-names: Kentaro
-    email: info@metaclan.jp
-doi: 10.5281/zenodo.19590036
-url: https://github.com/metaSATOKEN/manifold_topology_experiment
-repository-code: https://github.com/metaSATOKEN/manifold_topology_experiment
-license: Apache-2.0
-type: software
-date-released: "2026-04-06"
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite the accompanying author manuscript using preferred-citation.",
+  "title": "Principal Component Geometry and Feature Readout in Transformer Representations — research companion",
+  "type": "software",
+  "authors": [
+    {
+      "family-names": "Sato",
+      "given-names": "Kentaro",
+      "email": "info@metaclan.jp"
+    }
+  ],
+  "version": "english-v2-contact",
+  "preferred-citation": {
+    "type": "unpublished",
+    "authors": [
+      {
+        "family-names": "Sato",
+        "given-names": "Kentaro",
+        "email": "info@metaclan.jp"
+      }
+    ],
+    "title": "Principal Component Geometry and Feature Readout in Transformer Representations",
+    "year": 2026,
+    "version": "English manuscript, revised 21 October 2026"
+  },
+  "repository-code": "https://github.com/metaSATOKEN/manifold_topology_experiment"
+}

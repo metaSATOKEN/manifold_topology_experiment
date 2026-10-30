@@ -1,0 +1,5 @@
+# Sources and attribution
+
+Article text: Salesforce/wikitext, wikitext-2-raw-v1, train, revision b08601e04326c79dfdd32d625aee71d232d685c3. WikiText is derived from Wikipedia; underlying articles are CC BY-SA 3.0 and GFDL. Article titles and source row offsets are retained in fixtures.json. Dataset reference: https://huggingface.co/datasets/Salesforce/wikitext . Original corpus: Stephen Merity, Caiming Xiong, James Bradbury, Richard Socher, Pointer Sentinel Mixture Models (2016). Wikipedia article history attribution can be reached from https://en.wikipedia.org/wiki/ plus each title (spaces replaced with underscores).
+
+Model weights are downloaded from the original pinned repositories at user execution and are not redistributed in the results ZIP or cell. Model terms: https://huggingface.co/openai-community/gpt2 ; https://huggingface.co/facebook/opt-1.3b/blob/3f5c25d0bc631cb57ac65913f76e22c2dfb61d62/LICENSE.md ; https://huggingface.co/Qwen/Qwen2.5-1.5B/blob/8faed761d45a263340a0528343f099c05c9a4323/LICENSE . P4 contains input IDs and article excerpts, not model weights or full tokenizer files.

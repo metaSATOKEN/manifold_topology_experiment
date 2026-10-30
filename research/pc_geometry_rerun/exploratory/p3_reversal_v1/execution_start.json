@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-10-20T10:15:29.527913+00:00",
+  "python": "3.13.5",
+  "numpy": "2.2.6",
+  "card_sha256": "7f313dee30ff54469c2da2624df8cec27694fba3a962358e1e3fae6d60be5601",
+  "code_sha256": "96a26fde3cd8a984a525a487a9370a9bed86b66c5e52069d17eb8a6658c4bd81",
+  "new_language_model_forwards": 0,
+  "evaluation_is_previously_seen": true
+}

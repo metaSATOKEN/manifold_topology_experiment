@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "verification_runtime": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy": "2.2.6",
+  "trusted_source": "research/pc_geometry_rerun/p3_v1",
+  "receipt_command": "VECLIB_MAXIMUM_THREADS=4 /tmp/pcgeom_p1_design_env/bin/python research/pc_geometry_rerun/p3_v1/p3_verify.py receipt <copied FINAL ZIP> --output <receipt_verification.json>",
+  "logs": [
+    "verification.log",
+    "extended_verification.log",
+    "analysis/plot.log",
+    "analysis/plot_v2.log"
+  ],
+  "verification_status": "LOCAL_RECEIPT_AND_RECOMPUTE_PASS",
+  "new_language_model_forwards": 0,
+  "archive_sources_executed": false,
+  "source_compatible_environments_checked": 4,
+  "all_pinned_packages_checked": true,
+  "separate_arithmetic_audit": true,
+  "independent_reviewer": false
+}

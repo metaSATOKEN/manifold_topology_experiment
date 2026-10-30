@@ -1,0 +1,1585 @@
+{
+  "articles": 629,
+  "configuration": "wikitext-2-raw-v1",
+  "dataset": "Salesforce/wikitext",
+  "eligible_articles": 602,
+  "excluded": [
+    {
+      "reason": "shorter_than_512",
+      "row_start": 378,
+      "title": "Position ; GP"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 380,
+      "title": "Goals ; A"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 382,
+      "title": "Points ; PIM"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 388,
+      "title": "Games Played ; TOI"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 390,
+      "title": "Wins ; L"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 392,
+      "title": "Overtime Losses ; GA"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 7115,
+      "title": "New York State Route 368"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 7132,
+      "title": "M @-@ 122 ( Michigan highway )"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 8030,
+      "title": "De dezas a espwa : interviews with persons affected by the 2010 Haiti earthquake"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13397,
+      "title": "Played , W"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13399,
+      "title": "Losses , D"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13401,
+      "title": "Ties , A"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13403,
+      "title": "Batting points , Bwl"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13428,
+      "title": "Played , W"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13430,
+      "title": "Ties , L"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13452,
+      "title": "Played , W"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13454,
+      "title": "Losses , T"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13456,
+      "title": "No result , Pts"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13473,
+      "title": "Played , W"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13475,
+      "title": "Ties , L"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13477,
+      "title": "No result , Pts"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13494,
+      "title": "Played , W"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13496,
+      "title": "Losses , T"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 13498,
+      "title": "No result , Pts"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 14580,
+      "title": "Washington State Route 221"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 22497,
+      "title": "New York State Route 164"
+    },
+    {
+      "reason": "shorter_than_512",
+      "row_start": 34551,
+      "title": "Europium"
+    }
+  ],
+  "excluded_P1_ids": [
+    "wt2_train_00287",
+    "wt2_train_00433",
+    "wt2_train_01244",
+    "wt2_train_01274",
+    "wt2_train_01690",
+    "wt2_train_01856",
+    "wt2_train_05241",
+    "wt2_train_06141",
+    "wt2_train_06307",
+    "wt2_train_06821",
+    "wt2_train_08213",
+    "wt2_train_08251",
+    "wt2_train_09475",
+    "wt2_train_09935",
+    "wt2_train_10143",
+    "wt2_train_10968",
+    "wt2_train_11334",
+    "wt2_train_12311",
+    "wt2_train_12841",
+    "wt2_train_13079",
+    "wt2_train_13191",
+    "wt2_train_13217",
+    "wt2_train_13354",
+    "wt2_train_14377",
+    "wt2_train_16451",
+    "wt2_train_16821",
+    "wt2_train_17106",
+    "wt2_train_17858",
+    "wt2_train_18206",
+    "wt2_train_18301",
+    "wt2_train_18586",
+    "wt2_train_18626",
+    "wt2_train_19864",
+    "wt2_train_20184",
+    "wt2_train_20603",
+    "wt2_train_20644",
+    "wt2_train_20880",
+    "wt2_train_21482",
+    "wt2_train_21552",
+    "wt2_train_22089",
+    "wt2_train_22150",
+    "wt2_train_23047",
+    "wt2_train_24201",
+    "wt2_train_24937",
+    "wt2_train_26015",
+    "wt2_train_26498",
+    "wt2_train_26949",
+    "wt2_train_27695",
+    "wt2_train_28067",
+    "wt2_train_28275",
+    "wt2_train_28503",
+    "wt2_train_28850",
+    "wt2_train_29108",
+    "wt2_train_29965",
+    "wt2_train_30341",
+    "wt2_train_30422",
+    "wt2_train_31128",
+    "wt2_train_32295",
+    "wt2_train_32315",
+    "wt2_train_32655",
+    "wt2_train_32681",
+    "wt2_train_33830",
+    "wt2_train_34304",
+    "wt2_train_35404"
+  ],
+  "license": [
+    "CC-BY-SA-3.0",
+    "GFDL"
+  ],
+  "model_inference_performed": false,
+  "near_duplicate_rule": "Token 5-gram set Jaccard >=0.5 against P1 and already accepted P2 articles",
+  "ordering": "sha256('pcgeom-p2-20261020:' + full_article_body_sha256), then id",
+  "p2_exclusions": [
+    {
+      "id": "wt2_train_28275",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_11334",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_20644",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_23047",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_30341",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_01856",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_08251",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_22150",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_34304",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_20603",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_00287",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_33830",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_13354",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_01244",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_32295",
+      "reason": "P1_article"
+    },
+    {
+      "id": "wt2_train_10968",
+      "reason": "P1_article"
+    }
+  ],
+  "reserved": "Validation/test untouched; P0/P1 excluded; this P2 test is held out from P2 fit only, not necessarily from GPT-2 pretraining",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "rows": 36718,
+  "selected": [
+    {
+      "full_article_body_sha256": "0697c98ceb0aa45382fcf3a6e113cbc1f4dd4d3733b2610c4b718b4e6d959469",
+      "id": "wt2_train_17190",
+      "input_ids_sha256": "d87de5de2e58b63135c6b79296443a42fd06e4c08b15e36de80c89b3ab70705e",
+      "row_start": 17190,
+      "selection_key": "0096de635509edd0a26e9f3bc76c54a12d2f007f611206ed90663f3a1566d323",
+      "split": "train",
+      "text_sha256": "ec519c2c72c8902c456d8e4b20285a16808f68a606c4904225d4ff743a427a29",
+      "title": "NoitulovE"
+    },
+    {
+      "full_article_body_sha256": "62dbf1482f12134ce9b6897b684395232426a2725b80c0068861577abf759d75",
+      "id": "wt2_train_15777",
+      "input_ids_sha256": "cedf1258e4ab8a1b1cf82f97ce2425283a94160e01d277830e7d612f243e9960",
+      "row_start": 15777,
+      "selection_key": "01c0ab6743d7f8a0075729317e1254485a6f064dcba641590e8e6f872b3826ec",
+      "split": "train",
+      "text_sha256": "8efe7f4ffe06e1b5b3519e01cef9b99fc8d1ef8936a3fa13546392ec74d2c2c8",
+      "title": "Etymology of Wicca"
+    },
+    {
+      "full_article_body_sha256": "92dca826b23c661e3f499a0c4ac5df175ff8cf59289bcac510755175add62c3b",
+      "id": "wt2_train_05885",
+      "input_ids_sha256": "c6daa686854f90135080b920c2dd90218cb41d491914cf034eb6966d19c5ba44",
+      "row_start": 5885,
+      "selection_key": "02450cecbff84a595d9c6ce2d7d019a6a140e1b2f702ca3d647cfb908a2e354d",
+      "split": "train",
+      "text_sha256": "92dca826b23c661e3f499a0c4ac5df175ff8cf59289bcac510755175add62c3b",
+      "title": "New Year 's Eve ( Up All Night )"
+    },
+    {
+      "full_article_body_sha256": "4119902366aea08cfe9e186f66ca44281954f0b200ae484a6dc9146dcc08e34e",
+      "id": "wt2_train_02555",
+      "input_ids_sha256": "8006bef825932ee047ef3160e43fa827b8c03db78318625604438130139748ab",
+      "row_start": 2555,
+      "selection_key": "02eb4e7b7f5cf1563005df9361d3293a79f956e1ed4fa8780d4b19dff0610203",
+      "split": "train",
+      "text_sha256": "e5e20b0ca499b5b2f17117133db79a2eed0c3781fd156c6f18e8ac24553ce3b3",
+      "title": "Saprang Kalayanamitr"
+    },
+    {
+      "full_article_body_sha256": "a47cb565703c4d4c069210a5ce0f50651df8e441dc74867e2f0ac008175c45ca",
+      "id": "wt2_train_17245",
+      "input_ids_sha256": "3459b37e7bc207b3a44af824c4194c60ffdd69ca7350d656d05efd18bf578fde",
+      "row_start": 17245,
+      "selection_key": "02fd57bea8e5a627a99b98323a696600725c7028148e503a816694abccbf2525",
+      "split": "train",
+      "text_sha256": "d05809d8a1e0c1a890d2413f2042b6243a864531a4d84d35b57e3506a4f87ceb",
+      "title": "Stuart McCall"
+    },
+    {
+      "full_article_body_sha256": "40b0103b42d129390e5de1c3101b940ce511c88b5cff9f5d2d3069b9068b3f75",
+      "id": "wt2_train_11106",
+      "input_ids_sha256": "937fca11ef39151350599abc3fd881efb3f21cdb4257acdce3377ad506f1dc32",
+      "row_start": 11106,
+      "selection_key": "0342d4d023d7a3ce014c387e3329907580be49fb9d8a519ff044bf2f6304bfb8",
+      "split": "train",
+      "text_sha256": "40b0103b42d129390e5de1c3101b940ce511c88b5cff9f5d2d3069b9068b3f75",
+      "title": "Greens Ledge Light"
+    },
+    {
+      "full_article_body_sha256": "29e8ffc7f6f01b6d5b40f37959eb6b5b37ae1944edb8023e575c2d82f46743fb",
+      "id": "wt2_train_15407",
+      "input_ids_sha256": "5e96f12f776d232bf757c2b25cbf5f83d5a50833c623fd97e4a0c66eef56d4fd",
+      "row_start": 15407,
+      "selection_key": "036f8f9c1f5c17674d44f0c6e638df10fcb4d63a895c2bdaf03ade7f77cf12e4",
+      "split": "train",
+      "text_sha256": "8a49700fb412aa20e066b255e6a0b4ea4ea67d5319a9b4a14a2eb431222b5214",
+      "title": "Something Borrowed ( Torchwood )"
+    },
+    {
+      "full_article_body_sha256": "b787dc02acff1e24684315abb446db316d3931e728b98cdba906af063bc71092",
+      "id": "wt2_train_10809",
+      "input_ids_sha256": "8c4e40d2fa31335d73f6684140f5434902a0336c8c37b5fc29c440d1b1dc703a",
+      "row_start": 10809,
+      "selection_key": "037ee45b1bec49e8f23142635f09acc4f296b6e0e801ec5cb471b39b99544a11",
+      "split": "train",
+      "text_sha256": "b787dc02acff1e24684315abb446db316d3931e728b98cdba906af063bc71092",
+      "title": "Rosemary 's Baby ( 30 Rock )"
+    },
+    {
+      "full_article_body_sha256": "ebdb9bfe18bc63a0a9f62038f84352c1017d5113150fae41e0524c95d48c2512",
+      "id": "wt2_train_11166",
+      "input_ids_sha256": "0bbceca8f90b397ddb19cdc07999640264ac2b8543adff4c2374589a2ce710f9",
+      "row_start": 11166,
+      "selection_key": "04fc49e8bbcf268ad675427d9d64e2c8543f93ad7683966d7189f79d18c64d11",
+      "split": "train",
+      "text_sha256": "ebdb9bfe18bc63a0a9f62038f84352c1017d5113150fae41e0524c95d48c2512",
+      "title": "M @-@ 114 ( Michigan highway )"
+    },
+    {
+      "full_article_body_sha256": "e6081a95bb2c93d16051090fca7d243c1019877315e3cd5d68b4fd1ba68e4486",
+      "id": "wt2_train_12341",
+      "input_ids_sha256": "8a5334f9bdb7cc8b86ef9c624bb00cac766d016a1c7b880bff49889b014637d6",
+      "row_start": 12341,
+      "selection_key": "05955ca37f758491dc6e06c8e7bc9ea0864964975feb11280d139ad189a5d5f9",
+      "split": "train",
+      "text_sha256": "58126ac2250b1447633739e106dec9f7710a4462008ddbb817b1fb4df5da0085",
+      "title": "Jifna"
+    },
+    {
+      "full_article_body_sha256": "e7af7dffb36982f826cc06a76c42c3e4915e60f156c9d9cf58b08305c98dfd17",
+      "id": "wt2_train_29224",
+      "input_ids_sha256": "2897d17c0fcab60d081a424c7ae995e32c6ba59002beb5c32c4c34db3505fc35",
+      "row_start": 29224,
+      "selection_key": "0630061d7b3d27e0d452412ae0686741dc48b48eff0a02a355a9cc3a8bb97f70",
+      "split": "train",
+      "text_sha256": "e7af7dffb36982f826cc06a76c42c3e4915e60f156c9d9cf58b08305c98dfd17",
+      "title": "Inocybe praetervisa"
+    },
+    {
+      "full_article_body_sha256": "7fd3c95cdc0699333ecd581b4457a71d27d1aa7994aa6749c5136f8a9804fc3a",
+      "id": "wt2_train_27916",
+      "input_ids_sha256": "84cf7981e7f6e0d52331cb76a66306999db9530eb9d07e87e7a366d114aa65d8",
+      "row_start": 27916,
+      "selection_key": "06aef009ae218a9908898ad96688fa75c0f687921dfa340e87e1a3e428b5f577",
+      "split": "train",
+      "text_sha256": "d28afb2b7121fab36c59644b04a912837b643b6513da3febd6a6975391953cbd",
+      "title": "Kir 'Shara"
+    },
+    {
+      "full_article_body_sha256": "b597d56b60e4dcdb74659ff3bd12220ed72248be99d30b08793515ea6df981d9",
+      "id": "wt2_train_00748",
+      "input_ids_sha256": "28b9cb4eace8ce5d4f5a7176ac6fa0138632876ea4d04c6b4e65a1bc22f0d876",
+      "row_start": 748,
+      "selection_key": "06bed8762d2f06c69d46231059b46d76307b647a0206ff8267150abec7164eb7",
+      "split": "train",
+      "text_sha256": "ff646c3dddbc911d300f2e54824b2aeddc31f42d214cea733ae2e7c031d034a9",
+      "title": "South of Heaven"
+    },
+    {
+      "full_article_body_sha256": "b8f73600caa304f234266c6b861c3ae9c5d9455171f0e3d56009beaaed1ed47f",
+      "id": "wt2_train_36339",
+      "input_ids_sha256": "62521afe14dd0b46594907ff2ed80c7caba916f968118d74dd46d03547efa808",
+      "row_start": 36339,
+      "selection_key": "078b7a8cd04dc7d7ed45b5bad56b243b6ac2d1e8d1807a604ceaf78f7b0b58bb",
+      "split": "train",
+      "text_sha256": "de5466453f19c5b6bcdf7ab5cb4f836ad6f9f678366afddcf463809990657905",
+      "title": "Amylostereum"
+    },
+    {
+      "full_article_body_sha256": "cafa7777813bd870a909117f8f00dbae38e0b68be2c23dfe80ffe9cd75e09768",
+      "id": "wt2_train_35449",
+      "input_ids_sha256": "568dbf6ff261edb8239cbb771efc6427c89219370908b621695b14cacab69995",
+      "row_start": 35449,
+      "selection_key": "096ff0f608965153a54d5ce3a00a16a19490ac8994b7d9709d9e2ae5477af068",
+      "split": "train",
+      "text_sha256": "10c264bd98746fc9f3da3f084284d42d651c859e6dd8587c07dba4a0d17e8f6e",
+      "title": "Youth on the Prow , and Pleasure at the Helm"
+    },
+    {
+      "full_article_body_sha256": "d910cc3852c0a1a91f98a05d27c0e493ac4c2c9d651ab63f01a819d84e919c68",
+      "id": "wt2_train_09703",
+      "input_ids_sha256": "020171736976f6bc6534af41fcd6df0bc36f62e7c9f129042963d81261f88bde",
+      "row_start": 9703,
+      "selection_key": "09e27c174b59100bdcb3687e8b737e7a5ebae2a1dbde33423c130b7d27354b40",
+      "split": "train",
+      "text_sha256": "f851d2c9971113d0d3f44fecf19b8bb5ff5f0c858131ba1461aff5501aa4ceb1",
+      "title": "Aston Villa F.C."
+    },
+    {
+      "full_article_body_sha256": "398328f3ca54526217fbe57c94fe1d0d96fb6f3a0ab7ded18a5fb26405831314",
+      "id": "wt2_train_13338",
+      "input_ids_sha256": "791cd0419a481bd9ae12f320d34e248328e6a5f9b0d5c5296cac236c044347ba",
+      "row_start": 13338,
+      "selection_key": "0a33d940f5419f061d5c9e68dd24a972044adc870a4d489bb054282d7900216f",
+      "split": "train",
+      "text_sha256": "398328f3ca54526217fbe57c94fe1d0d96fb6f3a0ab7ded18a5fb26405831314",
+      "title": "HMS Hostile ( H55 )"
+    },
+    {
+      "full_article_body_sha256": "55ada948761595d108c27f82ab5f2f0820a9d17749c3535fe6f5af4038624fd5",
+      "id": "wt2_train_19035",
+      "input_ids_sha256": "7cea20d9464ef314c08fafbffec1a70c77895e7ce8067612805ec9da5976caef",
+      "row_start": 19035,
+      "selection_key": "0a97f9c8d6b0a160873868160fc610c4ba9c6e40d2e93ab727b805a7a799f098",
+      "split": "train",
+      "text_sha256": "8591632057143f45d9090dd0825e01b0bb62ac43f3bf8a5de7a77b56141c7f0f",
+      "title": "Plunketts Creek ( Loyalsock Creek )"
+    },
+    {
+      "full_article_body_sha256": "70bdedb33cab6319e388a12a6c351fc8eea3f59ef33f12c24ac860cee3b3402b",
+      "id": "wt2_train_26932",
+      "input_ids_sha256": "1a20c4bfdb2c3fec99d954fd6680437cd1a719870d7c8469da179ed36a3fc2e8",
+      "row_start": 26932,
+      "selection_key": "0b2c4ef4dc5e2433d1f1e3941e287ce14e7f9a4bcc3aa184e25d046968d9694d",
+      "split": "train",
+      "text_sha256": "70bdedb33cab6319e388a12a6c351fc8eea3f59ef33f12c24ac860cee3b3402b",
+      "title": "Tropical Storm Olaf ( 1997 )"
+    },
+    {
+      "full_article_body_sha256": "3adae71fa9ab6f854324ce5fe95a5f6f5d98d30cac8900c65267fd257f06e92f",
+      "id": "wt2_train_00271",
+      "input_ids_sha256": "fb771eb52d1e6215d74943f530eb57084112e6a7234b888fb07b6ac961e12209",
+      "row_start": 271,
+      "selection_key": "0ba46cbfaf9499fa6c31f71e907f8099fb11b1417fcc5675a3253845e978881f",
+      "split": "train",
+      "text_sha256": "3adae71fa9ab6f854324ce5fe95a5f6f5d98d30cac8900c65267fd257f06e92f",
+      "title": "Gambia women 's national football team"
+    },
+    {
+      "full_article_body_sha256": "27d8f2a9112186379eb6cd54c233be576407ee3fe153f215c7cf4d13e372dca8",
+      "id": "wt2_train_01582",
+      "input_ids_sha256": "a7610f2bb29df66bb95af5d85181d371d4d65806197d7e7e4765377cebaaca0b",
+      "row_start": 1582,
+      "selection_key": "0c14075a247314faae54d80c56875bebd0e08536d0245c8383ea946cec62d85c",
+      "split": "train",
+      "text_sha256": "9231029934eda3d3e2a64e7346a8c88f496305f3f5cf2886390d84c30b1da87a",
+      "title": "Zagreb Synagogue"
+    },
+    {
+      "full_article_body_sha256": "bdeb05177d1e9c9cbb74ebd5dd4258a8cb5b94a18d545b2f37f352f7357c1609",
+      "id": "wt2_train_20051",
+      "input_ids_sha256": "20268ead8b3831fcc15d686110cd4633505ab5a2d27179312a05137996f0fc7f",
+      "row_start": 20051,
+      "selection_key": "0c1ff53a532de52e9d611b39ebe87eff3b1c0bf0b1007695e8f747894e971d82",
+      "split": "train",
+      "text_sha256": "d626432b09dec1b25d352b43bb78b60927276049b1519095951af6a3de05ddd4",
+      "title": "Hoover Dam"
+    },
+    {
+      "full_article_body_sha256": "c50bb07705533d4297e15deddb96c717296db239dbb6f44cfb25fed696349892",
+      "id": "wt2_train_36544",
+      "input_ids_sha256": "54867897667d70dd3e228adcf873e9437cbc13d36d43c4f0ae49a94b3e05c441",
+      "row_start": 36544,
+      "selection_key": "0c7dc2ee0bcaec46b0def004da8c151e7b6730b0f0d1a6406e3a3a21da98a839",
+      "split": "train",
+      "text_sha256": "c50bb07705533d4297e15deddb96c717296db239dbb6f44cfb25fed696349892",
+      "title": "Business School ( The Office )"
+    },
+    {
+      "full_article_body_sha256": "3128dcff7bbb9935e75be0771b99d6b622315b9bfd2eee2507cb8be19f7eedef",
+      "id": "wt2_train_10340",
+      "input_ids_sha256": "4c19b13f59a091d6b3a5b5aad6172aab6e9e9b3d79f48cb03051000aec867a2e",
+      "row_start": 10340,
+      "selection_key": "0c9667f953e9a9dceac1d9bd84e83dfc7cdd346804b3b554699558b1e2e72a6c",
+      "split": "train",
+      "text_sha256": "f6a3a1e890c4f3ea5aebc6bc8af12d2253c3e5b165a36391978de11331ca3c95",
+      "title": "Ulysses ( poem )"
+    },
+    {
+      "full_article_body_sha256": "e261b2e1b4269c98d07efafacb3e620ec1fa95fec17f2c95185b735437f339d1",
+      "id": "wt2_train_25279",
+      "input_ids_sha256": "f81c6bd55ea5ebb6424ed8f5598e4659d53e73f91623de099011b61fc22dfda0",
+      "row_start": 25279,
+      "selection_key": "0d604322b6915c3834c00195c998a5959f847ef71f7bfe786dbfb90e74f70ff2",
+      "split": "train",
+      "text_sha256": "2eafe028e11f7f25e9649033143ee654c34522b9f6e4753de1f0ee4a059228bc",
+      "title": "Blackburn Firecrest"
+    },
+    {
+      "full_article_body_sha256": "7c2af01f50d6661b77eb0dd67aa889b8feae5e14afb319cf7694a7ec1a74a7f9",
+      "id": "wt2_train_26883",
+      "input_ids_sha256": "a5f712989a52b234d5a796820b148fef0bd2e49b1d6852fb68736e29b3d377c6",
+      "row_start": 26883,
+      "selection_key": "0de71d745277a690c550f0d40a031ec50587c85f5b33ae7405c43bd0525da1de",
+      "split": "train",
+      "text_sha256": "01c57830b491967590feb83d5c55072e68755db22ecf65b0912c703921f60300",
+      "title": "Bath Assembly Rooms"
+    },
+    {
+      "full_article_body_sha256": "5b3fd63616c1f7393a9104b89056ee669f2da025a128aca2243987320ce6a2a2",
+      "id": "wt2_train_14680",
+      "input_ids_sha256": "b891a84bbc4c01db4048c0ca6238fe26a931e7862825856b6ef041614014be13",
+      "row_start": 14680,
+      "selection_key": "0e60da143e309749da96ef769dc68cfd1c66bae1956dd7592c8744d61e34b017",
+      "split": "train",
+      "text_sha256": "8bfb757502917e7bad55a5c62fb0eec589f57f2c7804ece74e44eac04603ac54",
+      "title": "Odaenathus"
+    },
+    {
+      "full_article_body_sha256": "c94eabec03fbe13624c709f8e9db907e6677b464dc9eb8d2e0e7c1cbc82dd534",
+      "id": "wt2_train_27157",
+      "input_ids_sha256": "d44b007b1f94d07dd74423d74b87320280ec909b539ffdc6d37489328d421b5b",
+      "row_start": 27157,
+      "selection_key": "0e7b9300df6671f6bcdff08727de82fbb3f48d3aef6cb36caa242aefe2e2f09d",
+      "split": "train",
+      "text_sha256": "d3893fdd7bfbc9a03c38a66d72c54991f757a16182007d84eb8aa9e731af2f10",
+      "title": "Aerith Gainsborough"
+    },
+    {
+      "full_article_body_sha256": "bdbe8dbaa66ede581d3bd018cb9bce228f2ad3480465be1c0a840ff865111968",
+      "id": "wt2_train_13592",
+      "input_ids_sha256": "6790ce178a71586522cf11bddc2f64e1b9550604c091610418da9cb6956f17eb",
+      "row_start": 13592,
+      "selection_key": "0edbe3b4c1b1fc9b9abc8f354701826b1eecdbe8f7189800e29c4f26a841aae5",
+      "split": "train",
+      "text_sha256": "bdbe8dbaa66ede581d3bd018cb9bce228f2ad3480465be1c0a840ff865111968",
+      "title": "Josce de Dinan"
+    },
+    {
+      "full_article_body_sha256": "2b5a340a2ef79eaaebe1e8e50abd37743779026e4a4fbf0c3cdd41c6e144d399",
+      "id": "wt2_train_13978",
+      "input_ids_sha256": "cbf483b137823b24762447739639e3e258bdb9f93e4b9f94cc4bfbe9bf79eebd",
+      "row_start": 13978,
+      "selection_key": "0ee339a9af0ac322f2491962a71ea153825f724e05c847eeca9eb0633c0d4597",
+      "split": "train",
+      "text_sha256": "fc54c481406fd4744bbd24aabbf370d4d63d730d5512082c5e839cd192a0c70c",
+      "title": "Tropical Storm Domoina"
+    },
+    {
+      "full_article_body_sha256": "04efcee8ec985ea146a3340dc3eb5c1764e43e2948caa942cd7811daac890e9f",
+      "id": "wt2_train_27087",
+      "input_ids_sha256": "fc8482e4b97f93fe0b7c4bc601606b95618f2a9615f66715da1fd87053472505",
+      "row_start": 27087,
+      "selection_key": "0f94fcdd59a5fd6009132467002b211a3940463a051eb4e1888f48cabea05e97",
+      "split": "train",
+      "text_sha256": "b91b2179742cd72a4c3e3bda3ec20741cf72da57302bd1be1228467c688ad500",
+      "title": "Paranthodon"
+    },
+    {
+      "full_article_body_sha256": "6cc091e45fabcc8bcab972be7cea89b741831f78e6750ea10e688d63f63ab34a",
+      "id": "wt2_train_10258",
+      "input_ids_sha256": "6f023a54579f6f1b7d9fa8d413225f945176b5dee6197fa67238c3aef17f95d7",
+      "row_start": 10258,
+      "selection_key": "0f9cc66800ed06a5c19bd9386c1bae224e1148a6ba6f0641fbe602b1e6cc62fa",
+      "split": "train",
+      "text_sha256": "5fb3531a7d8517abb5e48362adda5c35fd21bd119356eb7e70868acd46c8388f",
+      "title": "First Battle of Maryang San"
+    },
+    {
+      "full_article_body_sha256": "c97b094e837d79f6d854284c65eb01bc005692180cedc650d0ed26016f3229e8",
+      "id": "wt2_train_26228",
+      "input_ids_sha256": "6493965f1a22f265ab1036f026cc28022c37afe76ea91cf3043e6b3c28d19819",
+      "row_start": 26228,
+      "selection_key": "107781ba30cfe0e7e0b852539664492add3b4d553edd1b0a0aea0ffc7f7df951",
+      "split": "train",
+      "text_sha256": "fa1d2153cd5f4717110029faaa854ea69c3482f5f92b3afddd40b83fd2f28786",
+      "title": "December 1964 South Vietnamese coup"
+    },
+    {
+      "full_article_body_sha256": "9d429306daa77bda230d385438d32da6174f9b19d530487c2807d3eba4d17759",
+      "id": "wt2_train_18279",
+      "input_ids_sha256": "7ea2848fb60da626bddb19edde31c73c7211dd9043b03f776a42169ef5f30dd6",
+      "row_start": 18279,
+      "selection_key": "10e6c8b161474a2211acc371613310b8a4cd3fcb2857c3f0de3152c1f527360e",
+      "split": "train",
+      "text_sha256": "50e2f921d6da79b3255475f525a6024e243c05a3330dabfde817243348fed29e",
+      "title": "God 's Choice"
+    },
+    {
+      "full_article_body_sha256": "55393bb69d7888b45b4e0de4dec2a8342b9d92d547af6b827e0709bab90e4e53",
+      "id": "wt2_train_11296",
+      "input_ids_sha256": "99d00e2714d8f3aa780527071fd58dfe6977384cc4458edf6d6e6da2ea93af25",
+      "row_start": 11296,
+      "selection_key": "125e1ee07a82b35f5ae591d349483cb64fff5539e47976365090264933d8e241",
+      "split": "train",
+      "text_sha256": "55393bb69d7888b45b4e0de4dec2a8342b9d92d547af6b827e0709bab90e4e53",
+      "title": "St Mary 's Church , Nether Alderley"
+    },
+    {
+      "full_article_body_sha256": "375c436ebbf4c117fe3859d63352507926fa13999fb503f4a58dc1703aa0ddfb",
+      "id": "wt2_train_32253",
+      "input_ids_sha256": "f82e131e5babcaf127073c2e4d64d0b8bcfe479bebcea6b49f5b7733ee32cdc5",
+      "row_start": 32253,
+      "selection_key": "127989ce9301dc0cfeeecf37e8a94df9ccf74a1bb1efc914d75b417aca256743",
+      "split": "train",
+      "text_sha256": "81408c8d8667475e55a902b8197ed836068a29fc99d3df8d45e744971cea804a",
+      "title": "Biddenden Maids"
+    },
+    {
+      "full_article_body_sha256": "f39b4e6febb7f1ba938017a244c291a731f0907a6d3ccfbcc12a669df9a513bb",
+      "id": "wt2_train_27895",
+      "input_ids_sha256": "59d617058aaa83363c76c6564a71b734aea995d2a984cd2dc739f2247959b07d",
+      "row_start": 27895,
+      "selection_key": "1292a71842588397345aa68d97b8f00df354e411bd794cfa5bb7877407220a52",
+      "split": "train",
+      "text_sha256": "f39b4e6febb7f1ba938017a244c291a731f0907a6d3ccfbcc12a669df9a513bb",
+      "title": "Church of Christ Pantocrator , Nesebar"
+    },
+    {
+      "full_article_body_sha256": "4a903cd35b9fbd3392a8e688b68018385b131f89ded1cf88be724f97a91508cd",
+      "id": "wt2_train_07877",
+      "input_ids_sha256": "11d6c943c343494425072b66391a4b9f090034d2e18c940ba3fdb6b61c6b624a",
+      "row_start": 7877,
+      "selection_key": "12c8b2576477efe4373c7ba721c11cc3a32767e15b78298786015274b01b9b96",
+      "split": "train",
+      "text_sha256": "f9c5bc7aa0f81a3c4beb25390324e726c2ad030d1ff0b9f0a61fd2f0472e9e2f",
+      "title": "2010 Haiti earthquake"
+    },
+    {
+      "full_article_body_sha256": "1815ad81a392e469134a24faf832bca50e220693234ffcad0b50596e6a43fd25",
+      "id": "wt2_train_27839",
+      "input_ids_sha256": "356d0585b28d7136d08fe2902a61dcd25d95ad10b2591aaa407d5871dce54e08",
+      "row_start": 27839,
+      "selection_key": "1306af27022a2d6d4430cc1f2a024fec79e83409f297e2a41a7df867918d1576",
+      "split": "train",
+      "text_sha256": "567288f28ad7413de64980332a559b5ea8fba2ae9032f2b212d39434b15cb718",
+      "title": "Henry Hoʻolulu Pitman"
+    },
+    {
+      "full_article_body_sha256": "1c33f350e7b6703c6e841e151b299338a4558313c333da055ca8dd3076432ddb",
+      "id": "wt2_train_32231",
+      "input_ids_sha256": "109e03f557b8afd202274aa1faf0fcdc669ced892ce08fc35178fa92328ef019",
+      "row_start": 32231,
+      "selection_key": "1357e4150f720c2325f8e3d3ed8325d51b944cad5ff5907fbe4ea40ce07c88ad",
+      "split": "train",
+      "text_sha256": "1c33f350e7b6703c6e841e151b299338a4558313c333da055ca8dd3076432ddb",
+      "title": "Bossy ( Lindsay Lohan song )"
+    },
+    {
+      "full_article_body_sha256": "5e4948ece410dbf62d22747b5f8af254438aca281d4ce061e2135ad03371724a",
+      "id": "wt2_train_26916",
+      "input_ids_sha256": "2910de5518e0479d0a03c1f4f6c87d825837b565dc6fa60bb69d82eea3e8f8c6",
+      "row_start": 26916,
+      "selection_key": "136ef9e4d3846054bca53b978d5e6c32fc99f3a4b7c7959278742280fc97f742",
+      "split": "train",
+      "text_sha256": "5e4948ece410dbf62d22747b5f8af254438aca281d4ce061e2135ad03371724a",
+      "title": "Flash Gordon Strange Adventure Magazine"
+    },
+    {
+      "full_article_body_sha256": "f0adaf8f60c7f8ff5536301c19d02f38f21a9f60b8703cb1c9b5fa9e84b44fa8",
+      "id": "wt2_train_27341",
+      "input_ids_sha256": "f2f7e1611615ad388b96624263dff8f6a685d87719ab3ff3d14bc46f0c33f885",
+      "row_start": 27341,
+      "selection_key": "141412eed44f7ba38e97758966e6802b8739bc82adb8c7cad32bab105090aaf2",
+      "split": "train",
+      "text_sha256": "755fed167e1d446f8c87aa4bf78cc56ab6d3347585f70184d025a9b8ae22b0b3",
+      "title": "Territorial era of Minnesota"
+    },
+    {
+      "full_article_body_sha256": "73307c0858642c8fac29fec3b1dc515f809a840fa2ff2013a205c87d6cdea426",
+      "id": "wt2_train_36586",
+      "input_ids_sha256": "185f62ccdb9b97785b5332a387e1b078b3d4754c3b6205d3104e66beae9ae936",
+      "row_start": 36586,
+      "selection_key": "14b6a9fcd7d2e9281ae4a8e888927a0f558fc1aff8cdfa37c0ffbb912d2134c7",
+      "split": "train",
+      "text_sha256": "6dfcdc0357b0cecb980fe2d01d18539c2c712afbfa992e81c32c245706356678",
+      "title": "Common starling"
+    },
+    {
+      "full_article_body_sha256": "30fa2205af4a5df95348ee589f1b5f0ae13e8cdf4da3ba318a4976e4543df048",
+      "id": "wt2_train_25973",
+      "input_ids_sha256": "7f378ec892af58e15d7bf714003aceee705d265d4cce2afc713e6ae8c04af883",
+      "row_start": 25973,
+      "selection_key": "14c5d66dd55e0af892a86a24290d69958a0800edd8fb7df6010e518c48017049",
+      "split": "train",
+      "text_sha256": "58adf2edda40b4d519ed81354784ee128487e43a4a9ded23b132f656fffe4905",
+      "title": "Dave Sisler"
+    },
+    {
+      "full_article_body_sha256": "79724ee561fd450366cd50475ab3aafae3cf0cec9760cfddcd56e685bcc0390a",
+      "id": "wt2_train_17380",
+      "input_ids_sha256": "3674c82196dbee49393a8cc9f3c454b6323ac9644ac03a490048220903e80bb3",
+      "row_start": 17380,
+      "selection_key": "15161bc76030318f14d36c4cfa99513562e6bcc41a291b5965f6c8adc281b9e8",
+      "split": "train",
+      "text_sha256": "251162d8e224a7f20cc8dcff16ed3fd00c7c9ebfea42a6698c5a4f65fcd85eec",
+      "title": "Black @-@ tailed jackrabbit"
+    },
+    {
+      "full_article_body_sha256": "944edc2e6fbbbbe647131d9e9ecdf0c75511712d02697ad130d6fd1da24387d8",
+      "id": "wt2_train_15839",
+      "input_ids_sha256": "99214592da790aa0395a8c9f5ebf29ed540dc9e00c0448f70bd24c7179416b2f",
+      "row_start": 15839,
+      "selection_key": "1666af6571d70cbfaabce7cfa8b2e4c4ec66067577cb05076a64cc66be9f7fef",
+      "split": "train",
+      "text_sha256": "294b9bec3ce20fb55212ca1bb8c8950957ed8e4d7aae66a3412964cd5fed89e2",
+      "title": "Bob Dylan"
+    },
+    {
+      "full_article_body_sha256": "f80de51ec78d47c411f5093c53d97612e5e6b30fef1c86ce95d22d6aff7f069e",
+      "id": "wt2_train_04199",
+      "input_ids_sha256": "7f2a5e4b76788c9908a32013385c2d2f368ed087c7b63ec125a0439a40bbc37c",
+      "row_start": 4199,
+      "selection_key": "16722b9e82a64d4b58b08937def69b6b0609fca471637a72ce7906fe7e725e19",
+      "split": "train",
+      "text_sha256": "45cf8b43f37677b5c54eb6d3abb9e5fa0b0cabf663bbe743e39dee8c66b1a78c",
+      "title": "Shaoguan incident"
+    },
+    {
+      "full_article_body_sha256": "71e1d381ae2fac69cf29407005877278328e2a6aae2fecab518e9225cd74f7dc",
+      "id": "wt2_train_16067",
+      "input_ids_sha256": "6fa3f85fa587a3399221b365f2797aec1d23b87ce5da65f9136496ed40b359e3",
+      "row_start": 16067,
+      "selection_key": "187266a7a09789c49308e9b0e3266a600cb2e23f02b9c696044869e828459bf3",
+      "split": "train",
+      "text_sha256": "71e1d381ae2fac69cf29407005877278328e2a6aae2fecab518e9225cd74f7dc",
+      "title": "Stephanolepis cirrhifer"
+    },
+    {
+      "full_article_body_sha256": "4a67e3a25facba725f54de61a65bc61834f848dd4be5ab3155a8a781c8dbd8de",
+      "id": "wt2_train_24355",
+      "input_ids_sha256": "2beb7025c2e7a43b368d5edd39f774752bb4b0df9aab7295d1a3a0accb8d2d92",
+      "row_start": 24355,
+      "selection_key": "18ddc77bb7f51eda57ee389ac25cfa7f4e6959fbfcdc72ecf6e686bb55235412",
+      "split": "train",
+      "text_sha256": "65bc26e8677d641abf6a0276c8cdf5251cd9033082fb717d7de6f733e1d40d37",
+      "title": "Christine Hakim"
+    },
+    {
+      "full_article_body_sha256": "e1444533e64939ab0744da52920f511d263a335dfe01909bd304e2ce0464b532",
+      "id": "wt2_train_02932",
+      "input_ids_sha256": "2f6d5cb48a58bd5df002276b912f46c4661067eb1c91acb1ac726a54b7dbb173",
+      "row_start": 2932,
+      "selection_key": "194f1ec59914faf2aa65a4218e365d501854203586f173ae4c63add4f9396371",
+      "split": "train",
+      "text_sha256": "d2946e3af0f8fe0fab70625c2701fbe57388752c5dc698fe18ac64ea3ec6c4a0",
+      "title": "Antimony"
+    },
+    {
+      "full_article_body_sha256": "ef99412de671477ad1c680dbbd55b03ec6b6ecc9cddee62e6841858d44bf5845",
+      "id": "wt2_train_08771",
+      "input_ids_sha256": "0d40922d3b8c79cad31f03dd18da6b0b6f79e43bc518b4d21bc59478100bf422",
+      "row_start": 8771,
+      "selection_key": "19a86f5981ca9cf9786bc6b9e62dcda69204ee4925b1780be4f49e0570233024",
+      "split": "train",
+      "text_sha256": "9e5d1059c741361800511f11fd2db0c97920628026255845246918e8e94d9d7a",
+      "title": "Rebbie Jackson"
+    },
+    {
+      "full_article_body_sha256": "59c3784c958a1ce483a9dccac5ecc2f09010d4352a0b5734e9e1930077f2476e",
+      "id": "wt2_train_29878",
+      "input_ids_sha256": "726fed427190c6f2b5141df4c5ed0bb8122da443b429111bf5c9cb8157dbecff",
+      "row_start": 29878,
+      "selection_key": "19d27493693cd32831a61cdda579eded1163f377c99a268d0d3489576cedb771",
+      "split": "train",
+      "text_sha256": "a0effbdcbb9366a87296cdb5050ff2ace41d300636919324f7dc162a01406c62",
+      "title": "Mole cricket"
+    },
+    {
+      "full_article_body_sha256": "8e871dbaceeb7ff2b37b0894393b3b3c0cf84346ba2b05ee1fe0f36be5bd4906",
+      "id": "wt2_train_03259",
+      "input_ids_sha256": "f03d8d8b050b0a8c01bf21eaeaf461508bf6e492bfd5ebae12ffd11ed34f1e58",
+      "row_start": 3259,
+      "selection_key": "19ee2972b5a2094de1426e6239bc460bf7f25e5919421f1daa3cbb02e3819f95",
+      "split": "train",
+      "text_sha256": "43db8297f57339a65d0dd1a713f3ed29728240456d755152e0ce10d4dcb45966",
+      "title": "Species of Allosaurus"
+    },
+    {
+      "full_article_body_sha256": "09a99cfefad6ed21cf343dd0747c2d055d55c1b4180842f6b0af4dc613eaf372",
+      "id": "wt2_train_13511",
+      "input_ids_sha256": "fda0c1a015ee38dfa925438c78be6b7b122735951d1506e60775117e14a511dc",
+      "row_start": 13511,
+      "selection_key": "1a110eff372e0f513dda0a3609609fd5ef53bb66bed202a033824ed199dc584d",
+      "split": "train",
+      "text_sha256": "09a99cfefad6ed21cf343dd0747c2d055d55c1b4180842f6b0af4dc613eaf372",
+      "title": "Texas A & M Singing Cadets"
+    },
+    {
+      "full_article_body_sha256": "bca65a76d7dca8528346bf3655c53817c47d99428e9201412037bae4a0b5e033",
+      "id": "wt2_train_34964",
+      "input_ids_sha256": "3ddd8a23707cf6689feb9d2225c44d8f0e657be476b6720ee001cf689db8723e",
+      "row_start": 34964,
+      "selection_key": "1a1dbe17994d20f6ef861c8165cd1c45d63f3d27084038a91e62958e3cc00393",
+      "split": "train",
+      "text_sha256": "bca65a76d7dca8528346bf3655c53817c47d99428e9201412037bae4a0b5e033",
+      "title": "Domnall mac Murchada"
+    },
+    {
+      "full_article_body_sha256": "c74bdc6476558298b2b73289a6e5ed23224d3ccb85719f9f193dac3cf8408650",
+      "id": "wt2_train_30631",
+      "input_ids_sha256": "af400a39ffedbcb707791fbfd43a8f7fffb80fd77d73bd394c922605949b6fc8",
+      "row_start": 30631,
+      "selection_key": "1a5c56445a0ebc4d37cac63b2ae5179f502edcdf621ea6c1083756ea97a8d0dc",
+      "split": "train",
+      "text_sha256": "e0b9e07f482940201e7fc280951b5911f1fb0d3640514119eb91d92b6e5edf83",
+      "title": "DuMont Television Network"
+    },
+    {
+      "full_article_body_sha256": "81b3765b561281553f0ab0a5f72e76f442efd687760a53511aba71cc8d72f32a",
+      "id": "wt2_train_17843",
+      "input_ids_sha256": "7766128bae745d75f8dc77de46e54fa9364ffa5d4444f24ee41768c3f03d5031",
+      "row_start": 17843,
+      "selection_key": "1ad777e5d9b11122e62a86c8d02503f19585e50e86dae0c9220037a158266ccf",
+      "split": "train",
+      "text_sha256": "81b3765b561281553f0ab0a5f72e76f442efd687760a53511aba71cc8d72f32a",
+      "title": "Protomycena"
+    },
+    {
+      "full_article_body_sha256": "c5aaa4e52cf2fed7311fb1008553e6a05ac87e99727be1f4a692daf4d663e5de",
+      "id": "wt2_train_31747",
+      "input_ids_sha256": "7fec9bb814e713f94c3caa275ccd96ecce1ea60597782ce1602fe0f58f0e3078",
+      "row_start": 31747,
+      "selection_key": "1b39a0911e9c6ceadb35ba154f5800fb41b064655f9d2a61f08fba3fed6ad879",
+      "split": "train",
+      "text_sha256": "35395adc82893c08d05768f3c72b8619bcc476fb66f1debe55ab4c27670d16d8",
+      "title": "Missouri River"
+    },
+    {
+      "full_article_body_sha256": "3f99aee93d8b2ec5e61f2572434eb8f1ff04b5a9e7da83b87a09de5ed732961e",
+      "id": "wt2_train_24694",
+      "input_ids_sha256": "bb4347ceea093c262215d1629e0809b340a5ff0dd128d1ef3ba38f1b501ba7f6",
+      "row_start": 24694,
+      "selection_key": "1b726b9d0578905d62f84da8589331b81767f2e5eef45de2fd93087d12105aae",
+      "split": "train",
+      "text_sha256": "e74c1404f8f2afc1acfbd45dbf2ac310a8be4ece6cd7bbd32cdd0a1b9021996f",
+      "title": "New York State Route 38"
+    },
+    {
+      "full_article_body_sha256": "80eff189f0775a84c82543e833c81cdee24e378167be37c345ac542cd7556eaf",
+      "id": "wt2_train_35025",
+      "input_ids_sha256": "f9b1926fabca4b057d08225d6f7a9fae9de0b4d607a4814904b8244e0e5046de",
+      "row_start": 35025,
+      "selection_key": "1b8033369c9efe0c065b62a6db5761e90c2c0a89223e459a4dcdc216aa82679f",
+      "split": "train",
+      "text_sha256": "3c977b929ebe7c1e43e0fe76352a508d579c554dd46cd81c5d9c0497bc1c0465",
+      "title": "Thunderbirds ( TV series )"
+    },
+    {
+      "full_article_body_sha256": "d5fc6f320ed16a1850e9fa01442d051fe243abe9ada17b09ac5f6048f2a2d06e",
+      "id": "wt2_train_33562",
+      "input_ids_sha256": "40ed550c1a6c87d7119150db5441e6378cf5483bec6a602c9dde30620e626aa0",
+      "row_start": 33562,
+      "selection_key": "1bfefa7e2625cdd0f14670f8b65a4bf3ab1e26df8c9548ab1c2cf31d2c5dc7dd",
+      "split": "train",
+      "text_sha256": "b6327198bf9733eda02ff766585781d3b54262248cdf618fe9c1c21e3fadef85",
+      "title": "Ace Attorney"
+    },
+    {
+      "full_article_body_sha256": "9aaec9a7693a1fa8c90544f39747e76039d4d06faf77a38a5c692859f5ba1389",
+      "id": "wt2_train_27037",
+      "input_ids_sha256": "4724121038186f9c2af16a4fbb79d80cf906ee085fe263e582d6bb84145c9b50",
+      "row_start": 27037,
+      "selection_key": "1c2ad632053bf7b93019a838eb32f9102287ed89de18aeb13c94c5f5fd4ed02e",
+      "split": "train",
+      "text_sha256": "9aaec9a7693a1fa8c90544f39747e76039d4d06faf77a38a5c692859f5ba1389",
+      "title": "Spanish Hill"
+    },
+    {
+      "full_article_body_sha256": "4e06f6081412494d623469f42e26bf8f3433cf2fc41b127d50ea36815f1c069f",
+      "id": "wt2_train_06968",
+      "input_ids_sha256": "77c2ec3cbdf880a2f41346b8a6d17b131a57138a956e520add68ce6c38751491",
+      "row_start": 6968,
+      "selection_key": "1c331283bac281520fe8f25a34c74f4ac446d45ecc48dd454b76eed8d399ebbe",
+      "split": "train",
+      "text_sha256": "4e06f6081412494d623469f42e26bf8f3433cf2fc41b127d50ea36815f1c069f",
+      "title": "Sandwich Day"
+    },
+    {
+      "full_article_body_sha256": "837f5d0545ec1bd09eaafdba6078b69a39559ebd32b587dad2c5c1cfaa554937",
+      "id": "wt2_train_24003",
+      "input_ids_sha256": "eadbdc70656d549ab7e1d503c2ab104eae6c2ac6f75bb1f77c32026a75246801",
+      "row_start": 24003,
+      "selection_key": "1c93b93094cce6367066b522e3310b7969464b2b9f4eb98dcb8ef5d3f5daa0fc",
+      "split": "train",
+      "text_sha256": "eafb0b0823863b46b5d6836f18567c2f70c604f2a03effb73306e6c672c0d3cc",
+      "title": "The One I Love ( manga )"
+    },
+    {
+      "full_article_body_sha256": "5d203680bcf1ff3f20ecf1423ff30fcad0065145bb2f83c81a52f5578a249b14",
+      "id": "wt2_train_17808",
+      "input_ids_sha256": "0e034bf79e4fa36f5165328f23dd555c4d48bf39b866f5b80a5cfaf4f252a98d",
+      "row_start": 17808,
+      "selection_key": "1cfeec67bc7fd9444c2e3d107d4016af3e167516089f693f92f187f3c7a019bf",
+      "split": "test",
+      "text_sha256": "5d203680bcf1ff3f20ecf1423ff30fcad0065145bb2f83c81a52f5578a249b14",
+      "title": "The Son Also Draws"
+    },
+    {
+      "full_article_body_sha256": "af66d36c93b1eddb25bb1bc846771430ee251ce199567edc7d4f0d0726f7664e",
+      "id": "wt2_train_22925",
+      "input_ids_sha256": "822a5ef682a265cafba4a7160153af36408279cc2f6547a0748e190258f221ef",
+      "row_start": 22925,
+      "selection_key": "1d29fe36fb91107566de7f22483ebb941ce2237129c1598db818452ad9ae0362",
+      "split": "test",
+      "text_sha256": "af66d36c93b1eddb25bb1bc846771430ee251ce199567edc7d4f0d0726f7664e",
+      "title": "Mark Stockwell"
+    },
+    {
+      "full_article_body_sha256": "0ae7fd64fad296a970529b7a51195dac7a8bc6c11cc0f86f03363ec5e78acf0d",
+      "id": "wt2_train_02487",
+      "input_ids_sha256": "c6965d44e430e9e3fe0075c55a9fb5ec230af3b496dbc8efef07f2308488e052",
+      "row_start": 2487,
+      "selection_key": "1d90c6b2128b222d06e28924f15625d6ba60b9470d244e3941cee5a8cca5ce35",
+      "split": "test",
+      "text_sha256": "a56ff6a8d59bc762d60bc322be126c33c7f53b7f44526c82ddf14466571e232a",
+      "title": "Adam Stansfield"
+    },
+    {
+      "full_article_body_sha256": "1699c439431daae37db3ddc756f3cabfff104c7b33dcddfd97d54611d2c96188",
+      "id": "wt2_train_01633",
+      "input_ids_sha256": "07ca95ebcb70e2cf749096ad344d18550630728c42cf874895a493f36c0f01f1",
+      "row_start": 1633,
+      "selection_key": "1f475f46ba3754e547dbd0c408feec5ef9b4f3e12889b57ca2685b7a9675b61e",
+      "split": "test",
+      "text_sha256": "1699c439431daae37db3ddc756f3cabfff104c7b33dcddfd97d54611d2c96188",
+      "title": "1806 Great Coastal hurricane"
+    },
+    {
+      "full_article_body_sha256": "a39f4ac6f9024bcd9fa899280ae571e10b100985601e67b1c317955769738698",
+      "id": "wt2_train_10767",
+      "input_ids_sha256": "ce04f98de2e806ebd5724312fb2e9931d06b9400aa8897e2774000f4c0754d0a",
+      "row_start": 10767,
+      "selection_key": "1f8f6fcedf9c1e877ef418789d9efb4ab40b84a42527f3b04f080837f46055c5",
+      "split": "test",
+      "text_sha256": "6f0cae25faf144039f0a2340425dbf46837b855e7ea1cdf8f1e016c9a3098c4d",
+      "title": "The Magdalen Reading"
+    },
+    {
+      "full_article_body_sha256": "46153d6c4aee578b9b9e717d52463237020b4c7f92db0245c8f6869cf9e3454c",
+      "id": "wt2_train_19937",
+      "input_ids_sha256": "6c6dfe1737ee019f5e7486533d7ea95e2be5c10da94493cd9f0cf8863dd85fe6",
+      "row_start": 19937,
+      "selection_key": "20c33a49b2a1fad3cf5390e82151c1fdb0bf7f3d9d2b5db2c69e47bda24dac3e",
+      "split": "test",
+      "text_sha256": "f55701745e8ec5cca4b25202f05f13ed31a262e21619f450b228ebb6de2d971d",
+      "title": "2008 Bahrain Grand Prix"
+    },
+    {
+      "full_article_body_sha256": "77d1cf2af7af1d2b9b7979054f2070741d8ebd852d08769fe89a86e9ba188051",
+      "id": "wt2_train_29254",
+      "input_ids_sha256": "7f6e4c7d60b4045b15ad70824578cf5d217c71acae87f906280a47ad0f6ad87a",
+      "row_start": 29254,
+      "selection_key": "2122c6ba02272d7440a95b16a10baeef14dbc43ec3fbd387d6f9109b6b2283b4",
+      "split": "test",
+      "text_sha256": "d602d24fc2cfab5e2c3bf34ec30f51f4b22f5408c542f1b2ec71af59a2db435f",
+      "title": "Hannah Primrose , Countess of Rosebery"
+    },
+    {
+      "full_article_body_sha256": "fc2d678790d2152bc3eed0061015763589d14a0caaee0f2b8fa488afe282b49d",
+      "id": "wt2_train_31269",
+      "input_ids_sha256": "6a7a05468fa62fb58d7067e162bc29853327a0d308be23aac128ea7d7ea74296",
+      "row_start": 31269,
+      "selection_key": "212b388bcb2f2c630638ca449341e51e04858d8c00ad808d7e27d4c287d89af2",
+      "split": "test",
+      "text_sha256": "b64544941dace2811b10df80433a86065c3499680025b4057fec466c5fbe9aeb",
+      "title": "Until the Whole World Hears"
+    },
+    {
+      "full_article_body_sha256": "a55828914b26f719cfd998a38ca72c6b90654efe6616fc024ec58dce4f30a965",
+      "id": "wt2_train_08729",
+      "input_ids_sha256": "9cb5a3a3c20048c4324119525907e62fb33371bcda2e3aa4caa46d8d70944ec7",
+      "row_start": 8729,
+      "selection_key": "2135b25cc19cfb285ebd82c4c01b82e9ed13f4a0ed2a9ef117e9ccd45ad698d1",
+      "split": "test",
+      "text_sha256": "ed9da5ae56684f88dc33d3c934bb8e5c31f4bc98647b3d5933c23b1d40207fd3",
+      "title": "Leslie Andrew"
+    },
+    {
+      "full_article_body_sha256": "d6a0e8e7da61ee3b968dfd5f85cf3feb1ca37aec539ee448620ba53fff4bd8db",
+      "id": "wt2_train_22547",
+      "input_ids_sha256": "2458718d2e012d9592c62532eece76173cbb653db7d35bae441e2d8aadf0ad03",
+      "row_start": 22547,
+      "selection_key": "21aa0a3533fb8e7c7f4086d0f540cfc89375a8f8fce97ab7ff4929d19b37feed",
+      "split": "test",
+      "text_sha256": "093c92879ac9f8023d6a4c47c0045aed2082fe23e30f2cb3cef1caf16b084429",
+      "title": "Haifa"
+    },
+    {
+      "full_article_body_sha256": "265a6d4849dc29f036096c1eb4cfd5feacc555130c09d61277a58192fb9ee83b",
+      "id": "wt2_train_20025",
+      "input_ids_sha256": "7e3625605a1582ccf6b94c222f8eda34ec03522342fa36087db383cb4c5b60f5",
+      "row_start": 20025,
+      "selection_key": "226f34e9986168341752c3438ad06266a806d93ce35d2c32e297d0f7ec363118",
+      "split": "test",
+      "text_sha256": "265a6d4849dc29f036096c1eb4cfd5feacc555130c09d61277a58192fb9ee83b",
+      "title": "SS El Sol"
+    },
+    {
+      "full_article_body_sha256": "cb797da2f1b60115895d349169e88ca54c6caa475b245b2bd8702b49ffced62a",
+      "id": "wt2_train_32886",
+      "input_ids_sha256": "f7ddbebb271223a4dad07b20e3f0bddcf1cebb7d2fd58af834fc2f61dd7c9876",
+      "row_start": 32886,
+      "selection_key": "227c6d9446a5a72631fdc44039224f5b09db0e82fbabddaf4ef9928926e9c71e",
+      "split": "test",
+      "text_sha256": "a93abbe8f64e88a85f8a11774be0ad1cf12196a696e65b7a99fc09a77f308bcb",
+      "title": "Van Morrison : Too Late to Stop Now"
+    },
+    {
+      "full_article_body_sha256": "39c5dc13d74bf656c2fbce4166a7dc05bbd534ee110e1dd5afd9f64d60974937",
+      "id": "wt2_train_15450",
+      "input_ids_sha256": "d43585c2f5770c40dadc3bfae5753623151453e9fe152182fd1d117827361361",
+      "row_start": 15450,
+      "selection_key": "22b88869631a8f3f514ef50b0843254fc9d58ce2044794b47c0d93a31fe2114e",
+      "split": "test",
+      "text_sha256": "8653f655ac565c178ece702168433a4072db52eea72e3c95285be7aaa138ba4e",
+      "title": "Perfect Dark ( 2010 video game )"
+    },
+    {
+      "full_article_body_sha256": "5b76cf37cfc0d1d145e9417f2b5cdbe1d5cadf781af8ef4a9ef5ca7cc9cfac05",
+      "id": "wt2_train_29722",
+      "input_ids_sha256": "47d2fe69ec49a830ad4b0dc81d587aacb1f81488c2ec53a574646e4df0212083",
+      "row_start": 29722,
+      "selection_key": "2333a1637256d78a4b65b73006851313cc2d3a22b19f6605799aade57b3d3406",
+      "split": "test",
+      "text_sha256": "3a71bed1490c9d9d5a43c5515ac9ca30dbfdcd8c40d43ff3626bf78a326cb532",
+      "title": "Snow ( visual novel )"
+    },
+    {
+      "full_article_body_sha256": "7074baa78ad0f5dceb42f946137f5d302459fc0d320c0196f5fc0e503c598749",
+      "id": "wt2_train_00133",
+      "input_ids_sha256": "37d39d7b46aeef76cbc61a56d9f582cc1d279e568005b40aa752cafc0cca8980",
+      "row_start": 133,
+      "selection_key": "234382232b819782ce039f63ce2a2b5215041d7d0e4f75239b7c6f1343c5ca59",
+      "split": "test",
+      "text_sha256": "e34a97267593e1480648c64b8bd6b44aabe34fc393c7f4f5909d883f88d41a3b",
+      "title": "Cicely Mary Barker"
+    },
+    {
+      "full_article_body_sha256": "d426e5e5b731559239119b45fc63b88c729db29b51b2b56f62357d7a20aceabf",
+      "id": "wt2_train_13853",
+      "input_ids_sha256": "4a4b2af590532e2b004204dc4c3a92f92089fb9062d99ee38e36268f57acc043",
+      "row_start": 13853,
+      "selection_key": "24586ca9ba315af6ec403bea47682c351db8eec96c09f4c8c049e3cc07dab6b7",
+      "split": "test",
+      "text_sha256": "c5ecebe537021fc1f6743ff5ef6e966e86034e09a4e7686e218d5d84a8e9689f",
+      "title": "Carre 's Grammar School"
+    },
+    {
+      "full_article_body_sha256": "98b9b171e7a576c689cd7f428930079634cd2fb4321903048965d36093ebc4e2",
+      "id": "wt2_train_28894",
+      "input_ids_sha256": "cbd5dd118365846b6676e30b269b3a8fdb01a933e25538b59ae4dd8dd0f22677",
+      "row_start": 28894,
+      "selection_key": "2478b67fef7a3f78a6385bdef561aa80f2b287644e1d8ed3bfcb719b49de8e8b",
+      "split": "test",
+      "text_sha256": "6cd1c84bfe76adaf164820d59d1fd834e884581750c01f99555f58d64e0e2ccd",
+      "title": "Journey ( 2012 video game )"
+    },
+    {
+      "full_article_body_sha256": "e1e40b9b69f76f32893ea609e21b5ac202a7df93d4301f8c7969588fcf2efef8",
+      "id": "wt2_train_19180",
+      "input_ids_sha256": "4b96f799335fae0d970f9fc2fa84f36e43c264d0935171ecdc0b0d264d45d355",
+      "row_start": 19180,
+      "selection_key": "24c3284e62ce74a3c8fb9c6a426c6a9db7d3e99ad2d70131fcc946e1d03c6837",
+      "split": "test",
+      "text_sha256": "e1e40b9b69f76f32893ea609e21b5ac202a7df93d4301f8c7969588fcf2efef8",
+      "title": "Berhtwald"
+    },
+    {
+      "full_article_body_sha256": "5cba8205c36538f2df8f5c8ff13937655adb509773feb689737b18dd93d5dc36",
+      "id": "wt2_train_23082",
+      "input_ids_sha256": "8af43374be5f68b1851e6a9ad59366b40250ef86a25aac39a2500d22e97dc03b",
+      "row_start": 23082,
+      "selection_key": "24fbe1e8ac8d1ee29cbf1aee5f6cbc36fa7d500a8ae294bd56e76dacbe2425da",
+      "split": "test",
+      "text_sha256": "0800a52abe1bb181769f176564e10f8986201215f7b3306fc19ad080a81372ec",
+      "title": "True Blue ( Madonna song )"
+    },
+    {
+      "full_article_body_sha256": "f1e501697843480e5786d224c7d08d1979177c8e24929955f48810533d849eee",
+      "id": "wt2_train_03640",
+      "input_ids_sha256": "62bcd4739908f2f05b25176a5d2d72578ef9edf02dab8fd07383b8691308d570",
+      "row_start": 3640,
+      "selection_key": "25380096e6726830a9de78bd951af66eda5870923043408998bce202e1d73530",
+      "split": "test",
+      "text_sha256": "16949bc703cbacb93e7d89545528f6067e554120f8080a86cb105a26bfdf406a",
+      "title": "Saint Leonard Catholic Church ( Madison , Nebraska )"
+    },
+    {
+      "full_article_body_sha256": "8c7762426308d1e0ef9978c72566430993e619403e677f45d5c83730bc7e8519",
+      "id": "wt2_train_28936",
+      "input_ids_sha256": "18fd43590ff894571f8b4357e0ab2f5633792276ad1b5cff9aea8761b537b29c",
+      "row_start": 28936,
+      "selection_key": "262d40895f2c53076f2d41a2fb029b54d58e6ef68bd208e8c7d3464ca7da905c",
+      "split": "test",
+      "text_sha256": "29769b758c48eaace0e78f35c0668e528d2d95ed01a4686ee40a750f0011845c",
+      "title": "Gold Beach"
+    },
+    {
+      "full_article_body_sha256": "77ac965415d55254b311c89f0e1e44bc573b14e0c473777d73b1d296c3a88538",
+      "id": "wt2_train_03475",
+      "input_ids_sha256": "597258c06be974132a241f5596df57f2dd9bbf0b101f4bcf1b24a7d3bd7886ed",
+      "row_start": 3475,
+      "selection_key": "269c01ad6593f6559b50cbdabac45d4e05bbe838638ff8a33973151828fbf1d8",
+      "split": "test",
+      "text_sha256": "6242e224b72d5b0c722bf7ce148e60f7e34e18e2420cc2e936d7987d8a0058ec",
+      "title": "Joe Nathan"
+    },
+    {
+      "full_article_body_sha256": "d1914383ab99e7167e52b41daf7719e02825cbcd2ce81172aff02b227b07fc00",
+      "id": "wt2_train_09318",
+      "input_ids_sha256": "a24ab0f327dd66e1e7d8b409218dabbb193c915807eeb0372893ac2c485bb913",
+      "row_start": 9318,
+      "selection_key": "26b5a9126f3ba1c1336b8e2e94fd32c3462f5722d096c03360bea7b7448caa74",
+      "split": "test",
+      "text_sha256": "0d0282558c51c1a588ef8eb8f5c7a5f855f92a43cf2e8c05e0157d2326683976",
+      "title": "You Only Live Twice ( film )"
+    },
+    {
+      "full_article_body_sha256": "c9d864154dd0b37f9a01905cb91dd702b2717f4edaf13a0b01b8dde043172f50",
+      "id": "wt2_train_12807",
+      "input_ids_sha256": "2c21012d79bbb4afb6ce89e4a7193c54718b538fb428407c0b8294105dd79533",
+      "row_start": 12807,
+      "selection_key": "26e38f172fcb2a09bacd7c86faecd0ca756c957719a8d7672caa0a6e19ae5ae8",
+      "split": "test",
+      "text_sha256": "52998cf34d7e7aa42ab79de96c7cf0d0d81e6ec467e477634e7c57fec5880847",
+      "title": "Mycena galericulata"
+    },
+    {
+      "full_article_body_sha256": "3bb60a2369c2796cedee1efc0895ad088ecfea969792103ca5b98e24917b9132",
+      "id": "wt2_train_10411",
+      "input_ids_sha256": "980137670f2e90fd3e1fbb22e9b0ec16b1285a02b29944b5fb3688c83b429085",
+      "row_start": 10411,
+      "selection_key": "278d5bfaf391e8cb5cd2ff9517c3c6b69bf8ca099b09cb069e6d1234ded2abf6",
+      "split": "test",
+      "text_sha256": "3bb60a2369c2796cedee1efc0895ad088ecfea969792103ca5b98e24917b9132",
+      "title": "The Food Album"
+    },
+    {
+      "full_article_body_sha256": "e78e81654b902b818fd279e257cd1f8a47a1d21fca9c1980cf74b8bb02379b5d",
+      "id": "wt2_train_01380",
+      "input_ids_sha256": "2c316a406a4b0a58fd2f7e05141456096dbc42d4c7c8405e6828c99a7aaad7fb",
+      "row_start": 1380,
+      "selection_key": "2804b8b213f704e7f3462fb2ff6bdfbb31d88cd96c9d98b3c7f61a912a1151d7",
+      "split": "test",
+      "text_sha256": "e78e81654b902b818fd279e257cd1f8a47a1d21fca9c1980cf74b8bb02379b5d",
+      "title": "WASP @-@ 44"
+    },
+    {
+      "full_article_body_sha256": "e9aa7c92a3032d4912a7767b09f84f804d9d3b650c2fe93dfb6491eec6307dc9",
+      "id": "wt2_train_15577",
+      "input_ids_sha256": "4e1d60bdf9623f42314c8fd96715ca778e9f5749f85698d105414c24f39c56f5",
+      "row_start": 15577,
+      "selection_key": "28a38d995b87aa485066e62b149488359a234d61f3e19d54df648045a8c49bec",
+      "split": "test",
+      "text_sha256": "9c011441a5a2e76ef459c8f9deefbfd2256e0a3cf830aee231a5411105f96056",
+      "title": "Hurricane Dot ( 1959 )"
+    },
+    {
+      "full_article_body_sha256": "f2a36354db97cd1d44b33795d893452a80567b5a89453981fa0731a1f097cd2e",
+      "id": "wt2_train_31559",
+      "input_ids_sha256": "f31c11fb85b3e8f452b48898f47e0484aeadef28b645f7ec445c0a4317bff0d9",
+      "row_start": 31559,
+      "selection_key": "28b360a733c619e491f3b18f7c719e10bbc6b16795c1e172a4219cb6dada17c1",
+      "split": "test",
+      "text_sha256": "467c325fa3a0867ad784bdc8c77029182e61abe9ebcf6175cbed7012f2fdf98b",
+      "title": "Florida Atlantic University"
+    },
+    {
+      "full_article_body_sha256": "d5e1ea5c72021b40d2e45682262d81078e747a321ca8542d18f7b0f712e3bae8",
+      "id": "wt2_train_29998",
+      "input_ids_sha256": "66c537037e60d5505ecd4c0d4b7e36789be3ef1db50174c05a198417db8d7fa7",
+      "row_start": 29998,
+      "selection_key": "290aedcb8b818b596d7c14b4fd1191cab202abfb8ed911e676fa142d5b0deed1",
+      "split": "test",
+      "text_sha256": "d5e1ea5c72021b40d2e45682262d81078e747a321ca8542d18f7b0f712e3bae8",
+      "title": "Le souper de Beaucaire"
+    },
+    {
+      "full_article_body_sha256": "dfe5df0a5d5e04a14cb407b8e3bf72a9e6acae3624ecf76419f329a15aad6028",
+      "id": "wt2_train_15704",
+      "input_ids_sha256": "078942a8db9909a4ba536349805c0ed7e1a870dd2fbfcb3524d47625fb934cb2",
+      "row_start": 15704,
+      "selection_key": "2917944e4ff464be0033017d40a0c1a6a4c487ac5f1f95f2d4081ae791598872",
+      "split": "test",
+      "text_sha256": "a2cf89d8b14c07a71edda8b8fdc7cdd483897bb71820228aa9d35363510a5ef4",
+      "title": "George N. Briggs"
+    },
+    {
+      "full_article_body_sha256": "b27ecbccd2850a26efe0ff8ed96f1ba74d2261aad95ec4f35676ef8cc4563c39",
+      "id": "wt2_train_16779",
+      "input_ids_sha256": "24dea973ccbcba210c07dfb7c7308a4ee329733f743febdbfb7c683fe01f15b1",
+      "row_start": 16779,
+      "selection_key": "29d3861aae03b95f7fac6b40cd95f2f26fdcef5f88ab8f3e3e76560fe8042503",
+      "split": "test",
+      "text_sha256": "b27ecbccd2850a26efe0ff8ed96f1ba74d2261aad95ec4f35676ef8cc4563c39",
+      "title": "Lágrimas Cálidas"
+    },
+    {
+      "full_article_body_sha256": "33eb6e9e8862fcd88da6db9c52335ac288891cd5bfbaa505fc8a7bb5dbf5838c",
+      "id": "wt2_train_01710",
+      "input_ids_sha256": "9c0599001293f9b062c9ae08d01ec54b7a50274bd812403455fd494191163246",
+      "row_start": 1710,
+      "selection_key": "2a5afdbb9ac722cfc807d8977653a59f0af7c40dc1323db8378b42dc5fc49cb1",
+      "split": "test",
+      "text_sha256": "2e9265d14629fbfdb0f65e73421b000c6120b8e00ae2b8626220c1d688dc7260",
+      "title": "Michael Jordan"
+    },
+    {
+      "full_article_body_sha256": "f31560e2a6c899b5119af1b5f3c1df1fafde11bc116263ef398baf1d5c45eea7",
+      "id": "wt2_train_02270",
+      "input_ids_sha256": "6336085e22812896fe3129a4d6627dacbe459555b0826632a9bb67e57ce2d90a",
+      "row_start": 2270,
+      "selection_key": "2b2e4a23f67337e70467240a34be2f3988346e76035610130885dc0652370e6f",
+      "split": "test",
+      "text_sha256": "e8ac477f7ff282d096fde6d6a99a78244e9cf9330ea3c79c5a304485124c2c7e",
+      "title": "Wrapped in Red"
+    },
+    {
+      "full_article_body_sha256": "ca208316e08c96088c293ec3188ae3168f8290f1863a42df6f90e3fd9a3ef264",
+      "id": "wt2_train_24039",
+      "input_ids_sha256": "7c756cb6345dc310c06ba403a3e2390dae15d3c531c2c03f3ffafa1b4c660ffc",
+      "row_start": 24039,
+      "selection_key": "2b91be422b1c0eb4d39ccac1fadc9c09a5570edd4642f329cb11ed379e792bac",
+      "split": "test",
+      "text_sha256": "ca208316e08c96088c293ec3188ae3168f8290f1863a42df6f90e3fd9a3ef264",
+      "title": "Hurricane Abby ( 1960 )"
+    },
+    {
+      "full_article_body_sha256": "79e40695e115635926766fe4a5e6cb71a5f699f6215891457982af39008e88ad",
+      "id": "wt2_train_21754",
+      "input_ids_sha256": "b1791094634da97142854a311e3a9d952cec3df1ae0c0c432a64f127bf881fd3",
+      "row_start": 21754,
+      "selection_key": "2cc69540ebaa2f6501ddb63add2350c44f30a0e6b2cf2afed9ffe91936068aa7",
+      "split": "test",
+      "text_sha256": "7e3869a868b6a7480df269efe7478a1a132f61c430b0e806c08423d2c3fac979",
+      "title": "Stanley Price Weir"
+    },
+    {
+      "full_article_body_sha256": "95b31acc39789df73184389b9b0b40e82d496e6dc6ac9e2ffc5ce59aa7137708",
+      "id": "wt2_train_13125",
+      "input_ids_sha256": "3ce3a87dd86f3a7f36115124eaf41762ecb87a5a83a16aeda2c2d3696039961f",
+      "row_start": 13125,
+      "selection_key": "2d3239e152165e861b47ea85a9fbc6461e543c367a1aa5151cf2352c062baf8f",
+      "split": "test",
+      "text_sha256": "95b31acc39789df73184389b9b0b40e82d496e6dc6ac9e2ffc5ce59aa7137708",
+      "title": "Otra Nota"
+    },
+    {
+      "full_article_body_sha256": "7f753229f8416a4a06cbfd5eff5da67ce22390a115f1dad42a3af20e68337774",
+      "id": "wt2_train_12928",
+      "input_ids_sha256": "64947cc3668236a9d372c5ec8abbe4e0f30a029fad183c76353e472ab3f5f119",
+      "row_start": 12928,
+      "selection_key": "2d8939dcf4a550041a7c65ce155d1acf68c82dbc15599ba3b7254a505139e178",
+      "split": "test",
+      "text_sha256": "7f753229f8416a4a06cbfd5eff5da67ce22390a115f1dad42a3af20e68337774",
+      "title": "Gertrude Barrows Bennett"
+    },
+    {
+      "full_article_body_sha256": "c3e19cc9d7d998df19dc7f1c8deb18db66f114abbcd9312cf4e2f53575fb04f2",
+      "id": "wt2_train_20484",
+      "input_ids_sha256": "96dbb89af2437d633a4e8950a623b9f29ff3121b39976a55f9fde0619cf98a7c",
+      "row_start": 20484,
+      "selection_key": "2de5d709643358028b846d5ded960f6d57eb5150ccb45d3564b8a74cf4d761cc",
+      "split": "test",
+      "text_sha256": "07fabaa812e8f9c4c7f1d5a566271009ead63551663b4164b8eb2ae44d8f2f7a",
+      "title": "Portrait of Monsieur Bertin"
+    },
+    {
+      "full_article_body_sha256": "be37974a3ca06fca092fece6813ee708668c859a74c5314bb4ed2d3a8840bdd1",
+      "id": "wt2_train_04818",
+      "input_ids_sha256": "50a0bffa729e50c9cc6e098676c9601e0446fbf33d4ccaf4032b4d017eea2864",
+      "row_start": 4818,
+      "selection_key": "2f03612567a1f9c019456f4ea0abe5461a543be16165376ea7f21b347befc27f",
+      "split": "test",
+      "text_sha256": "be37974a3ca06fca092fece6813ee708668c859a74c5314bb4ed2d3a8840bdd1",
+      "title": "The Boat Race 1900"
+    },
+    {
+      "full_article_body_sha256": "c68510d6c9f5c5fad4679ef880a4392d11ca23fd1b256b4462bb5564649b62e8",
+      "id": "wt2_train_26292",
+      "input_ids_sha256": "9e0c040da14d5fc0ae1638dd2d5efb810bff0f7e2aa9ed65f5b9be57fbce83a8",
+      "row_start": 26292,
+      "selection_key": "2f5e1f1b6d960f9e8cae59e487c3d14f4e5f7db70a4503127c9e95e85169838b",
+      "split": "test",
+      "text_sha256": "28fd5920f8f310c1f26715f89064d848cdf9df5232b2a52e4a4c1f05feddd1f0",
+      "title": "1998 National League Wild Card tie @-@ breaker game"
+    },
+    {
+      "full_article_body_sha256": "db071621ae9a060f4792c1c57deeb4b3296654eb2b0a006244c4075eaf1a4834",
+      "id": "wt2_train_32994",
+      "input_ids_sha256": "d12898179ac055fe0da059e7ff7ed7e95ecbc376a4a34831e89b6014a01d1920",
+      "row_start": 32994,
+      "selection_key": "2fdee21f6647fff6f71d1df2757a8161abc4438e6cde137c7a870c33b160235d",
+      "split": "test",
+      "text_sha256": "20b74d8b284f2e04d87ebf0c544a601de57b92ba9d333c6d662d6170c252ff0f",
+      "title": "Max Mosley"
+    },
+    {
+      "full_article_body_sha256": "e863785d52167440ecb37e1236212fa87f642f19be325c29e95449c76a11dd7f",
+      "id": "wt2_train_10010",
+      "input_ids_sha256": "c87d1cfced14c710b223b3b59c21855e650c3fcd89fa394f943c03f16a56d43c",
+      "row_start": 10010,
+      "selection_key": "3001d5dbe82f3d90ab1da63996f581a6dc52ddeb6975e32b048ad5357614d791",
+      "split": "test",
+      "text_sha256": "4382ef3246ccb1de727c8ce13d603033baec8f5deee6dbe9d89177420b0fe75a",
+      "title": "Harold Innis"
+    },
+    {
+      "full_article_body_sha256": "7ef5cc83114af6c34b57f6a65e888ddac84eb7dcc78258a9bd2604d87d72390c",
+      "id": "wt2_train_13613",
+      "input_ids_sha256": "e0ed42eff23921f7ccd3d8c8804881c0391089fe1c5ac299bff02fa71ab4861a",
+      "row_start": 13613,
+      "selection_key": "30ed4696fb4b5c9346d32dd5899e14132dd2f7966def2038a8e96a727a783225",
+      "split": "test",
+      "text_sha256": "7ef5cc83114af6c34b57f6a65e888ddac84eb7dcc78258a9bd2604d87d72390c",
+      "title": "World War I Memorial ( East Providence , Rhode Island )"
+    },
+    {
+      "full_article_body_sha256": "b9cb0dd19a412cb0ec2e7a8b3334adf883d4a1dc921f3fc1d9066159a8858a45",
+      "id": "wt2_train_24064",
+      "input_ids_sha256": "56ec21d67d71ec63a0905beda3998160e6207781f56feed3936bd4753ca0ba90",
+      "row_start": 24064,
+      "selection_key": "30ff3a0b5dbf02f4faedea5728a4d95230e3e4daf16a6326689515afd2907837",
+      "split": "test",
+      "text_sha256": "11d41b2af54020753a7886727a41cb7b03da6e424cf3bf9f555cae31c0bd4577",
+      "title": "2010 Alabama Crimson Tide football team"
+    },
+    {
+      "full_article_body_sha256": "d93b75b25208054784670083be3e6b5f0c934a202555a02a717f84e6e9075382",
+      "id": "wt2_train_01038",
+      "input_ids_sha256": "c41d0a1615794dd251266568913a1f7d98efbe386ee10cd348d9446b4becf8cb",
+      "row_start": 1038,
+      "selection_key": "31122e91e9b7a83233834ac7c0901af8a9def0e5c7e88f5a7f4ef92b584ef8f4",
+      "split": "test",
+      "text_sha256": "e576fb2d334e6c0dd20407f79ecae4137c46cfca6645d6d61b3add02e71ba71d",
+      "title": "Johnson – Corey – Chaykovsky reaction"
+    },
+    {
+      "full_article_body_sha256": "5c1902fc6ca36665bbfbec4e95647cdb7db79f8ae1d73e79a38a5643ca4d6771",
+      "id": "wt2_train_05440",
+      "input_ids_sha256": "789f24fb1a59f31ab47036457aabfbda66b940f6c14317ebf6fc2ba78c41cd6a",
+      "row_start": 5440,
+      "selection_key": "3130d11003f035500530897f32567a663d81d1ba3a9403097440c64c40c1ae88",
+      "split": "test",
+      "text_sha256": "b74be2801686e9b6811f7902c6fa4ebd7a3aa164d3f711734567676c16e57fa6",
+      "title": "Zhou Tong ( archer )"
+    },
+    {
+      "full_article_body_sha256": "b67a2a3cde8204f0b393d0a63c955699157d132d3e2458dddd181d833e68ccd3",
+      "id": "wt2_train_14065",
+      "input_ids_sha256": "1459e46525a107840580ced8d231749d55ae4e0933a4d4ddadcf05d02a8027d6",
+      "row_start": 14065,
+      "selection_key": "31ed6bd6c56d4aa398516a30d8dca7d6e5b22b4bcc982cb34a61036bc73fe7b6",
+      "split": "test",
+      "text_sha256": "128557b0d24daea213593e17022706505cd434e95361ccfb0f0ecd4668cd84ea",
+      "title": "In Bloom"
+    },
+    {
+      "full_article_body_sha256": "7915577fb466a904c60ecdaea08fac2877802afd412842aa81de08ed7b82d3dc",
+      "id": "wt2_train_03926",
+      "input_ids_sha256": "e2d24064d1771ef9fed6257751ab167cafa8e94e984ed0c641c95bef0ed1ba77",
+      "row_start": 3926,
+      "selection_key": "320566e4f28710036d8076255dd618e93301ff836d33cf883daaba683a6ad9b2",
+      "split": "test",
+      "text_sha256": "7915577fb466a904c60ecdaea08fac2877802afd412842aa81de08ed7b82d3dc",
+      "title": "Central Area Command ( RAAF )"
+    },
+    {
+      "full_article_body_sha256": "1dec2060661a328a8fbeb74b9af277614a97b08e662f1477446cfe4bebd874fe",
+      "id": "wt2_train_27461",
+      "input_ids_sha256": "5e57e3c8cfb098b113e95f986b2035769884790125ea2d95035e9815b258fb44",
+      "row_start": 27461,
+      "selection_key": "32a7188503183af55ced29976967cb9af05fcee06e3c97c4db34367de04f0b97",
+      "split": "test",
+      "text_sha256": "18f5bbb7a07a73503f7f80f89685cbedda278668298e1c82d0ae843cdd192fc3",
+      "title": "Mitsuyo Maeda"
+    },
+    {
+      "full_article_body_sha256": "8f1ed052fe6c2e020dc0040dd249642d67810caf5f04beadd12d533397c68616",
+      "id": "wt2_train_14599",
+      "input_ids_sha256": "a88f40f2323587f45cf32610540ca58f30587d999baf22d7819506f2652bc831",
+      "row_start": 14599,
+      "selection_key": "32b7cdeed49317e50c1efb02080c70c3eabb3b416b5cbf950a88832c5ef46324",
+      "split": "test",
+      "text_sha256": "8f1ed052fe6c2e020dc0040dd249642d67810caf5f04beadd12d533397c68616",
+      "title": "Superman : Escape from Krypton"
+    },
+    {
+      "full_article_body_sha256": "a597218c8d6bbd78a206d701e0441b0c184115403dfd6fd3a5d1e20dbddce635",
+      "id": "wt2_train_33631",
+      "input_ids_sha256": "d4351234b99386813217279bf9b7ee84e92bae5ccf6a854b0c7d773bacdb2324",
+      "row_start": 33631,
+      "selection_key": "32f26d4c973f8536495f7265b531e37b116e4de29f7ee2b826bc48b592c3e99d",
+      "split": "test",
+      "text_sha256": "8dcc14bc9ce474bbcffb8f85eda913431d06b260878370c3888d25e3b1ad1b86",
+      "title": "Cambodian Campaign"
+    },
+    {
+      "full_article_body_sha256": "72a322c0a699f4e79967f8e9f56abe068dfdb7b066411865e34d542e880fc1ef",
+      "id": "wt2_train_11377",
+      "input_ids_sha256": "d1cac6f670d682058aeffa7ce5562502839c86bf5b1beff4aeda61c2a9858041",
+      "row_start": 11377,
+      "selection_key": "358d4a4ff6c141669dd1d0dc0b7986b13e5dd40c5c85a546701d92f8816a7c2f",
+      "split": "test",
+      "text_sha256": "72a322c0a699f4e79967f8e9f56abe068dfdb7b066411865e34d542e880fc1ef",
+      "title": "California State Route 243"
+    },
+    {
+      "full_article_body_sha256": "2640aac2e3b941a554e92521e06189ca2a3903e714a3f3813dbf85a3050ad13d",
+      "id": "wt2_train_00976",
+      "input_ids_sha256": "af4d866e78199560465d86411e4b9bedf7c897c139e154e7682e62e84a26257e",
+      "row_start": 976,
+      "selection_key": "35d5a38f1cd629b98c1ab01c0399ec0febcda629423ab83c80ae771c353546e1",
+      "split": "test",
+      "text_sha256": "6795eb56ea6268f7c8e986f194b1ab984b5337756d00370ede288212a18395e6",
+      "title": "Gold dollar"
+    },
+    {
+      "full_article_body_sha256": "7be6c73a15be4af77a8630feaf988764ca1cf040673a36e45ffbaa95f9f050cb",
+      "id": "wt2_train_32153",
+      "input_ids_sha256": "b014d10a96af6799e68a09dae39bfdd548e04063292b28dff42928a8033b7b28",
+      "row_start": 32153,
+      "selection_key": "35d7cefdb53fd99cd6ca6c4618a3376c9d450231c6c3e944daef56f907d9092a",
+      "split": "test",
+      "text_sha256": "115d6993473d4ef45b1b3e42b5115163d21e66892249bc3a751228d0e4d45e6f",
+      "title": "I Am Unicorn"
+    },
+    {
+      "full_article_body_sha256": "0aad7e4e147744ef1e82bf015c9edaa14f12e0ca877b602c74a76a157f5722b3",
+      "id": "wt2_train_02733",
+      "input_ids_sha256": "0056acd8740c672ba603a166b7046418a86cc2fc61f3ade0e4844c729d3abee9",
+      "row_start": 2733,
+      "selection_key": "35e6175118ed808dc33e6e6cf56ea822c690215d9ddb279b7f63cf8c75dc3bdd",
+      "split": "test",
+      "text_sha256": "716cca225b2de1f7225fbd544da8581f6ec5751bf82344cc38f6bd4482e2471e",
+      "title": "Loose ( Nelly Furtado album )"
+    },
+    {
+      "full_article_body_sha256": "1e1f30bcf8dcbb2702b801f02ed169f8ac432c7fb373bd2181c1c76932cd980c",
+      "id": "wt2_train_32199",
+      "input_ids_sha256": "939f08827632ed6ec6ca0b222b476dd0f601320057dffe9752c5ab9fb489a63f",
+      "row_start": 32199,
+      "selection_key": "365c9e46c229006241fa089bd3c2059b40cebb8d7eb3f60c029ab26f206bf40d",
+      "split": "test",
+      "text_sha256": "f22813f264620c67aad11c20a6542dfca38d4ed29b9abb07075355efcb3f05df",
+      "title": "Galentine 's Day"
+    },
+    {
+      "full_article_body_sha256": "370ab0ebc785c3b40a02e1a241cf434099ef0e18dec74bee0506a5c64757e6d1",
+      "id": "wt2_train_08901",
+      "input_ids_sha256": "38ed6c25c8a28328aa34dd620142b62f5c14282351e5b9f5f39b55e9c8930ad2",
+      "row_start": 8901,
+      "selection_key": "36b57fb5b2da451ea286a10673eae0b7ecac40844fb77ca689343291b2511f3c",
+      "split": "test",
+      "text_sha256": "9f7d21784371f36255aa540a2e8e4df184c725ea48499c7c0eb02af3616a794f",
+      "title": "1940 Atlantic hurricane season"
+    },
+    {
+      "full_article_body_sha256": "194bb99ccd166faf18cea656c606eb66480f0764a71d3fe9046b4e98f8067774",
+      "id": "wt2_train_00051",
+      "input_ids_sha256": "e43aca2362ec45aaf6a5e86be183b8a947a0c82ba9e4401dbe9041f419001065",
+      "row_start": 51,
+      "selection_key": "379f2a8cc1b18e9903717c528aaaeb03ef6e9f70cc1612a6566ffc928036514b",
+      "split": "test",
+      "text_sha256": "da4d1d38464bad0a62344ca915fffe2832f0f27f1f0671f77e2eca3d666473fd",
+      "title": "Tower Building of the Little Rock Arsenal"
+    },
+    {
+      "full_article_body_sha256": "b399d0fc6cf9079f22c742f5fbc079040665cc92bb8a85abac50c73441a50a16",
+      "id": "wt2_train_06991",
+      "input_ids_sha256": "e1ceaf2382fb9245138b889e127e5edb55874c1a8c7479572953c02b772370d3",
+      "row_start": 6991,
+      "selection_key": "383dc7dc6d08884bb6365d9f363a962780a2c1eaf49bde15af4c32c9cfec94de",
+      "split": "test",
+      "text_sha256": "b399d0fc6cf9079f22c742f5fbc079040665cc92bb8a85abac50c73441a50a16",
+      "title": "Tiber Oil Field"
+    },
+    {
+      "full_article_body_sha256": "f57ee8439420c88f0df163689b751802410f9a1609791d806a1e24ad608d3d11",
+      "id": "wt2_train_30020",
+      "input_ids_sha256": "98969f6756249d04fbdc2b6b966db6db54a173e6d94d76b3be719079c7a24747",
+      "row_start": 30020,
+      "selection_key": "3860b4bc98587547f6f0c9aedec31258b0e02302a5ddf883e3cc4ea995d78f5d",
+      "split": "test",
+      "text_sha256": "93f5b477bb52cee50c1b04af14c4420248a72ba07dbb99f41ae4a1463e8b9511",
+      "title": "Jin – Song Wars"
+    },
+    {
+      "full_article_body_sha256": "8c30b9d563483db144a862c9c9e5b34781d46106b39f078fa47e797259f3edbd",
+      "id": "wt2_train_10831",
+      "input_ids_sha256": "24ed589fbd195eac0c5e943022d7785ba10623327266ed2d1406d7c81be9c15c",
+      "row_start": 10831,
+      "selection_key": "3875f4ff149cd38f349bbc059d47edc6a3366f3b2ae2d1e241aebd6da87632e7",
+      "split": "test",
+      "text_sha256": "c0469de925b053713d5f369b6616721f17f0a710aa78f2afde61a0ae0548a097",
+      "title": "Polka Party !"
+    },
+    {
+      "full_article_body_sha256": "be44bc1006e6048cb13083f62e7194f03f161557ceacfb567c74d519d36c1d7e",
+      "id": "wt2_train_31323",
+      "input_ids_sha256": "d1af42c3c55ec16f1ddd373c36c04743a4391a53888eda2064e848d0b60b5d05",
+      "row_start": 31323,
+      "selection_key": "394d6a732e652720b8a5c1bbe113cb2efa0cb88fcf280d0fef0ecb6ea1396cd4",
+      "split": "test",
+      "text_sha256": "9d5d61a3631d0cdd3e6084151f8ac3342070a37693d4b77174f566f31c322134",
+      "title": "Ceres ( dwarf planet )"
+    },
+    {
+      "full_article_body_sha256": "03de8172225fe98c8ae9f293e1c55a0de2183df0ef36ba002616ca095459c627",
+      "id": "wt2_train_29582",
+      "input_ids_sha256": "43cdf17cf50d1c61da2c205c22e4734247bf24e3e77cf46fe698402950768e38",
+      "row_start": 29582,
+      "selection_key": "396fff9d210b278be7207e42eebfaa0fca2b43bbad74ba1ecebfdfbc3e6f5e17",
+      "split": "test",
+      "text_sha256": "3d2ca6b83c10c39fbdfd17097f17974d11fb383336ca049ca97bdaf37dbb85b6",
+      "title": "Moment of Surrender"
+    },
+    {
+      "full_article_body_sha256": "3674726ea04a24cd1cafb07ce32462f161be8f009434f5e6d452a6d5baced02f",
+      "id": "wt2_train_12023",
+      "input_ids_sha256": "58b9b075b5436a720c012c6eb3d7454e171e954878f2539498b2f3ef4fd5e59b",
+      "row_start": 12023,
+      "selection_key": "39fe03770bb84d3e60c640bdd7bfb37ea0b57387e30b8ce20fe54f71fd5f558f",
+      "split": "test",
+      "text_sha256": "3674726ea04a24cd1cafb07ce32462f161be8f009434f5e6d452a6d5baced02f",
+      "title": "Hope Highway"
+    }
+  ],
+  "selected_articles": 128,
+  "source": {
+    "bytes": 6357543,
+    "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+    "url": "https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/train-00000-of-00001.parquet"
+  },
+  "split": "train",
+  "split_rule": "Hash order after P0/P1 and near-duplicate exclusions; first 64 train, next 64 test",
+  "test_articles": 64,
+  "text_rule": "Remove title and all heading rows; strip nonempty body rows; join with two newlines; first 8192 Unicode code points; first 512 GPT-2 tokens",
+  "token_rule": "No BOS/EOS/padding; position 0 is first body token",
+  "tokenizer": {
+    "bytes": 1355256,
+    "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "url": "https://huggingface.co/openai-community/gpt2/resolve/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer.json"
+  },
+  "tokens_per_article": 512,
+  "train_articles": 64
+}

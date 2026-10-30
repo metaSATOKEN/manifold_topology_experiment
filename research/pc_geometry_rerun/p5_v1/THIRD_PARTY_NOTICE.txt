@@ -1,0 +1,5 @@
+Historical extraction/plot sources and sample texts: Copyright 2026 Kentaro Sato, Apache License 2.0; LICENSE.txt included.
+Runtime isolation/process handling adapted from pc_geometry_rerun/p0_v2/p0_launch.py.
+Geometry diagnostics follow the fixed EDA-0004 definitions.
+This package executes only its current embedded sources. Historical sources are evidence text, not entry points.
+Model weights are downloaded by the user at execution and excluded from result archives.

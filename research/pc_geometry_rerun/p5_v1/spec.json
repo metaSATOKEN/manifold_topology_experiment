@@ -1,0 +1,63 @@
+{
+  "experiment": "EXP-0005",
+  "release": "pcgeom_p5_v1",
+  "seed": 20261031,
+  "points": [
+    "block06",
+    "block07",
+    "block12_preln",
+    "final_ln"
+  ],
+  "devices": [
+    "cpu",
+    "cuda"
+  ],
+  "conditions": [
+    "C0",
+    "C1",
+    "C4"
+  ],
+  "primary": {
+    "device": "cpu",
+    "point": "block07",
+    "condition": "C0"
+  },
+  "pins": {
+    "huggingface-hub": "0.36.0",
+    "numpy": "2.2.6",
+    "pip": "25.2",
+    "safetensors": "0.7.0",
+    "tokenizers": "0.22.2",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6"
+  },
+  "prepare_seconds": 1800,
+  "total_seconds": 2400,
+  "closure_seconds": 120,
+  "technical_resumes": 2,
+  "zip_limit": 300000000,
+  "run_limit_bytes": 134217728,
+  "initial_free_bytes": 16106127360,
+  "components": 8,
+  "attention": "eager",
+  "dtype": "float32",
+  "tf32": false,
+  "reference_pc1": {
+    "narrative": 0.961,
+    "technical": 0.966,
+    "repetitive": 0.976
+  },
+  "reference_pc2": {
+    "narrative": 0.0025,
+    "technical": 0.0024,
+    "repetitive": 0.0041
+  },
+  "reference_abs_tolerance": 0.005,
+  "occupancy_min": 0.8,
+  "max_gap_max": 0.1,
+  "max_pc1_share_max": 0.5,
+  "curve_q_min": 0.9,
+  "curve_gain_min": 0.01,
+  "cpu_gpu_rtol": 0.0001,
+  "cpu_gpu_atol": 0.0001
+}

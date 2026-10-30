@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/private/tmp/pcgeom_p1_design_env/bin/python",
+    "-u",
+    "research/pc_geometry_rerun/p1_v1/p1_verify.py",
+    "receipt",
+    "research/pc_geometry_rerun/receipts/98a3faf68004_p1_v1_final/pcgeom_p1_v1_98a3faf68004_FINAL_04cd3d.zip",
+    "--output",
+    "research/pc_geometry_rerun/receipts/98a3faf68004_p1_v1_final/receipt_verification.json"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 253.21528079360723,
+  "scope": "Saved observations only; no model inference",
+  "numpy": "2.2.6"
+}

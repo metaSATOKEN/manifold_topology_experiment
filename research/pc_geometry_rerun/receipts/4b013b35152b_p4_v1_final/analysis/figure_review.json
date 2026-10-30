@@ -1,0 +1,23 @@
+{
+  "checked_by": "same agent, direct image viewing",
+  "checks": "All four PNGs viewed: labels, legends, intervals, axes and footnotes legible; no clipping or data-obscuring overlaps.",
+  "figures": {
+    "01_primary_intervals.png": {
+      "sha256": "95689482b9a1cd771e17d6b82b5418d0fdd7fff54fbe5d9e9e0047ad52703fec",
+      "svg_sha256": "a5fce1db1415041c9fc23391673a71cddb7599491cbdee94e0e349b74d3cb6c0"
+    },
+    "02_geometry_first_token.png": {
+      "sha256": "88b8b2896d4c37d3aa0ea1d522b7ee8169dcae42084f71f42c572102d74b9969",
+      "svg_sha256": "8e9100dde8d5cb8b0cd174774203800488f726c5e414a839027f55fd647a0466"
+    },
+    "03_readout_sensitivity.png": {
+      "sha256": "46285437104f3073696953b2eae3b1ca83a550c767c5cc7e07554011d33204bd",
+      "svg_sha256": "6e37e0dea40a6949bca8b6c21a390253fa556aa7497cc1845a9ea639d3f46540"
+    },
+    "04_shared_variance.png": {
+      "sha256": "fb26ad72e0047a23acc3cd1b95d62be60eb15d523072161b52eecc9c7a457f7c",
+      "svg_sha256": "a3a94c407045a3318002d156e3bb6f57a71f998cdbdaa10f4844a8e3bcde15f1"
+    }
+  },
+  "status": "PASS"
+}

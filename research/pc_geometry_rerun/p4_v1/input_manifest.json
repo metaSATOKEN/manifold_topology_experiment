@@ -1,0 +1,656 @@
+{
+  "article_count": 629,
+  "configuration": "wikitext-2-raw-v1",
+  "dataset": "Salesforce/wikitext",
+  "excluded": [
+    {
+      "id": "wt2_train_14377",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_00913",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_32049",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_26292",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_00382",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_01633",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_18279",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13191",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_00799",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_00392",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_13811",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_17245",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_28850",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_08901",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_16067",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_14680",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_32153",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_10010",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13168",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_31360",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_21754",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13454",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_13496",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_00378",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_27839",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13428",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_13473",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_14065",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_34304",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_15378",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_19864",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_31747",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_30422",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13511",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_11334",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_27695",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_34964",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_04150",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13079",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_17914",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_30020",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13613",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_05295",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_29722",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_27461",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_05440",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_21482",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_01244",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_24355",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_20051",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_30341",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_07684",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_09103",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_17453",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_05264",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13217",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_32231",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_21131",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_26932",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_12023",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_01380",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_12341",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_27895",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_32295",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_01582",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_13399",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_00287",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_12841",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_11377",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_12928",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_08771",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_30631",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_00390",
+      "reason": "short_article"
+    },
+    {
+      "id": "wt2_train_17808",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_33830",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_31269",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_31323",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_02270",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_29998",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_06141",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_24003",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_03475",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_28067",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_29878",
+      "reason": "previous_article_or_title"
+    },
+    {
+      "id": "wt2_train_29356",
+      "reason": "previous_article_or_title"
+    }
+  ],
+  "model_inference_performed": false,
+  "old_article_ids": [
+    "wt2_train_00051",
+    "wt2_train_00133",
+    "wt2_train_00271",
+    "wt2_train_00287",
+    "wt2_train_00394",
+    "wt2_train_00433",
+    "wt2_train_00507",
+    "wt2_train_00748",
+    "wt2_train_00799",
+    "wt2_train_00913",
+    "wt2_train_00976",
+    "wt2_train_01038",
+    "wt2_train_01244",
+    "wt2_train_01274",
+    "wt2_train_01380",
+    "wt2_train_01582",
+    "wt2_train_01633",
+    "wt2_train_01690",
+    "wt2_train_01710",
+    "wt2_train_01856",
+    "wt2_train_01988",
+    "wt2_train_02270",
+    "wt2_train_02378",
+    "wt2_train_02487",
+    "wt2_train_02555",
+    "wt2_train_02733",
+    "wt2_train_02932",
+    "wt2_train_03128",
+    "wt2_train_03259",
+    "wt2_train_03475",
+    "wt2_train_03640",
+    "wt2_train_03926",
+    "wt2_train_04150",
+    "wt2_train_04199",
+    "wt2_train_04818",
+    "wt2_train_05241",
+    "wt2_train_05264",
+    "wt2_train_05295",
+    "wt2_train_05440",
+    "wt2_train_05713",
+    "wt2_train_05885",
+    "wt2_train_06104",
+    "wt2_train_06141",
+    "wt2_train_06307",
+    "wt2_train_06699",
+    "wt2_train_06821",
+    "wt2_train_06939",
+    "wt2_train_06968",
+    "wt2_train_06991",
+    "wt2_train_07198",
+    "wt2_train_07684",
+    "wt2_train_07877",
+    "wt2_train_08125",
+    "wt2_train_08173",
+    "wt2_train_08213",
+    "wt2_train_08251",
+    "wt2_train_08342",
+    "wt2_train_08729",
+    "wt2_train_08771",
+    "wt2_train_08901",
+    "wt2_train_09103",
+    "wt2_train_09133",
+    "wt2_train_09318",
+    "wt2_train_09402",
+    "wt2_train_09475",
+    "wt2_train_09703",
+    "wt2_train_09935",
+    "wt2_train_10010",
+    "wt2_train_10143",
+    "wt2_train_10258",
+    "wt2_train_10340",
+    "wt2_train_10411",
+    "wt2_train_10603",
+    "wt2_train_10767",
+    "wt2_train_10809",
+    "wt2_train_10831",
+    "wt2_train_10887",
+    "wt2_train_10968",
+    "wt2_train_11106",
+    "wt2_train_11166",
+    "wt2_train_11220",
+    "wt2_train_11296",
+    "wt2_train_11334",
+    "wt2_train_11377",
+    "wt2_train_12023",
+    "wt2_train_12311",
+    "wt2_train_12341",
+    "wt2_train_12618",
+    "wt2_train_12807",
+    "wt2_train_12841",
+    "wt2_train_12877",
+    "wt2_train_12928",
+    "wt2_train_13079",
+    "wt2_train_13125",
+    "wt2_train_13168",
+    "wt2_train_13191",
+    "wt2_train_13217",
+    "wt2_train_13338",
+    "wt2_train_13354",
+    "wt2_train_13511",
+    "wt2_train_13592",
+    "wt2_train_13613",
+    "wt2_train_13811",
+    "wt2_train_13853",
+    "wt2_train_13978",
+    "wt2_train_14065",
+    "wt2_train_14377",
+    "wt2_train_14599",
+    "wt2_train_14680",
+    "wt2_train_15378",
+    "wt2_train_15407",
+    "wt2_train_15450",
+    "wt2_train_15577",
+    "wt2_train_15678",
+    "wt2_train_15704",
+    "wt2_train_15741",
+    "wt2_train_15777",
+    "wt2_train_15839",
+    "wt2_train_16067",
+    "wt2_train_16451",
+    "wt2_train_16740",
+    "wt2_train_16779",
+    "wt2_train_16821",
+    "wt2_train_17069",
+    "wt2_train_17106",
+    "wt2_train_17190",
+    "wt2_train_17245",
+    "wt2_train_17380",
+    "wt2_train_17453",
+    "wt2_train_17808",
+    "wt2_train_17843",
+    "wt2_train_17858",
+    "wt2_train_17914",
+    "wt2_train_17966",
+    "wt2_train_18206",
+    "wt2_train_18254",
+    "wt2_train_18279",
+    "wt2_train_18301",
+    "wt2_train_18586",
+    "wt2_train_18626",
+    "wt2_train_18987",
+    "wt2_train_19035",
+    "wt2_train_19180",
+    "wt2_train_19864",
+    "wt2_train_19937",
+    "wt2_train_20025",
+    "wt2_train_20051",
+    "wt2_train_20184",
+    "wt2_train_20484",
+    "wt2_train_20571",
+    "wt2_train_20603",
+    "wt2_train_20644",
+    "wt2_train_20662",
+    "wt2_train_20880",
+    "wt2_train_21022",
+    "wt2_train_21131",
+    "wt2_train_21174",
+    "wt2_train_21202",
+    "wt2_train_21482",
+    "wt2_train_21552",
+    "wt2_train_21754",
+    "wt2_train_21814",
+    "wt2_train_22089",
+    "wt2_train_22150",
+    "wt2_train_22547",
+    "wt2_train_22925",
+    "wt2_train_23047",
+    "wt2_train_23082",
+    "wt2_train_24003",
+    "wt2_train_24039",
+    "wt2_train_24064",
+    "wt2_train_24201",
+    "wt2_train_24291",
+    "wt2_train_24355",
+    "wt2_train_24694",
+    "wt2_train_24825",
+    "wt2_train_24840",
+    "wt2_train_24937",
+    "wt2_train_25279",
+    "wt2_train_25973",
+    "wt2_train_26015",
+    "wt2_train_26228",
+    "wt2_train_26292",
+    "wt2_train_26498",
+    "wt2_train_26710",
+    "wt2_train_26883",
+    "wt2_train_26916",
+    "wt2_train_26932",
+    "wt2_train_26949",
+    "wt2_train_26985",
+    "wt2_train_27037",
+    "wt2_train_27087",
+    "wt2_train_27157",
+    "wt2_train_27341",
+    "wt2_train_27461",
+    "wt2_train_27526",
+    "wt2_train_27695",
+    "wt2_train_27839",
+    "wt2_train_27895",
+    "wt2_train_27916",
+    "wt2_train_28067",
+    "wt2_train_28275",
+    "wt2_train_28503",
+    "wt2_train_28850",
+    "wt2_train_28894",
+    "wt2_train_28936",
+    "wt2_train_29108",
+    "wt2_train_29136",
+    "wt2_train_29224",
+    "wt2_train_29254",
+    "wt2_train_29338",
+    "wt2_train_29356",
+    "wt2_train_29489",
+    "wt2_train_29582",
+    "wt2_train_29688",
+    "wt2_train_29722",
+    "wt2_train_29878",
+    "wt2_train_29965",
+    "wt2_train_29998",
+    "wt2_train_30020",
+    "wt2_train_30181",
+    "wt2_train_30341",
+    "wt2_train_30422",
+    "wt2_train_30631",
+    "wt2_train_31101",
+    "wt2_train_31128",
+    "wt2_train_31269",
+    "wt2_train_31323",
+    "wt2_train_31360",
+    "wt2_train_31559",
+    "wt2_train_31747",
+    "wt2_train_32049",
+    "wt2_train_32153",
+    "wt2_train_32199",
+    "wt2_train_32231",
+    "wt2_train_32253",
+    "wt2_train_32295",
+    "wt2_train_32315",
+    "wt2_train_32349",
+    "wt2_train_32655",
+    "wt2_train_32681",
+    "wt2_train_32709",
+    "wt2_train_32886",
+    "wt2_train_32994",
+    "wt2_train_33116",
+    "wt2_train_33562",
+    "wt2_train_33631",
+    "wt2_train_33830",
+    "wt2_train_34304",
+    "wt2_train_34964",
+    "wt2_train_35025",
+    "wt2_train_35404",
+    "wt2_train_35449",
+    "wt2_train_36339",
+    "wt2_train_36544",
+    "wt2_train_36586"
+  ],
+  "raw_hidden_bytes": 2196086784,
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "rule": "Remove headings; first 8192 Unicode chars; shared text cut at last whitespace before earliest model token-512 end; reencode; require 256..512 for every tokenizer; no special tokens. SHA256 pcgeom-p4-20261020:+full-body SHA order; first64 train, next64 test.",
+  "selected": 128,
+  "source": {
+    "bytes": 6357543,
+    "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+    "url": "https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/train-00000-of-00001.parquet"
+  },
+  "split": "train",
+  "test": 64,
+  "token_counts": {
+    "gpt2": {
+      "test": {
+        "max": 511,
+        "min": 417,
+        "total": 31081
+      },
+      "train": {
+        "max": 511,
+        "min": 426,
+        "total": 30863
+      }
+    },
+    "opt": {
+      "test": {
+        "max": 511,
+        "min": 417,
+        "total": 31081
+      },
+      "train": {
+        "max": 511,
+        "min": 426,
+        "total": 30863
+      }
+    },
+    "qwen": {
+      "test": {
+        "max": 511,
+        "min": 472,
+        "total": 32569
+      },
+      "train": {
+        "max": 511,
+        "min": 469,
+        "total": 32585
+      }
+    }
+  },
+  "train": 64
+}

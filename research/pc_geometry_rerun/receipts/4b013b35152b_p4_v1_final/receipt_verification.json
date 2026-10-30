@@ -1,0 +1,82 @@
+{
+  "all_raw_evidence_unchanged": true,
+  "all_source_archives_and_copies_identical": true,
+  "archive_bytes": 2162593458,
+  "both_archived_scientific_summaries_agree": true,
+  "capsule": "f54f877cc9d1145c966ccad03789a7f1529390c982c16ace5236fd21bd930ac6",
+  "causal_mechanism": "UNRESOLVED",
+  "checked_at": "2026-10-20T12:47:20.386933+00:00",
+  "committed_model_documents": 384,
+  "decision_counts": {
+    "INCONCLUSIVE": 2,
+    "SUPPORTS_MINIMUM_CRITERION": 4
+  },
+  "evaluation_article_points": 384,
+  "final_comparison_closed": true,
+  "fixed_bootstrap_summaries_compared": 186,
+  "independent_batched_bootstrap": true,
+  "independent_reviewer": false,
+  "local_receipt_verified": true,
+  "new_language_model_forwards": 0,
+  "numeric_audit": {
+    "geometry_gram_vs_rectangular_svd": true,
+    "independent_reviewer": false,
+    "max_joint_gradient_relative": 6.4057254397028525e-12,
+    "max_prediction_difference": 8.526512829121202e-13,
+    "predictions_reconstructed": 12479148,
+    "same_agent_self_audit": true,
+    "status": "PASS",
+    "training_CV_recomputed": true
+  },
+  "operational_audit": {
+    "events": {
+      "DOCUMENT_COMMITTED": 384,
+      "FORWARD_STARTED": 384,
+      "GPU_PREFLIGHT_PASS": 6,
+      "NOOP": 3
+    },
+    "excludes_final_zip_and_download_time": true,
+    "first_test_forward": "2026-10-20T12:03:22.983890+00:00",
+    "fit_sealed_at": "2026-10-20T12:02:27.157147+00:00",
+    "frozen_at": "2026-10-20T10:52:34.315814+00:00",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_total_bytes": 101974081536,
+    "host_total_bytes": 189928599552,
+    "last_training_commit": "2026-10-20T12:02:04.196851+00:00",
+    "limitation": "Weight files/pre-normalization tensors not in ZIP; validate saved hashes and extraction diagnostics, not a new model forward.",
+    "maximum_recorded_normalization_error": 0.0,
+    "maximum_recorded_surprisal_ce_error": 1.5537484493455267e-14,
+    "model_file_manifests_match": true,
+    "package_pins_match": true,
+    "recorded_active_seconds": 904.541874447,
+    "resources": {
+      "gpt2": {
+        "forward_seconds": 4.205906571999861,
+        "peak_allocated_bytes": 1092557312
+      },
+      "opt": {
+        "forward_seconds": 10.296850979999249,
+        "peak_allocated_bytes": 5932054016
+      },
+      "qwen": {
+        "forward_seconds": 9.85170564399965,
+        "peak_allocated_bytes": 7865354752
+      }
+    },
+    "run_created": "2026-10-20T11:56:33.681015+00:00",
+    "seconds_through_summary": 904.53683,
+    "session_count": 1,
+    "six_environment_contracts_match": true,
+    "status": "PASS",
+    "technical_resumes": 0,
+    "training_before_seal_before_test": true
+  },
+  "original_archive_files": 11,
+  "original_status_fields_preserved": true,
+  "raw_evidence_files_checked": 2414,
+  "run_id": "4b013b35152b",
+  "same_agent_self_audit": true,
+  "snapshot_id": "76c5c40ed614",
+  "status": "LOCAL_RECEIPT_AND_RECOMPUTE_PASS",
+  "valid_per_primary_endpoint": 64
+}

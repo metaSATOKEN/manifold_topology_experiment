@@ -1,0 +1,322 @@
+{
+  "figures": [
+    {
+      "path": "figures/01_historical_comparison.png",
+      "description": "旧図原画像と同じ３文章の再現。下段の線は隣接token間の補間。",
+      "conditions": [
+        "cpu/block07/C0/narrative",
+        "cpu/block07/C0/technical",
+        "cpu/block07/C0/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/02_points_zoom_and_C1.png",
+      "description": "線なし全点、同一PCAの中央90%拡大、先頭除外後の再PCA。外側点は図中に計数。",
+      "conditions": [
+        "cpu/block07/C0/narrative",
+        "cpu/block07/C1/narrative",
+        "cpu/block07/C0/technical",
+        "cpu/block07/C1/technical",
+        "cpu/block07/C0/repetitive",
+        "cpu/block07/C1/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_block06_2d.png",
+      "description": "cpu block06の全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cpu/block06/C0/narrative",
+        "cpu/block06/C0/technical",
+        "cpu/block06/C0/repetitive",
+        "cpu/block06/C1/narrative",
+        "cpu/block06/C1/technical",
+        "cpu/block06/C1/repetitive",
+        "cpu/block06/C4/narrative",
+        "cpu/block06/C4/technical",
+        "cpu/block06/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_block06_3d.png",
+      "description": "cpu block06の全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cpu/block06/C0/narrative",
+        "cpu/block06/C0/technical",
+        "cpu/block06/C0/repetitive",
+        "cpu/block06/C1/narrative",
+        "cpu/block06/C1/technical",
+        "cpu/block06/C1/repetitive",
+        "cpu/block06/C4/narrative",
+        "cpu/block06/C4/technical",
+        "cpu/block06/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_block07_2d.png",
+      "description": "cpu block07の全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cpu/block07/C0/narrative",
+        "cpu/block07/C0/technical",
+        "cpu/block07/C0/repetitive",
+        "cpu/block07/C1/narrative",
+        "cpu/block07/C1/technical",
+        "cpu/block07/C1/repetitive",
+        "cpu/block07/C4/narrative",
+        "cpu/block07/C4/technical",
+        "cpu/block07/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_block07_3d.png",
+      "description": "cpu block07の全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cpu/block07/C0/narrative",
+        "cpu/block07/C0/technical",
+        "cpu/block07/C0/repetitive",
+        "cpu/block07/C1/narrative",
+        "cpu/block07/C1/technical",
+        "cpu/block07/C1/repetitive",
+        "cpu/block07/C4/narrative",
+        "cpu/block07/C4/technical",
+        "cpu/block07/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_block12_preln_2d.png",
+      "description": "cpu block12_prelnの全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cpu/block12_preln/C0/narrative",
+        "cpu/block12_preln/C0/technical",
+        "cpu/block12_preln/C0/repetitive",
+        "cpu/block12_preln/C1/narrative",
+        "cpu/block12_preln/C1/technical",
+        "cpu/block12_preln/C1/repetitive",
+        "cpu/block12_preln/C4/narrative",
+        "cpu/block12_preln/C4/technical",
+        "cpu/block12_preln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_block12_preln_3d.png",
+      "description": "cpu block12_prelnの全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cpu/block12_preln/C0/narrative",
+        "cpu/block12_preln/C0/technical",
+        "cpu/block12_preln/C0/repetitive",
+        "cpu/block12_preln/C1/narrative",
+        "cpu/block12_preln/C1/technical",
+        "cpu/block12_preln/C1/repetitive",
+        "cpu/block12_preln/C4/narrative",
+        "cpu/block12_preln/C4/technical",
+        "cpu/block12_preln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_final_ln_2d.png",
+      "description": "cpu final_lnの全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cpu/final_ln/C0/narrative",
+        "cpu/final_ln/C0/technical",
+        "cpu/final_ln/C0/repetitive",
+        "cpu/final_ln/C1/narrative",
+        "cpu/final_ln/C1/technical",
+        "cpu/final_ln/C1/repetitive",
+        "cpu/final_ln/C4/narrative",
+        "cpu/final_ln/C4/technical",
+        "cpu/final_ln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cpu_final_ln_3d.png",
+      "description": "cpu final_lnの全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cpu/final_ln/C0/narrative",
+        "cpu/final_ln/C0/technical",
+        "cpu/final_ln/C0/repetitive",
+        "cpu/final_ln/C1/narrative",
+        "cpu/final_ln/C1/technical",
+        "cpu/final_ln/C1/repetitive",
+        "cpu/final_ln/C4/narrative",
+        "cpu/final_ln/C4/technical",
+        "cpu/final_ln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_block06_2d.png",
+      "description": "cuda block06の全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cuda/block06/C0/narrative",
+        "cuda/block06/C0/technical",
+        "cuda/block06/C0/repetitive",
+        "cuda/block06/C1/narrative",
+        "cuda/block06/C1/technical",
+        "cuda/block06/C1/repetitive",
+        "cuda/block06/C4/narrative",
+        "cuda/block06/C4/technical",
+        "cuda/block06/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_block06_3d.png",
+      "description": "cuda block06の全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cuda/block06/C0/narrative",
+        "cuda/block06/C0/technical",
+        "cuda/block06/C0/repetitive",
+        "cuda/block06/C1/narrative",
+        "cuda/block06/C1/technical",
+        "cuda/block06/C1/repetitive",
+        "cuda/block06/C4/narrative",
+        "cuda/block06/C4/technical",
+        "cuda/block06/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_block07_2d.png",
+      "description": "cuda block07の全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cuda/block07/C0/narrative",
+        "cuda/block07/C0/technical",
+        "cuda/block07/C0/repetitive",
+        "cuda/block07/C1/narrative",
+        "cuda/block07/C1/technical",
+        "cuda/block07/C1/repetitive",
+        "cuda/block07/C4/narrative",
+        "cuda/block07/C4/technical",
+        "cuda/block07/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_block07_3d.png",
+      "description": "cuda block07の全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cuda/block07/C0/narrative",
+        "cuda/block07/C0/technical",
+        "cuda/block07/C0/repetitive",
+        "cuda/block07/C1/narrative",
+        "cuda/block07/C1/technical",
+        "cuda/block07/C1/repetitive",
+        "cuda/block07/C4/narrative",
+        "cuda/block07/C4/technical",
+        "cuda/block07/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_block12_preln_2d.png",
+      "description": "cuda block12_prelnの全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cuda/block12_preln/C0/narrative",
+        "cuda/block12_preln/C0/technical",
+        "cuda/block12_preln/C0/repetitive",
+        "cuda/block12_preln/C1/narrative",
+        "cuda/block12_preln/C1/technical",
+        "cuda/block12_preln/C1/repetitive",
+        "cuda/block12_preln/C4/narrative",
+        "cuda/block12_preln/C4/technical",
+        "cuda/block12_preln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_block12_preln_3d.png",
+      "description": "cuda block12_prelnの全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cuda/block12_preln/C0/narrative",
+        "cuda/block12_preln/C0/technical",
+        "cuda/block12_preln/C0/repetitive",
+        "cuda/block12_preln/C1/narrative",
+        "cuda/block12_preln/C1/technical",
+        "cuda/block12_preln/C1/repetitive",
+        "cuda/block12_preln/C4/narrative",
+        "cuda/block12_preln/C4/technical",
+        "cuda/block12_preln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_final_ln_2d.png",
+      "description": "cuda final_lnの全３文章×３処理、2D等縮尺。",
+      "conditions": [
+        "cuda/final_ln/C0/narrative",
+        "cuda/final_ln/C0/technical",
+        "cuda/final_ln/C0/repetitive",
+        "cuda/final_ln/C1/narrative",
+        "cuda/final_ln/C1/technical",
+        "cuda/final_ln/C1/repetitive",
+        "cuda/final_ln/C4/narrative",
+        "cuda/final_ln/C4/technical",
+        "cuda/final_ln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/atlas_cuda_final_ln_3d.png",
+      "description": "cuda final_lnの全３文章×３処理、3D等縮尺。",
+      "conditions": [
+        "cuda/final_ln/C0/narrative",
+        "cuda/final_ln/C0/technical",
+        "cuda/final_ln/C0/repetitive",
+        "cuda/final_ln/C1/narrative",
+        "cuda/final_ln/C1/technical",
+        "cuda/final_ln/C1/repetitive",
+        "cuda/final_ln/C4/narrative",
+        "cuda/final_ln/C4/technical",
+        "cuda/final_ln/C4/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    },
+    {
+      "path": "figures/03_thickness_all_axes.png",
+      "description": "主条件の残差PC2〜8×全４特徴×３文章。軸を選別しない。",
+      "conditions": [
+        "cpu/block07/C0/narrative",
+        "cpu/block07/C0/technical",
+        "cpu/block07/C0/repetitive"
+      ],
+      "equal_units": true,
+      "source": "raw/analysis PCA arrays verified by analysis/verify.py"
+    }
+  ],
+  "figure_count": 19,
+  "atlas_conditions_2d": 72,
+  "atlas_conditions_3d": 72,
+  "primary_zoom_outside": {
+    "narrative": 10,
+    "technical": 10,
+    "repetitive": 8
+  },
+  "display_sign_rule": "Flip PC1 only if position zero has negative score; visualization only.",
+  "original_figure_unchanged": true
+}

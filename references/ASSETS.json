@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "status": "local staging; no public URLs assigned",
+  "assets": [
+    {
+      "name": "pcgeom_p1_v1_98a3faf68004_FINAL_04cd3d.zip",
+      "kind": "original_observations",
+      "stage": "P1",
+      "bytes": 469779245,
+      "sha256": "3358100aaac5adb7b2f319c5399a12f034291dbbf20b14591509b579be428222",
+      "restore_to": "research/pc_geometry_rerun/receipts/98a3faf68004_p1_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p2_v1_6966c146e980_FINAL_f3efc8.zip",
+      "kind": "original_observations",
+      "stage": "P2",
+      "bytes": 498956097,
+      "sha256": "730f2eb58af84fa6a6017eb2a07fe7324e4f6c4692dbec4ffb720fa2c4626d0a",
+      "restore_to": "research/pc_geometry_rerun/receipts/6966c146e980_p2_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p3_v1_0113330bdd64_FINAL_4b0a6d.zip",
+      "kind": "original_observations",
+      "stage": "P3",
+      "bytes": 217826943,
+      "sha256": "a2bb3006758df5931c67b0257daecfcaa3fadbd3e37214216743e93c362c0772",
+      "restore_to": "research/pc_geometry_rerun/receipts/0113330bdd64_p3_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_INDEX.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 118841,
+      "sha256": "e17939558ef55bdad8383178b6340135d2fd035fbba57117a9a89422c73d4178",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_001_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 230994894,
+      "sha256": "5de03745e8da2fd2d444e6a15ad1b5f09c1550f9d05c53ea0f4c13ebdf21bcec",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_002_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 229143980,
+      "sha256": "c6afd798289b5e4d8d798ffa2470b29967aa806241b5c140984ad5c64504835c",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_003_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 229990033,
+      "sha256": "74e046f720ec7d1907b8e70a748652e1126470822a7cdff0c8d271cb88824a77",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_004_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 229255528,
+      "sha256": "7b70aceb93137d77f54b52d3066d839dc99b8a3f3fec151da3a0aa75a6c56516",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_005_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 227907381,
+      "sha256": "1ae77eca75a67eed20997b41a60666caa83ce61000cb354bb5807cdcc37200c1",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_006_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 227186974,
+      "sha256": "0fdd3feeea034306c8cc53e03c1e4cd2cf6df9d498653d3221d602ecc998105b",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_007_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 228459720,
+      "sha256": "ed7d5bee2d8b9ad350478114d291fbffef237f400c4b741b32d598e993cb0462",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_008_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 228967167,
+      "sha256": "e7d24fefb202bb1eacc5edba6d9567eb2d69f63654bb81febea78783aa17bc25",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_009_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 231446613,
+      "sha256": "15c3f097a6ee70c792cce08dc8e7683bc1390e6dd2deba88eee3a97c88146120",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p4_v1_4b013b35152b_FINAL_76c5c40ed614_PART_010_of_010.zip",
+      "kind": "original_observations",
+      "stage": "P4",
+      "bytes": 99122327,
+      "sha256": "a92b6124a7898e3d99f5e5cb40f7ee97863a8bc84d79f488b8ae82df38b215d2",
+      "restore_to": "research/pc_geometry_rerun/receipts/4b013b35152b_p4_v1_final/raw",
+      "member_prefix": "",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_p5_v1_52dcd57cc2e4_FINAL_9c1e90.zip",
+      "kind": "original_observations",
+      "stage": "P5",
+      "bytes": 12462238,
+      "sha256": "34e4f29b393b5a3f9d2a55ce2d5e17c846fcf9a2e4f0b7b4c8587d4f931cb313",
+      "restore_to": "research/pc_geometry_rerun/receipts/52dcd57cc2e4_p5_v1_final/raw",
+      "member_prefix": "evidence/",
+      "url": null,
+      "original_bytes_preserved": true
+    },
+    {
+      "name": "pcgeom_arc_thickness_v1_saved_arrays.zip",
+      "kind": "saved_exploratory_arrays",
+      "stage": "arc_thickness_v1",
+      "bytes": 341378885,
+      "sha256": "fa44f89612fb76ef08c96f6aebf532527ccce009510beb278798c471d8da8c96",
+      "restore_to": ".",
+      "member_prefix": "",
+      "url": null,
+      "members": 1152
+    },
+    {
+      "name": "pcgeom_p2_lexical_v1_saved_arrays.zip",
+      "kind": "saved_exploratory_arrays",
+      "stage": "p2_lexical_v1",
+      "bytes": 147160640,
+      "sha256": "1e61a810988762ecb7851c8c5abb0eb91994cc5302583bb6d0599d42cbd4479b",
+      "restore_to": ".",
+      "member_prefix": "",
+      "url": null,
+      "members": 25
+    },
+    {
+      "name": "pcgeom_p3_reversal_v1_saved_arrays.zip",
+      "kind": "saved_exploratory_arrays",
+      "stage": "p3_reversal_v1",
+      "bytes": 57211311,
+      "sha256": "56040fd436c437b14550c671f3bc974a7dc598a5521dde8b535128f0e35409e3",
+      "restore_to": ".",
+      "member_prefix": "",
+      "url": null,
+      "members": 10
+    },
+    {
+      "name": "pcgeom_p4_components_v1_saved_arrays.zip",
+      "kind": "saved_exploratory_arrays",
+      "stage": "p4_components_v1",
+      "bytes": 122782908,
+      "sha256": "ec454ff2ef8990300301c3cde1dd401f9e8e04cbaff5d5815550b1503ffa297c",
+      "restore_to": ".",
+      "member_prefix": "",
+      "url": null,
+      "members": 12
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-10-20T09:11:55.611015+00:00",
+  "command": "VECLIB_MAXIMUM_THREADS=4 python3 -m unittest -v test_numeric.py",
+  "exit_code": 0,
+  "tests_passed": 3,
+  "test_names": [
+    "test_joint_direct_solution_and_unknown_ids",
+    "test_lexical_signal_shrinks_and_unseen_falls_back",
+    "test_no_validation_fitting_and_training_only_knots"
+  ],
+  "elapsed_seconds_reported": 0.035,
+  "source_sha256": "c405f1d37e1e9b53711fa01f21534f379ff9c04b2a12c0b107288eaba8b1583b",
+  "evidence": "Successful tool execution in this session; no repeated test run for this record"
+}

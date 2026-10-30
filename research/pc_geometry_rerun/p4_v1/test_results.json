@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-20T10:52:34.008419+00:00",
+  "tests": 26,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 2.16,
+  "python": "3.13.5",
+  "numpy": "2.2.6",
+  "synthetic_data_only": true,
+  "coverage": [
+    "joint ridge versus augmented least squares",
+    "within group centering and singleton exclusion",
+    "unknown token IDs",
+    "PCA eigen audit and raw-coordinate prediction reconstruction",
+    "all three model synthetic train-seal-test-audit lifecycle",
+    "all training CV selections reconstructed",
+    "no-op creates zero new forwards",
+    "complete multipart ZIP restore",
+    "missing/mixed/duplicate/replaced part rejection",
+    "unsafe paths and pickle rejection",
+    "environment JSON tuple-list regression and genuine change rejection",
+    "persistent time budget and technical retry limit",
+    "owned subprocess timeout",
+    "disabled delivery never asserts local save",
+    "fixed input splits and old-article exclusion"
+  ]
+}

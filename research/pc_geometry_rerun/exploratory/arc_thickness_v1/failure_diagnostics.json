@@ -1,0 +1,20 @@
+{
+  "C0": {
+    "article": "wt2_train_27981",
+    "worst_position": 1,
+    "squared_error_share": 0.9999999968078249,
+    "original_norm": 11558.79976900731,
+    "training_fold_norm_min": 45.30254834542996,
+    "training_fold_norm_max": 70.18874951863545,
+    "status": "descriptive inspection of the saved worst-article predictions; no new fit"
+  },
+  "C1": {
+    "article": "wt2_train_27981",
+    "worst_position": 1,
+    "squared_error_share": 0.9999999936275613,
+    "original_norm": 11558.79976900731,
+    "training_fold_norm_min": 45.30254834542996,
+    "training_fold_norm_max": 70.18874951863545,
+    "status": "descriptive inspection of the saved worst-article predictions; no new fit"
+  }
+}

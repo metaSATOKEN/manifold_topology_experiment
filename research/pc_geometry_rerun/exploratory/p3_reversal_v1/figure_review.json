@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-10-20T10:24:58.574788+00:00",
+  "status": "PASS",
+  "reviewer": "same agent visual inspection",
+  "files": [
+    "figures/01_readout_reversal.png",
+    "figures/02_variance_capture.png",
+    "figures/03_complement.png"
+  ],
+  "checks": [
+    "All titles, axes, intervals and data labels readable",
+    "Original negative final_ln estimate retained",
+    "No claim that variance is semantic information",
+    "Known-P3 exploratory evaluation explicitly labelled"
+  ]
+}
