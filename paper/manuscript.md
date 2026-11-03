@@ -23,7 +23,7 @@ The study makes three contributions.
 2. **We establish incremental surprisal readout within recurring token IDs on separate articles.** Shared PCs improve on a fixed token-ID baseline and on random directions of the same dimensionality in the prespecified GPT-2 middle-layer comparison. The subsequent multi-model test evaluates a within-group training objective and reports both supported and inconclusive conditions.
 3. **We characterize the sensitivity of readout evaluation.** Exploratory diagnostics identify component groups that support additional readout, examine the roles of vector length and direction, and reveal both changes in ranking across training configurations and the coexistence of typical improvements with large losses on a few articles.
 
-The study provides empirical diagnostics for assessing what can be concluded from visualizations and probes of hidden representations. We first present short-text geometry (Section 3), then confirmatory evaluations on separate articles (Section 4), followed by secondary comparisons and exploratory diagnostics (Sections 5 and 6). Section 7 discusses the implications, and Section 8 brings together the limitations and unresolved questions. Appendices A–C contain the main methods, supplementary summaries, inputs, and verification scope. Comprehensive tables and saved data are organized in the accompanying [reference materials](../references/README.md).
+The study provides empirical diagnostics for assessing what can be concluded from visualizations and probes of hidden representations. We first present short-text geometry (Section 3), then confirmatory evaluations on separate articles (Section 4), followed by secondary comparisons and exploratory diagnostics (Sections 5 and 6). Section 7 discusses the implications, and Section 8 brings together the limitations and unresolved questions. Appendices A–C contain the main methods, supplementary summaries, inputs, and verification scope. Comprehensive tables and saved data are organized in the accompanying [reference materials](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/README.md).
 
 ### 1.1 Relation to prior work
 
@@ -414,7 +414,7 @@ Adding raw PCs produced a large readout failure on `wt2_train_27981` (2nd Battal
 | Mean article-level increment | −0.31019 | 0.06005 |
 | Increment on the failure article above | −24.22476 | −0.26574 |
 
-The failure persisted when the fixed predictions were reconstructed through a separate computational route and when recurring IDs received equal scoring weight. We also summed token-level squared-error improvements, divided by each article's target sum of squares, within categories. Negative mean contributions were large for tokens containing letters, low-frequency tokens, and the opening portion of articles. These additive totals describe where losses accumulated; category counts and exposure differ. Appendix A.6 defines the categories, and [Detailed Table Set J](../revision_2026-10-21_compact_ja/../references/tables/appendix_J.md) reports all contributions, token shares, and article counts.
+The failure persisted when the fixed predictions were reconstructed through a separate computational route and when recurring IDs received equal scoring weight. We also summed token-level squared-error improvements, divided by each article's target sum of squares, within categories. Negative mean contributions were large for tokens containing letters, low-frequency tokens, and the opening portion of articles. These additive totals describe where losses accumulated; category counts and exposure differ. Appendix A.6 defines the categories, and [Detailed Table Set J](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_J.md) reports all contributions, token shares, and article counts.
 
 This diagnostic captures both the gain for a typical article and the influence of articles where losses are concentrated. Assessing the readout value of PCs requires considering representative performance alongside its distribution across articles.
 
@@ -515,7 +515,7 @@ The first token strongly influences the prominent variance concentration at GPT-
 
 ## Data, code, and verification records
 
-Appendices A–C contain the main methods and supplementary results needed to assess the claims. Tables covering all conditions, articles, and random sets, along with original ZIP archives, fixed predictions, coefficients, inputs, code, and verification records, are accessible through the [reference-materials guide](../references/README.md). The [figure and table map](../references/FIGURE_TABLE_MAP.md) links each result to its corresponding summaries and data. This version is for local distribution; a public repository and external download URLs have not yet been assigned. The [SHA-256 manifest](../references/MANIFEST.json) identifies the manuscript, figures, and fixed reference materials.
+Appendices A–C contain the main methods and supplementary results needed to assess the claims. The companion repository is <https://github.com/metaSATOKEN/manifold_topology_experiment>. Tables covering all conditions, articles, and random sets, along with fixed inputs, code, and verification records, are accessible through the [reference-materials guide](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/README.md). The [figure and table map](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/FIGURE_TABLE_MAP.md) links each result to its corresponding materials. Archive contents and download availability are documented in the [data inventory](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/DATA.md). The [SHA-256 manifest](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/MANIFEST.json) identifies the manuscript, figures, and fixed reference materials.
 
 ## Authorship and assistance
 
@@ -556,7 +556,7 @@ P4 selected from 629 candidates. For each tokenizer, we identified the end of it
 
 The corpus revision was `b08601e04326c79dfdd32d625aee71d232d685c3` (CC-BY-SA-3.0 / GFDL). P1 collected GPT-2 states after blocks 1, 6, and 12 and after final LayerNorm; P2/P3 collected block 6 and the final normalized state. P5's primary condition was after block 7, with comparisons after blocks 6 and 12 and after final LayerNorm. Block numbering is one-based.
 
-All models used eval mode, float32, eager attention, no quantization, TF32 disabled, and one text at a time. No BOS/EOS tokens, padding, or chat templates were added; the text began at position 0. P1–P4 used `use_cache=False`; P5 used True. The reference environment was PyTorch 2.8.0+cu128, Transformers 4.57.6, and NumPy 2.2.6; post-acquisition analyses used float64. Input sets, exact extraction rules, seeds, and hashes are documented in the [methods and identifiers specification](../revision_2026-10-21_compact_ja/../references/METHODS_AND_IDENTIFIERS.md).
+All models used eval mode, float32, eager attention, no quantization, TF32 disabled, and one text at a time. No BOS/EOS tokens, padding, or chat templates were added; the text began at position 0. P1–P4 used `use_cache=False`; P5 used True. The reference environment was PyTorch 2.8.0+cu128, Transformers 4.57.6, and NumPy 2.2.6; post-acquisition analyses used float64. Input sets, exact extraction rules, seeds, and hashes are documented in the [methods and identifiers specification](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/METHODS_AND_IDENTIFIERS.md).
 
 ### A.2 PCA, preprocessing, and random controls
 
@@ -634,13 +634,13 @@ All other outcomes are inconclusive. Joint attainment across P4's 6 conditions r
 
 ### A.6 Exploratory comparisons and diagnostics
 
-The lexical-control exploration covers all 24 combinations of 4 families (original 8 features, ID, NL, and NL ID), middle/final extraction points, and C0/C1/C4. NL contains 200 columns: the original 8 columns, standardized linear terms and 25/50/75-percentile hinges for position, character count, byte count, rarity, and norm, the 4×4 products for 10 pairs of distinct variables, and 12 character-shape indicators. NL ID adds the same ID shrinkage. Results for all candidates are retained in [Detailed Table Set H](../revision_2026-10-21_compact_ja/../references/tables/appendix_H.md).
+The lexical-control exploration covers all 24 combinations of 4 families (original 8 features, ID, NL, and NL ID), middle/final extraction points, and C0/C1/C4. NL contains 200 columns: the original 8 columns, standardized linear terms and 25/50/75-percentile hinges for position, character count, byte count, rarity, and norm, the 4×4 products for 10 pairs of distinct variables, and 12 character-shape indicators. NL ID adds the same ID shrinkage. Results for all candidates are retained in [Detailed Table Set H](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_H.md).
 
 The reversal diagnostic compares fixed O; R, ordinary training on recurring IDs; W fixed, changing to the within-group objective with the same tokens, scales, and penalties; and W CV, which also selects penalties. We split state and projection sums of squares into between-group and within-group components and calculated the fraction captured by the top 8 on the same observation set. Complement-space controls comprise 20 random bases with the top-8 projection removed, then re-orthogonalized by QR; they use the same training and tuning as W CV. For centered targets and predictions,
 
 $$R^2=2\operatorname{cov}(y,\hat y)/\operatorname{var}(y)-\operatorname{var}(\hat y)/\operatorname{var}(y).$$
 
-Table B4 summarizes correlations and prediction-SD/target-SD ratios. The [prediction diagnostic table](../revision_2026-10-21_compact_ja/../references/tables/prediction_diagnostics.md) includes both decomposition terms for every configuration. Substituting medians of these quantities into the identity does not recover the median R².
+Table B4 summarizes correlations and prediction-SD/target-SD ratios. The [prediction diagnostic table](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/prediction_diagnostics.md) includes both decomposition terms for every configuration. Substituting medians of these quantities into the identity does not recover the median R².
 
 The component exploration uses C1 at all 6 P4 extraction points. P contains 4 position terms, B adds log1p norm, and N adds 5 hinge features. For all C1 tokens in the 64 training articles, define
 
@@ -652,7 +652,7 @@ $$
 
 Hinge scales and U8's center, basis, and score scales are estimated from all C1 training tokens. U8 projects centered unit-length states $u=h/\|h\|$ onto their top 8 PCs; its random controls project the same transformed states onto the 20 random bases. Features are standardized before article × ID centering, and regression uses recurring-ID tokens. N's hinge penalty is selected by training-set cross-validation and retained when adding raw PC1–8 or U8. Each augmented model jointly estimates baseline and added coefficients and selects the added penalty from the 5 candidates in A.4. PC1/PC2–8/PC1–8 are matched with 1/7/8-dimensional controls.
 
-Token contributions are the per-token SSE improvement divided by the article's within-group target SS, summed within categories and aggregated as article means. Frequency categories are 0, 1–9, 10–99, and at least 100; relative position is divided into four equal intervals. Token types are fixed as whitespace, numeric, letters containing a Unicode L character, punctuation/symbols, and other. Type precedence, Unicode rules, and values for all categories, equal-ID weighting, individual articles, and random sets are retained in the [detailed specification](../revision_2026-10-21_compact_ja/../references/METHODS_AND_IDENTIFIERS.md) and [Detailed Table Set J](../revision_2026-10-21_compact_ja/../references/tables/appendix_J.md).
+Token contributions are the per-token SSE improvement divided by the article's within-group target SS, summed within categories and aggregated as article means. Frequency categories are 0, 1–9, 10–99, and at least 100; relative position is divided into four equal intervals. Token types are fixed as whitespace, numeric, letters containing a Unicode L character, punctuation/symbols, and other. Type precedence, Unicode rules, and values for all categories, equal-ID weighting, individual articles, and random sets are retained in the [detailed specification](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/METHODS_AND_IDENTIFIERS.md) and [Detailed Table Set J](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_J.md).
 
 ### A.7 Geometry, curve fitting, and local residuals
 
@@ -776,7 +776,7 @@ tick tock tick tock tick tock the clock goes round and round tick tock tick tock
 | Technical | 0.236 | 0.999611 | 0.998201 | -106.09 | -84591.77 |
 | Repetitive | 0.409 | 0.999850 | 0.995927 | -21056.87 | -266432.95 |
 
-For every text, more than 99.9999% of the full-space curve error was concentrated at the first token. We examined extrapolation in the fold containing that token using saved fold-specific errors. [Detailed Table Set M](../revision_2026-10-21_compact_ja/../references/tables/appendix_M.md) reports first-token error shares and training-coordinate ranges for each extraction point.
+For every text, more than 99.9999% of the full-space curve error was concentrated at the first token. We examined extrapolation in the fold containing that token using saved fold-specific errors. [Detailed Table Set M](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_M.md) reports first-token error shares and training-coordinate ranges for each extraction point.
 
 ### C.3 All geometry conditions for saved articles
 
@@ -817,11 +817,11 @@ In the Qwen middle-layer failure below, position 1 had an original norm of 11,55
 | C1 | 0.099351 | -6.3291e+05 | -4.0507e+07 |
 | C4 | 0.12054 | 0.12429 | -0.18366 |
 
-A failure was also recorded for this article in the original shared-basis readout, but Table 13 and this table use different predictors, splits, and controls. [Detailed Table Set K](../revision_2026-10-21_compact_ja/../references/tables/appendix_K.md) reports absolute R², increments, article distributions, and all target features for all 18 conditions.
+A failure was also recorded for this article in the original shared-basis readout, but Table 13 and this table use different predictors, splits, and controls. [Detailed Table Set K](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_K.md) reports absolute R², increments, article distributions, and all target features for all 18 conditions.
 
 ### C.5 Comparison of execution devices in the short-text study
 
-**Table C4. CPU/GPU comparison in P5.** All 12 pairs were compared using a fixed tolerance. State differences for all 12 pairs are in [Detailed Table Set L](../revision_2026-10-21_compact_ja/../references/tables/appendix_L.md); extrapolation diagnostics are in [Detailed Table Set M](../revision_2026-10-21_compact_ja/../references/tables/appendix_M.md).
+**Table C4. CPU/GPU comparison in P5.** All 12 pairs were compared using a fixed tolerance. State differences for all 12 pairs are in [Detailed Table Set L](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_L.md); extrapolation diagnostics are in [Detailed Table Set M](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/tables/appendix_M.md).
 
 | Item | Observation |
 | --- | --- |
@@ -846,4 +846,4 @@ A failure was also recorded for this article in the original shared-basis readou
 
 Each primary quantity in P1–P4 had 64 valid articles, with 0 worker failures and 0 missing primary quantities. There were also no missing conditions among P5's 72 or the article-geometry exploration's 1,152 conditions. Quantities undefined by the measurement, such as post-treatment norm correlations under C4 and first-token contribution under C1, were retained as NA in the tables. Section 8.6 describes the scope of these checks and the limits on claims of independent replication.
 
-The [reference-materials guide](../references/README.md) links to saved materials and maps them to the figures and tables.
+The [reference-materials guide](https://github.com/metaSATOKEN/manifold_topology_experiment/blob/main/references/README.md) links to saved materials and maps them to the figures and tables.
