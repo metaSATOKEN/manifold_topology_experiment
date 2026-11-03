@@ -1,61 +1,21 @@
-% Generated from preserved English v2; see build_pdf_source.py.
-\documentclass[11pt,a4paper]{article}
-\usepackage[top=22mm,bottom=23mm,left=21mm,right=21mm,headheight=14pt,headsep=8mm]{geometry}
-\usepackage{fontspec}
-\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,ItalicFont=*-italic,BoldFont=*-bold,BoldItalicFont=*-bolditalic]
-\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,ItalicFont=*-italic,BoldFont=*-bold,BoldItalicFont=*-bolditalic]
-\setmonofont{lmmono10-regular.otf}[Scale=0.86]
-\usepackage{amsmath,amssymb}
-\usepackage{unicode-math}
-\setmathfont{latinmodern-math.otf}
-\usepackage{graphicx,booktabs,longtable,array,calc,multirow}
-\usepackage{xcolor}
-\definecolor{ink}{HTML}{1D2630}
-\definecolor{linkblue}{HTML}{234B68}
-\usepackage{microtype}
-\usepackage{ragged2e}
-\usepackage{caption}
-\captionsetup{font=small,labelfont=bf,justification=justified,singlelinecheck=false,skip=6pt}
-\usepackage{fvextra}
-\usepackage{needspace,placeins,pdflscape}
-\usepackage{titlesec}
-\titleformat{\section}{\large\bfseries\color{ink}}{}{0pt}{}
-\titleformat{\subsection}{\normalsize\bfseries\color{ink}}{}{0pt}{}
-\titlespacing*{\section}{0pt}{2.1ex plus 0.5ex minus .2ex}{0.9ex}
-\titlespacing*{\subsection}{0pt}{1.8ex plus .4ex minus .2ex}{0.7ex}
-\usepackage{enumitem}
+% Current manuscript; visual design adapted from the author's supplied template.
+\documentclass[10pt,a4paper]{article}
+\newcommand{\runningtitle}{PRINCIPAL COMPONENT GEOMETRY}
+\input{article-style.tex}
+\usepackage{longtable,calc,multirow,microtype}
+\usepackage{fvextra,needspace,placeins,pdflscape,enumitem,xurl}
 \setlist{nosep,leftmargin=1.7em,topsep=4pt}
-\usepackage{xurl}
-\usepackage[colorlinks=true,linkcolor=linkblue,urlcolor=linkblue,bookmarksopen=true,bookmarksnumbered=false]{hyperref}
-\hypersetup{pdftitle={Principal Component Geometry and Feature Readout in Transformer Representations},pdfauthor={Kentaro Sato},pdfsubject={English manuscript v2: final self-check and typeset edition}}
+\usepackage[colorlinks=true,urlcolor=accent,linkcolor=accent,unicode,pdfencoding=auto,bookmarksopen=false,bookmarksnumbered=false]{hyperref}
+\hypersetup{pdftitle={Principal Component Geometry and Feature Readout in Transformer Representations},pdfauthor={Kentaro Sato}}
 \usepackage{bookmark}
-\usepackage{fancyhdr}
-\pagestyle{fancy}\fancyhf{}
-\fancyhead[L]{\footnotesize\color{gray}Principal Component Geometry and Feature Readout}
-\fancyhead[R]{\footnotesize\color{gray}Sato}
-\fancyfoot[C]{\small\thepage}
-\renewcommand{\headrulewidth}{0.3pt}
-\setcounter{secnumdepth}{-2}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt plus 1pt minus .5pt}
-\setlength{\emergencystretch}{2em}
 \setlength{\LTpre}{5pt}\setlength{\LTpost}{7pt}
 \setlength{\LTcapwidth}{\textwidth}
-\renewcommand{\arraystretch}{1.18}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\widowpenalty=10000\clubpenalty=10000
-\raggedbottom
-\begin{document}
-\thispagestyle{plain}
-\begin{center}
-{\LARGE\bfseries Principal Component Geometry and Feature Readout in Transformer Representations\par}
-\vspace{4pt}
-{\large Sensitivity to the First Token, Features in Local Residuals, and Readout from Fixed Shared Principal Components\par}
-\vspace{5pt}
-Kentaro Sato\\
-\href{mailto:info@metaclan.jp}{info@metaclan.jp}\\
-21 October 2026 · English manuscript, revised
-\end{center}
-\vspace{\dimexpr 12pt-\baselineskip\relax}
+\begin{document}\articlebody\thispagestyle{first}
+{\raggedright\sffamily\bfseries\color{ink}\fontsize{22}{27}\selectfont Principal Component Geometry and Feature Readout in Transformer Representations\par}
+{\raggedright\sffamily\fontsize{13}{17}\selectfont\color{accent} Sensitivity to the First Token, Features in Local Residuals, and Readout from Fixed Shared Principal Components\par}
+\smallskip{\bfseries Kentaro Sato}\par
+{\small Contact: \href{mailto:info@metaclan.jp}{info@metaclan.jp}\par}
+{\small 21 October 2026 · English manuscript, revised\par}\smallskip\hrule\medskip
 \input{body.tex}
 \end{document}

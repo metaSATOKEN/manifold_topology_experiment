@@ -2,7 +2,7 @@
 
 This revision is staged in the private [metaSATOKEN/manifold_topology_experiment repository](https://github.com/metaSATOKEN/manifold_topology_experiment), ahead of the new Zenodo DOI. The previous repository version is retained on [codex/archive-before-revision-2026-10-30](https://github.com/metaSATOKEN/manifold_topology_experiment/tree/codex/archive-before-revision-2026-10-30). Git history is preserved.
 
-The manuscript, figures, result tables, scientific source modules, and fixed inputs are retained. The readable source layout and file inventory accompany the 39-page English manuscript. This synchronization adds no experiment or numerical reanalysis.
+The manuscript, figures, result tables, scientific source modules, and fixed inputs are retained. The readable source layout and file inventory accompany the 40-page English manuscript. This synchronization adds no experiment or numerical reanalysis.
 
 The 19 large data ZIPs are stored separately and are **not included in Git**. Their exact sizes and hashes are in [ASSETS.json](../references/ASSETS.json); download URLs remain unassigned until the assets are uploaded. A fresh checkout can read the paper, code, tables, and summaries and verify repository files. Restoring the original observations requires those separate ZIPs.
 

@@ -8,6 +8,7 @@ Which observations drive variance concentration in Transformer representations, 
 
 \FloatBarrier
 
+\clearpage
 \section{1. Background and central claim}\label{background-and-central-claim}
 
 A language model's hidden state is a vector representing a token after it has been processed. Projecting these vectors into a low-dimensional PCA space can reveal an elongated configuration and variation around it. When much of the variance lies along that long axis, which observations produce the concentration, and what can be read from the other components? Connecting a distant point to a dense cloud in token order can itself create a long line. Examining the observed point distribution is therefore the starting point for interpreting the shape.
@@ -54,7 +55,7 @@ The article experiments moved from sensitivity of concentration to transfer of f
 For confirmatory experiments P1--P4, we fixed the targets, primary quantities, exclusions, comparisons, and decision rules in local protocol cards before collecting observations. EDA-0001--0004 are exploratory analyses of saved data informed by known results. For the short-text geometry study, P5, we explicitly treated the three inputs as known at design time and fixed the extraction points, measurements, and decision rules before new forward passes. We report P5 as geometric validation on known inputs and the primary hypotheses of P1--P4 as article-level confirmatory evaluations. Table 1 lists the roles and samples of each stage; Appendix A maps the full conditions to their fixed specifications.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1000}}
@@ -121,7 +122,7 @@ We measured principal component geometry in terms of both variance concentration
 For sensitivity measurements, we applied the following treatments to the saved states of the same article and re-estimated the mean and PCA. This allowed us to compare how concentration changes with the treatment of the first token, high-norm points, and vector length.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.1400}}
@@ -150,7 +151,7 @@ Excluding the first token changes which saved states are analyzed; the input tex
 We distinguish the following coordinate systems.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2000}}
@@ -195,7 +196,7 @@ To account more fully for differences between token identities, we explored comp
 We further distinguished the training tokens and objectives as follows. W was used for the primary multi-model confirmation.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1500}}
@@ -246,7 +247,7 @@ For within-group evaluation, \(\mathrm{SS}_{y}\) is the sum of squared targets a
 We first computed paired differences between conditions for each article, then used their median as the primary summary. Tokens from the same article were thus treated as observations grouped within an article. Confirmatory decisions used prespecified minimum effects and article-bootstrap intervals. Table 2 gives the interval levels, and Tables 6--8 and Appendix A.5 give the support criteria.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1200}}
@@ -500,7 +501,7 @@ Our initial question was whether the strong PC1--norm correlation persisted as a
 This result refuted the initial hypothesis that a high norm correlation would persist after excluding the first token. It also supported the hypothesis that excluding high-norm points would reduce concentration more than excluding the same number of points at random. Together, these findings establish sensitivity to high-norm points, including the first token, as central to interpreting the prominent middle-layer concentration.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5100}}
@@ -552,7 +553,7 @@ Given the dependence of concentration on the first token, we next examined which
 The association with position persisted under transfer. Adding PCs to a baseline containing position, length, frequency, and norm also provided incremental readout of current-token surprisal. Both results met the prespecified criteria, including an advantage over random directions (Table 6). Thus, associations shared across articles remained after the first-token-sensitive concentration had weakened.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4100}}
@@ -604,7 +605,7 @@ Transfer to separate articles can still reflect average differences between toke
 At GPT-2's middle layer, the incremental value of PCs beyond the ID control persisted on separate articles. In a within-group evaluation comparing occurrences of the same ID in the same article, both the PC increment and the advantage over random directions also met the prespecified criteria (Table 7). Hidden states at individual occurrences thus supported readout of unexpectedness after removing mean differences between token identities. Table B3 gives article counts with positive and negative outcomes.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1400}}
@@ -661,7 +662,7 @@ Having found incremental surprisal readout within recurring token IDs, we extend
 The prespecified criteria were met after GPT-2's final normalization, at OPT's middle layer, and at both Qwen extraction points. GPT-2's middle layer and OPT's final normalized state were inconclusive because intervals crossed a minimum-effect threshold (Table 8, Figure 6). The training configuration changed from O in P3 to W in P4, and the training articles, evaluation articles, and interval levels also differed. For GPT-2's middle layer in P4, the PC increment met its criterion, but the lower bound of the advantage over random directions did not, resulting in an inconclusive outcome. Overall, four conditions met both support criteria and two were inconclusive; the criterion requiring support across all 6 conditions was not met. These decisions concern whether each condition meets its specified minimum effects. Table 8b reports absolute performance. Evaluation included tokens belonging to IDs that recur within the same article: for GPT-2, for example, this comprised 20,522 of the 31,017 C1 tokens across all 64 articles.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -707,7 +708,7 @@ Qwen2.5-1.5B after final RMSNorm & 0.022240 {[}0.015933, 0.035083{]} & 0.011978 
 \endgroup
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4000}}
@@ -795,7 +796,7 @@ As a first step toward understanding the incremental value of PCs, we assessed h
 The ID model was the strongest comparator in both training-set cross-validation and baseline performance on evaluation articles. Introducing this control reduced the PC increment relative to the original comparison, but incremental value and an advantage over random directions remained (Table 9; intervals in Table B3). This motivated fixing the comparison model, including its coefficients, and testing it on new articles in the confirmation reported in Section 4.3.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1900}}
@@ -854,7 +855,7 @@ We examined the final-layer reversal by changing the training population and the
 Restricting ordinary training to recurring IDs already reversed the median PC-versus-random ranking. Training on within-group deviations increased the advantage further, including with penalties fixed, and favored PCs on most articles (Table 10; article counts in Table B3). The shared top 8 components captured most within-group state variation. In this comparison, the value of that concentrated variation for readout depended on both the training tokens and the objective.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
@@ -903,7 +904,7 @@ We next examined which components support useful readout. We split the shared ba
 PC2--8 provided incremental value and an advantage over random directions in every condition examined. PC1 alone contributed little in many conditions, with a clearer increment at OPT's middle layer (Table 11; supplementary values in Table B3). For readouts already accounting for position and vector norm, PC2--8 formed a useful group of components for reading additional associations.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1900}}
@@ -970,7 +971,7 @@ PC scores depend on both the norm and direction of a hidden-state vector. We the
 Even after flexible modeling of length, the increment from U8 was positive in every condition examined. Its advantage over random directions was near zero at OPT's middle layer, while the other conditions had positive descriptive intervals (Table 12). Direction-related features therefore supported additional readout after the specified length associations were included in the baseline.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2000}}
@@ -1032,7 +1033,7 @@ We then examined how aggregate improvements related to imbalances across article
 Adding raw PCs produced a large readout failure on \nolinkurl{wt2_train_27981} (2nd Battalion 9th Marines), making the mean article-level increment negative despite a positive median. Its {\(\Delta\)R\textsuperscript{2}} of about −24 means that the augmented model's SSE exceeded the baseline SSE by about 24 times that article's within-group target sum of squares. The loss was smaller with N + U8 (Table 13, Figure 9). The two columns differ in both baseline and representation; using the same baseline N yielded increments of −30.578826 for raw PC1--8 and −0.265742 for U8 on this article. Table B3 gives intervals and absolute performance.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3900}}
@@ -1088,7 +1089,7 @@ We explored the relationship between article point distributions and residual fe
 At the middle layers of GPT-2 and Qwen, the all-point long axis arose from a distant, highly influential point and a dense cloud. Concentration at OPT's middle layer was weaker. After GPT-2's final normalization, by contrast, the points formed an elongated band with appreciable width and curvature (Figure 10). Fit quality in a projected plane differed from the extent to which a single curve approximated the full hidden state, as did the number of articles meeting the criteria (Table 14). Table C2 reports all 18 conditions, including the sensitivity treatments.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2900}}
@@ -1286,7 +1287,7 @@ We rehashed each body SHA-256 with a stage-specific prefix and selected candidat
 P4 selected from 629 candidates. For each tokenizer, we identified the end of its 512th token, or its last token if fewer than 512, and used the earliest of these endpoints as a common upper bound. The same text string was cut at the preceding whitespace boundary. If retokenization exceeded 512 tokens, the text was shortened at whitespace boundaries. All models were required to receive 256--512 tokens. P5 used the three full texts in C.1, containing 101/85/72 tokens.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -1370,7 +1371,7 @@ Within-group eligibility requires at least 32 tokens in recurring IDs and at lea
 P2 used ID-free ridge with fixed \(\alpha=\gamma=.01\). The position direction is the single direction with the largest absolute median position correlation across training articles, with its sign set to make that median positive. At least 58 valid articles are required, and ties favor the lower component index. The same selection is applied within each set of 8 random directions. Secondary readout of character count removes character and byte counts from the baseline.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3100}}
@@ -1413,7 +1414,7 @@ We compute increments and paired differences within each article before aggregat
 The fixed sample of 64 articles balances storage requirements with estimation of the article distribution. If fewer than 58 articles are valid, insufficient data takes precedence. Decision rules based on lower and upper interval bounds are as follows.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}
@@ -1495,7 +1496,7 @@ Interval levels are stated in the main text and supplementary tables. In the det
 \section{Appendix B. Supplementary comparisons and prediction diagnostics}\label{appendix-b.-supplementary-comparisons-and-prediction-diagnostics}
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3300}}
@@ -1549,7 +1550,7 @@ P4 Qwen final & V1 (\%) & 26.83 & 26.73 & --- \\*
 \endgroup
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2100}}
@@ -1600,7 +1601,7 @@ After final LayerNorm & C4 & PC3 & 0.046071 & 0.157545 \\*
 \endgroup
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2400}}
@@ -1663,7 +1664,7 @@ EDA-0003 Qwen middle, failure article & {R\textsuperscript{2}} after adding PCs 
 \endgroup
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2000}}
@@ -1763,7 +1764,7 @@ tick tock tick tock tick tock the clock goes round and round tick tock tick tock
 \subsection{C.2 Curve diagnostics and supplementary quantities for the primary condition}\label{c.2-curve-diagnostics-and-supplementary-quantities-for-the-primary-condition}
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1700}}
@@ -1824,7 +1825,7 @@ For every text, more than 99.9999\% of the full-space curve error was concentrat
 \subsection{C.3 All geometry conditions for saved articles}\label{c.3-all-geometry-conditions-for-saved-articles}
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3000}}
@@ -1900,7 +1901,7 @@ For the controlled surprisal increment, the unadjusted descriptive 95\% interval
 In the Qwen middle-layer failure below, position 1 had an original norm of 11,558.8, compared with 45.3--70.2 in its training fold under both C0 and C1. This out-of-range observation accounted for more than 99.99\% of the augmented readout's squared error. The diagnostic localizes the loss; the separate shared-basis failure uses a different predictor.
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1800}}
@@ -1951,7 +1952,7 @@ A failure was also recorded for this article in the original shared-basis readou
 \subsection{C.5 Comparison of execution devices in the short-text study}\label{c.5-comparison-of-execution-devices-in-the-short-text-study}
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3600}}
@@ -1992,7 +1993,7 @@ Maximum CPU/GPU difference in PC1 variance ratio & {1.73×10\textsuperscript{-}\
 \subsection{C.6 Acquisition and verification scope}\label{c.6-acquisition-and-verification-scope}
 
 \Needspace{6\baselineskip}\begingroup
-\fontsize{9}{11.2}\selectfont\setlength{\tabcolsep}{3pt}
+\fontsize{9.3}{12}\selectfont\setlength{\tabcolsep}{3.3pt}
 {
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1000}}

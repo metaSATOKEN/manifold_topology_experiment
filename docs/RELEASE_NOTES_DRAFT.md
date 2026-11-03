@@ -2,7 +2,7 @@
 
 Companion materials for *Principal Component Geometry and Feature Readout in Transformer Representations* by Kentaro Sato.
 
-Includes the 39-page English manuscript, ten figures, compact Appendices A–C, full result tables, fixed scientific protocols, P1–P5 acquisition code, and four exploratory analyses. The package preserves confirmatory/exploratory distinctions, inconclusive conditions, and article-level failures.
+Includes the 40-page English manuscript, ten figures, compact Appendices A–C, full result tables, fixed scientific protocols, P1–P5 acquisition code, and four exploratory analyses. The package preserves confirmatory/exploratory distinctions, inconclusive conditions, and article-level failures.
 
 The data attachments comprise 15 original observation ZIPs and four saved-array ZIPs. Their inventory and hashes are in `references/ASSETS.json`. P4 requires the INDEX plus all ten PARTs from the same snapshot. Offline verification and restoration instructions are in `docs/REPRODUCIBILITY.md`.
 
