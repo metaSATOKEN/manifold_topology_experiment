@@ -14,6 +14,37 @@ PCA summarizes the directions in which a model's hidden states vary most. A stri
 
 We study GPT-2, OPT-1.3B, and Qwen2.5-1.5B base models using English WikiText articles, together with a geometric validation on three known short texts.
 
+## How the analysis connects geometry to readout
+
+**1. Measure which observations drive concentration.** Within each text, we subtract the mean state and fit PCA. The share of variance along its largest direction is
+
+$$
+V_1 = \frac{\lambda_1}{\sum_j\lambda_j},
+$$
+
+where $\lambda_j$ is the variance along principal component $j$. A distant first point and a dense remaining cluster can produce a large $V_1$. We measure sensitivity by excluding the first saved state and fitting the mean and PCA again. The model receives the same input text throughout this comparison.
+
+**2. Reuse fixed coordinates on separate articles.** For transfer, we fit a shared center and eight PC directions on the included states pooled across training articles. A state in an evaluation article receives coordinates
+
+$$
+z_t = U_{\mathrm{train}}^\top(h_t-\mu_{\mathrm{train}}).
+$$
+
+Here $h_t$ is the hidden state after token $t$, $\mu_{\mathrm{train}}$ is the training mean, and the columns of $U_{\mathrm{train}}$ are the eight directions; $z_t$ contains the eight PC scores. This shared basis is held fixed across evaluation articles. Feature scales and readout coefficients are also fixed from training. The within-text geometry analysis above instead fits coordinates separately for each text.
+
+**3. Measure what PCs add to the readout.** The target is current-token surprisal: how unexpected that token was under the model's probability distribution immediately before it appeared. A separate regression estimates this quantity from the state after the token has been processed.
+
+We compare a baseline with a jointly fitted regression that also uses PC scores. Token-ID controls account for mean differences between lexical identities. Within-ID tests subtract group means from both targets and predictions for repeated occurrences of the same ID within the same article. The primary multi-model test also trains on these within-group deviations, with position and hidden-state norm as the remaining baseline features.
+
+For each evaluation article, the incremental readout is
+
+$$
+\Delta R^2_{\mathrm{PC}}
+=\frac{\mathrm{SSE}_{\mathrm{base}}-\mathrm{SSE}_{\mathrm{PC}}}{\mathrm{SS}_y}.
+$$
+
+SSE is the sum of squared prediction errors. $\mathrm{SS}_y$ is the sum of squared target deviations from the article mean for ordinary evaluation, or from each article × token-ID group's mean for within-group evaluation. Positive increments mean improvement; negative increments mean deterioration. We also compare PCs with 20 sets of eight random orthogonal directions, averaging their errors. Article-level increments and paired PC-versus-random differences are then summarized by their medians. Confirmatory decisions use prespecified effect thresholds and article-bootstrap intervals. [Methods and decision rules](paper/manuscript.md#2-study-design-and-measurements).
+
 ## Main findings
 
 ### 1. The first token strongly influences the apparent geometry
