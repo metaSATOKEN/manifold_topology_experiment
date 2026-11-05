@@ -20,9 +20,10 @@
         "email": "info@metaclan.jp"
       }
     ],
-    "title": "Principal Component Geometry and Feature Readout in Transformer Representations",
+    "title": "Principal Component Geometry and Feature Readout in Transformer Representations: Sensitivity to the First Token, Features in Local Residuals, and Readout from Fixed Shared Principal Components",
     "year": 2026,
-    "version": "English manuscript, revised 21 October 2026"
+    "version": "English manuscript, revised 21 October 2026",
+    "doi": "10.5281/zenodo.23969557"
   },
   "repository-code": "https://github.com/metaSATOKEN/manifold_topology_experiment"
 }

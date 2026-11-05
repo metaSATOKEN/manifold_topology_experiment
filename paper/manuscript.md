@@ -3,7 +3,7 @@
 
 Kentaro Sato  
 info@metaclan.jp  
-21 October 2026 · English manuscript, revised
+21 October 2026 · English manuscript, revised · DOI: [10.5281/zenodo.23969557](https://doi.org/10.5281/zenodo.23969557)
 
 ## Abstract
 

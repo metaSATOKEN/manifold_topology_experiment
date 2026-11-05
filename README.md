@@ -95,6 +95,6 @@ The results concern statistical readout in the selected models, extraction point
 
 ## Citation
 
-Sato, Kentaro. 2026. *Principal Component Geometry and Feature Readout in Transformer Representations: Sensitivity to the First Token, Features in Local Residuals, and Readout from Fixed Shared Principal Components.*
+Sato, Kentaro. 2026. *Principal Component Geometry and Feature Readout in Transformer Representations: Sensitivity to the First Token, Features in Local Residuals, and Readout from Fixed Shared Principal Components.* DOI: [10.5281/zenodo.23969557](https://doi.org/10.5281/zenodo.23969557).
 
 [Citation metadata](CITATION.cff) · [Licensing and source attribution](licenses/README.md) · [Contact](mailto:info@metaclan.jp)
