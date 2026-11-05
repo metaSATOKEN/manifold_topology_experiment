@@ -1,6 +1,6 @@
 # Scientific code and saved results
 
-This tree retains the original directory relationships for the experiment and analysis sources. The top-level [paper](../../paper/manuscript.pdf), [figure/table map](../../references/FIGURE_TABLE_MAP.md), and [reproducibility guide](../../docs/REPRODUCIBILITY.md) are the current reader entry points.
+This tree retains the original directory relationships for the experiment and analysis sources. The top-level [paper](../../paper/transformer-pc-geometry-and-feature-readout.pdf), [figure/table map](../../references/FIGURE_TABLE_MAP.md), and [reproducibility guide](../../docs/REPRODUCIBILITY.md) are the current reader entry points.
 
 - `p0_v2/`: pilot/recovery utilities retained as dependencies and provenance.
 - `p1_v1/`–`p5_v1/`: unpacked acquisition programs, inputs, protocols, and support modules.

@@ -13,4 +13,4 @@ else
   xelatex -interaction=nonstopmode -halt-on-error -output-directory="$builddir" main.tex
   xelatex -interaction=nonstopmode -halt-on-error -output-directory="$builddir" main.tex
 fi
-cp "$builddir/main.pdf" manuscript.pdf
+cp "$builddir/main.pdf" transformer-pc-geometry-and-feature-readout.pdf

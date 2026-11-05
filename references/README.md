@@ -1,6 +1,6 @@
 # Reference materials
 
-The [paper](../paper/manuscript.pdf) contains the claims, core methods, and important failures. These materials provide the complete supporting records.
+The [paper](../paper/transformer-pc-geometry-and-feature-readout.pdf) contains the claims, core methods, and important failures. These materials provide the complete supporting records.
 
 1. [Figure and table map](FIGURE_TABLE_MAP.md): locate evidence for each manuscript item.
 2. [Methods and identifiers](METHODS_AND_IDENTIFIERS.md): input extraction, seeds, definitions, and identifiers (Japanese).

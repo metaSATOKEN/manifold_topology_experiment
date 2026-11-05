@@ -6,7 +6,7 @@
 
 The paper connects these two findings: which observations make representations look strongly concentrated, and what information remains readable when that concentration is reduced. It also shows why improvements on a typical article must be considered alongside failures on individual articles.
 
-**[Read the paper (PDF)](paper/manuscript.pdf) · [Markdown version](paper/manuscript.md) · [Figures, tables, and supporting evidence](references/FIGURE_TABLE_MAP.md)**
+**[Read the paper (PDF)](paper/transformer-pc-geometry-and-feature-readout.pdf) · [Markdown version](paper/manuscript.md) · [Figures, tables, and supporting evidence](references/FIGURE_TABLE_MAP.md)**
 
 ## The question
 
@@ -85,7 +85,7 @@ The results concern statistical readout in the selected models, extraction point
 
 | To explore | Start here |
 | --- | --- |
-| Claims, methods, results, and compact appendices | [Paper PDF](paper/manuscript.pdf) or [Markdown](paper/manuscript.md) |
+| Claims, methods, results, and compact appendices | [Paper PDF](paper/transformer-pc-geometry-and-feature-readout.pdf) or [Markdown](paper/manuscript.md) |
 | Evidence behind a particular figure or table | [Figure and table map](references/FIGURE_TABLE_MAP.md) |
 | Complete numerical tables and method details | [Reference materials](references/README.md) |
 | Saved observations and exploratory arrays | [Data inventory](references/DATA.md) |

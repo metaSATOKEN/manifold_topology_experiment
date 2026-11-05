@@ -1,6 +1,6 @@
 # Paper
 
-- [Latest English PDF](manuscript.pdf), with author contact.
+- [Latest English PDF](transformer-pc-geometry-and-feature-readout.pdf), with author contact.
 - [Markdown](manuscript.md), with matching content and GitHub links to supporting materials.
 - `main.tex`, `body.tex`, `article-style.tex`, and `figures/`: typesetting sources and the ten original figures.
 
